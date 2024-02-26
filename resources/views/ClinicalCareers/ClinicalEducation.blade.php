@@ -45,14 +45,7 @@
 <li aria-level="1">Receive mentorship from senior medical leaders</li>
 </ul>
 <a class="btn" href="..com/blog/2022-medical-leadership-conference-providing-opportunities-and-showing-appreciation/" target="_blank">Read About MLC22</a></div>
-    </div></section><section class="full-width-cta green" id="full-width-cta">
-        <div class="container">
-            <div class="full-width-cta-inner">
-                <div class="full-width-cta-wrapper center">
-                    <h2>Expand Your Career Now</h2><div class="btn-wrapper right"><a href="..com/clinicians/clinician-careers/" target="_blank" class="btn -secondary">View Our Clinical Careers</a></div></div>
-            </div>
-        </div>
-    </section></div>
+    </div></section></div>
 	</div>
 
 

@@ -6,7 +6,7 @@
 			<div class="mbnav">
 				<div class="mbnav__state" data-clickable="true">
 					<!--  main responsive menu -->
-					<div class="mbnav__inner"><ul id="menu-main-navigation" class="menu"><li id="menu-item-4937" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937 "><p href="#" >SERVICE LINES</p>
+					<div class="mbnav__inner"><ul id="menu-main-navigation" class="menu"><li id="menu-item-4937" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937 "><a href="#">SERVICE LINES</a>
 <ul class="sub-menu">
 	<li id="menu-item-4946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4946"><a href="#">Col &#8211; 1</a>
 	<ul class="sub-menu">
@@ -57,12 +57,12 @@
 			</div><!-- header part -->
 			<header class="main-header ">
 				<div class="container justify-content-between d-flex align-items-center">
-					<a href="/" class="brand"><img src="{{ asset('img/lightlogo.png') }}" alt=""  class="light logo2"><img src="{{ asset('img/logo.png') }}" alt="" class="dark logo1 h-40"></a>
+					<a href="/" class="brand"><img src="{{ asset('img/lightlogo.png') }}" alt=""  class="light logo2"><img src="{{ asset('img/logo.png') }}" alt="" class="dark logo1"></a>
 					<div class="header-right">
 						<div class="header-top"><!-- hamburger -->
 							<a href="javascript:;" class="hamburger" title="Mobile Menu">
 								<span></span>
-							</a></div><div class="navigation"><ul id="menu-main-navigation-1" class="menu"><li class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937"><a href="#">SERVICE LINES</a><div class="mega-menu-wrapper">
+							</a></div><div class="navigation"><ul id="menu-main-navigation-1" class="menu"><li class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937"><p class="textMenu">SERVICE LINES</p><div class="mega-menu-wrapper">
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4946"><a href="#">Col &#8211; 1</a><div class="mega-menu-wrapper">
 	<ul class="sub-menu">
@@ -84,7 +84,7 @@
 </li>
 </ul>
 </div></li>
-<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4505"><a href="#">COMPANY</a><div class="dropdown-menu-wrapper">
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4505"><p class="textMenu">COMPANY</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">About SCP Health</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">Partner With Us</a><div class="mega-menu-wrapper"></li>
@@ -94,13 +94,13 @@
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">Corporate Careers</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
-<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><a href="#">CLINICAL CAREERS</a><div class="dropdown-menu-wrapper">
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><p class="textMenu">CLINICAL CAREERS</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">Working With SCP</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">Clinical Education and Training</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
-<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">NEWS &#038; RESOURCES</a><div class="dropdown-menu-wrapper">
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><p class="textMenu">NEWS &#038; RESOURCES</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
 	{{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a><div class="mega-menu-wrapper"></li>

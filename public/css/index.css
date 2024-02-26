@@ -3,6 +3,36 @@
     width : 80px !important;
     height : 80px !important;
 }
+@media only screen and (max-width: 420px) {
+    .logo1{
+     height: 50px !important;
+     width: 50px !important;
+    }
+    .logo2{
+     height: 50px !important;
+     width: 50px !important;
+    }
+  }
+body.home .main-header .header-right>.navigation>.menu>li:hover>p {
+    color: #20ab95 !important;
+    cursor: context-menu;
+}
+body.home .main-header .header-right>.navigation>.menu>li>p {
+    color: #ffffff !important;
+    font-size: 25px  !important;
+}
+.textMenu
+{
+    color: #000000 !important;
+    font-size: 25px  !important;
+    font-weight: bold;
+}
+.textMenu:hover
+{
+    color: #b5bd00 !important;
+    font-size: 25px  !important;
+    cursor: context-menu;
+}
 body.home .main-header {
     background-color: #db8b3d !important;
     border-bottom: 3px solid #db8b3d !important;
@@ -153,4 +183,36 @@ body.home .main-header {
 .tabbed-contact-form .contact-tab .slick-current .form-tab .item-selector {
     background-color: #20ab95 !important;
     color: #0e1f35;
+}
+
+.fa-brands:hover
+{
+    color: #db8b3d !important;
+}
+.h1, h1 {
+    margin-bottom: 0.9375rem !important;
+    font-family: Ubuntu, sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    color: #0e1f35 !important;
+}
+
+.h1, h1 {
+    font-size: 3rem !important;
+}
+
+.h2, h2 {
+    font-size: 2.4375rem !important;
+    line-height: 1.25 !important;
+}
+
+.h2, h2 {
+    margin-bottom: 0.9375rem !important;
+    font-family: Ubuntu, sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    color: #db8b3d !important;
+}
+.hero-section.heroimage .hero-wrapper h1 {
+    color: #fff !important;
 }

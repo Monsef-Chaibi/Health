@@ -27,13 +27,14 @@
 </ul></nav></section><section id="nav_menu-3" class="widget widget_nav_menu"><span class="widget-title">CAREERS</span><nav class="menu-footer-menu-careers-container" aria-label="CAREERS"><ul id="menu-footer-menu-careers" class="menu"><li id="menu-item-4209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4209"><a href=".clinicians/clinician-careers/">Clinical Careers</a></li>
 <li id="menu-item-4860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4860"><a href=".company/corporate-careers/">Corporate Careers</a></li>
 <li id="menu-item-4957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4957"><a href="https://www.myscphealth.com/">Provider Portal</a></li>
-</ul></nav></section><section id="nav_menu-6" class="widget widget_nav_menu"><span class="widget-title">RESOURCES</span><nav class="menu-footer-menu-news-resources-container" aria-label="RESOURCES"><ul id="menu-footer-menu-news-resources" class="menu"><li id="menu-item-5064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5064"><a href=".resources/">Resources</a></li>
-<li id="menu-item-5065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5065"><a href=".blog/">Blog</a></li>
-<li id="menu-item-5067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5067"><a href=".news/">Company News</a></li>
-<li id="menu-item-85688" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85688"><a href=".events/">Events</a></li>
+</ul></nav></section><section id="nav_menu-6" class="widget widget_nav_menu" style="text-align: center;font-size:30px"><span class="widget-title">Social Media</span><nav class="menu-footer-menu-news-resources-container" aria-label="RESOURCES"><ul id="menu-footer-menu-news-resources" class="menu">
+<li id="menu-item-5064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5064"><a href=".resources/"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li id="menu-item-5065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5065"><a href=".blog/"><i class="fa-brands fa-facebook-f"></i></a></li>
+<li id="menu-item-5067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5067"><a href=".news/"><i class="fa-brands fa-youtube"></i></a></li>
+<li id="menu-item-85688" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85688"><a href=".events/"><i class="fa-brands fa-linkedin-in"></i></a></li>
 </ul></nav></section><section id="block-2" class="widget widget_block widget_text">
-<p></p>
-</section>			</div>
+</ul></nav></section>
+			</div>
 					</div>
 
 

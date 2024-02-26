@@ -123,7 +123,8 @@
                 </div>
             </div>
         </div>
-    </section><section class="sidebartab-section bg-blue" id="sidebar-slider">
+    </section>
+    <section class="sidebartab-section bg-blue" id="sidebar-slider">
         <div class="container">
             <div class="sec-heading text-center"><h2>Health Solutions</h2><p><p style="text-align: justify;">SCP Health is where healing meets performance. Our solutions balance the unique needs of health care organizations to propel clinical and operational progress and accelerate each organization's strategy.</p></div><div class="sidebartabs justify-content-center">
                     <div class="sidebartab-left">
@@ -211,7 +212,9 @@
 </ul>
 </div></div></div>
                 </div></div>
-    </section><section class="four-column-section" id="four-column-icon">
+    </section>
+    
+    <section class="four-column-section" id="four-column-icon">
         <div class="container"><div class="sec-heading text-center"><h2>Clinical Services Results</h2><p><span style="font-size: 14pt;">Our commitment to continuous improvement in quality is evident in our results.</span></p></div><div class="four-column row justify-content-center"><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2022/09/Collaboration.png" alt="SCP Health - Collaboration." ></div><h4>97% Clinician Retention Rate</h4></div></div></div><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2022/09/Confidence.png" alt="SCP Health - Confidence." ></div><h4>99% MIPS<br>Scores</h4></div></div></div><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2022/10/Reduce_Patient_Transistion_icon.png" alt="SCP Health - Reduce Patient Transition." ></div><h4><1% Locums<br>Usage</h4></div></div></div><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/Revenue_Cycle-1.svg" alt="SCP Health - Revenue Cycle." ></div><h4>15% Average Collections Increase</h4></div></div></div></div></div>
     </section><section class="testimonial-section" id="logo-testimonial">
         <div class="container">

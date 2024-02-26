@@ -6,6 +6,7 @@
     <!-- be_ixf, sdk, gho-->
     
     <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
+    <script src="https://kit.fontawesome.com/f8183aa58e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
     .be-ix-link-block .be-related-link-container {margin-bottom: 20px;margin-top: 20px;text-align: center;}
