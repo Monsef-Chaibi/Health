@@ -49,7 +49,7 @@ class Controller extends BaseController
     {
         return view('Company/Partner');
     }
-    
+
     public function Leaders()
     {
         return view('Company/Leaders');
@@ -78,5 +78,29 @@ class Controller extends BaseController
     public function Working()
     {
         return view('ClinicalCareers/Working');
+    }
+
+    public function Resources()
+    {
+        return view('ClinicalCareers/Working');
+    }
+
+    public function Blog()
+    {
+        return view('ClinicalCareers/Working');
+    }
+
+    public function News()
+    {
+        return view('ClinicalCareers/Working');
+    }
+
+    public function Events()
+    {
+        return view('NewResource/Events');
+    }
+    public function ContactUs()
+    {
+        return view('ContactUs');
     }
 }

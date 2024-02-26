@@ -6,7 +6,7 @@
 			<div class="mbnav">
 				<div class="mbnav__state" data-clickable="true">
 					<!--  main responsive menu -->
-					<div class="mbnav__inner"><ul id="menu-main-navigation" class="menu"><li id="menu-item-4937" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937"><a href="#">SERVICE LINES</a>
+					<div class="mbnav__inner"><ul id="menu-main-navigation" class="menu"><li id="menu-item-4937" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937 "><p href="#" >SERVICE LINES</p>
 <ul class="sub-menu">
 	<li id="menu-item-4946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4946"><a href="#">Col &#8211; 1</a>
 	<ul class="sub-menu">
@@ -40,15 +40,16 @@
 </li>
 <li id="menu-item-3902" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><a href="#">CLINICAL CAREERS</a>
 <ul class="sub-menu">
+	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">Working With SCP</a></li>
 	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">Clinical Education and Training</a></li>
 </ul>
 </li>
 <li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">NEWS &#038; RESOURCES</a>
 <ul class="sub-menu">
-	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a></li>
+	{{-- <li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a></li>
 	<li id="menu-item-3899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a></li>
-	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a></li>
-	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href=".events/">Events</a></li>
+	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a></li> --}}
+	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">Events</a></li>
 </ul>
 </li>
 </ul></div>
@@ -56,7 +57,7 @@
 			</div><!-- header part -->
 			<header class="main-header ">
 				<div class="container justify-content-between d-flex align-items-center">
-					<a href="/" class="brand"><img src="{{ asset('img/logo.png') }}" alt="" class="light logo1 2xl:ml-20"><img src="{{ asset('img/logo.png') }}" alt="" class="dark logo1 sm:ml-20 h-40"></a>
+					<a href="/" class="brand"><img src="{{ asset('img/lightlogo.png') }}" alt=""  class="light logo2 sm:ml-20"><img src="{{ asset('img/logo.png') }}" alt="" class="dark logo1 sm:ml-20 h-40"></a>
 					<div class="header-right">
 						<div class="header-top"><!-- hamburger -->
 							<a href="javascript:;" class="hamburger" title="Mobile Menu">
@@ -95,18 +96,19 @@
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><a href="#">CLINICAL CAREERS</a><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">Working With SCP</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">Clinical Education and Training</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">NEWS &#038; RESOURCES</a><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a><div class="mega-menu-wrapper"></li>
+	{{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href=".events/">Events</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a><div class="mega-menu-wrapper"></li> --}}
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">Events</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
-</ul><a href="/contact-us/" class="btn">CONTACT</a><div class="search-form-box">
+</ul><a href="/Contact-Us" class="btn">CONTACT</a><div class="search-form-box">
 	<div class="search-form-backdrop"></div>
 	<div class="search-form-wrapper">
 		<span class="close-form"></span>

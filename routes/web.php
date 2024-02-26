@@ -42,7 +42,7 @@ Route::prefix('Company')->group(function () {
     Route::match(['get', 'post'], '/Technology', [Controller::class, 'Technology'])->name('Technology');
 
     Route::match(['get', 'post'], '/Sustainability', [Controller::class, 'Sustainability'])->name('Sustainability');
-    
+
     Route::match(['get', 'post'], '/Corporate', [Controller::class, 'Corporate'])->name('Corporate');
 
 });
@@ -54,3 +54,18 @@ Route::prefix('Clinical-Careers')->group(function () {
     Route::match(['get', 'post'], '/Clinical-Education', [Controller::class, 'ClinicalEducation'])->name('ClinicalEducation');
 
 });
+
+Route::prefix('New-Resources')->group(function () {
+
+    // Route::match(['get', 'post'], '/Resources', [Controller::class, 'Resources'])->name('Resources');
+
+    // Route::match(['get', 'post'], '/Blog', [Controller::class, 'Blog'])->name('Blog');
+
+    // Route::match(['get', 'post'], '/News', [Controller::class, 'News'])->name('News');
+
+    Route::match(['get', 'post'], '/Events', [Controller::class, 'Events'])->name('Events');
+
+});
+
+
+Route::match(['get', 'post'], '/Contact-Us', [Controller::class, 'ContactUs'])->name('Contact-Us');

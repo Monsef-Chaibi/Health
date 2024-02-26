@@ -6,13 +6,13 @@
 
 
 <body class="home page-template page-template-template-parts page-template-template-home-page page-template-template-partstemplate-home-page-php page page-id-22">
-	
+
 	@include('include/header')
-			
+
 	<!-- banner area part -->
 	<section class="hero-section "><div class="hero-banner"><img src="https://www.scphealth.com/wp-content/uploads/2023/08/SCP_Home_Hero_Image.jpg" alt="SCP Health - Your strategic health care partner, providing quality health solutions to all health care services."></div><div class="hero-wrapper">
 				<div class="container">
-					<div class="hero-content "><h1>Your Strategic Health Care Partner</h1><p><p>SCP Health is a physician-led team of clinical and operational experts, collectively passionate about revitalizing health care.<br><br>Using our clinical and operational expertise, we are leading the future with scalable health care solutions by engaging, activating, and optimizing clinicians to deliver exceptional patient care.</p><div class="btn-group"><a href="/company/" target="_self" class="btn">About Us</a></div></div>
+					<div class="hero-content "><h1>Your Strategic Health Care Partner</h1><p><p>SCP Health is a physician-led team of clinical and operational experts, collectively passionate about revitalizing health care.<br><br>Using our clinical and operational expertise, we are leading the future with scalable health care solutions by engaging, activating, and optimizing clinicians to deliver exceptional patient care.</p><div class="btn-group"><a href="{{ route('Health') }}" target="_self" class="btn">About Us</a></div></div>
 				</div>
 			</div></section><div class="main-content"><section class="tabbed-section ">
         <div class="tb-wrapper">
@@ -44,25 +44,17 @@
                                                     <div class="desc-wrapper"><p style="font-weight: 400;">Our scalable health care solutions align and integrate with your strategic goals to improve quality, accelerate decision-making, and propel progress across all service lines.</p>
 <div class="gca-column one-half first"><p style="font-weight: 400;"><strong>Services:</strong></p>
 <ul style="color: #e87e24;">
-<li><a class="btn-link" href="..com/healthcare-services/emergency-medicine/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/emergency-medicine/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw3tV8OL37FNCbcbJDD7iW7O">Emergency Medicine</a></li>
-<li><a class="btn-link" href="..com/healthcare-services/hospital-medicine/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/hospital-medicine/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw0Uo6T1LYPQvi9iYUlyQ8er">Hospital Medicine</a></li>
-<li><a class="btn-link" href="..com/healthcare-services/critical-care-medicine/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/critical-care-medicine/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw1sM7GJioCwXxpVN5VBoS44">Critical Care Medicine</a></li>
-<li><a class="btn-link" href="..com/healthcare-services/urgent-care/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/urgent-care/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw2KaM3VzKMrGjkZCTOECCTy">Urgent Care</a></li>
-<li><a class="btn-link" href="..com/healthcare-services/retail-health/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/retail-health/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw1HthCG-3XiX_2XyJZe-UEv">Primary Care &amp; Retail Health</a></li>
-<li><a class="btn-link" href="..com/healthcare-services/telehealth/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/telehealth/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw3vmCUvukEwaB599FyL3h7k">Telehealth &amp; Telemedicine</a></li>
-<li><a class="btn-link" href="..com/healthcare-services/patient-engagement/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-services/patient-engagement/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw24f1c7uTBeZE6YA9QSONZW">Patient Engagement</a></li>
+<li><a class="btn-link" href="{{ route('Health') }}" >Emergency Medicine</a></li>
+<li><a class="btn-link" href="{{ route('Hospital') }}" >Hospital Medicine</a></li>
+<li><a class="btn-link" href="{{ route('Critical') }}" >Critical Care Medicine</a></li>
 </ul></div>
 <div class="gca-column one-half"><p style="font-weight: 400;"><strong>Solutions:</strong></p>
 <ul style="color: #e87e24;">
-<li><a class="btn-link" href="..com/healthcare-solutions/care-delivery/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/care-delivery/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw230lG-HMD-cDySjlu6M74P">Care Delivery</a></li>
-<li><a class="btn-link" href="..com/healthcare-solutions/clinical-staffing/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/clinical-staffing/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw1_1oZ6bldiLHY3tX6958By">Clinical Staffing</a></li>
-<li><a class="btn-link" href="..com/healthcare-solutions/clinical-workforce-optimization/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/clinical-workforce-optimization/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw3gNFl3syFdaRhvSHk8yOJG">Clinical Workforce Optimization</a></li>
-<li><a class="btn-link" href="..com/healthcare-solutions/documentation-and-revenue-cycle-management/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/documentation-and-revenue-cycle-management/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw0X5RQZ508JyUj5JX_e8juq">Documentation &amp; Revenue Cycle Management</a></li>
-<li><a class="btn-link" href="..com/healthcare-solutions/virtual-health/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/virtual-health/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw1nxSUhbVHeD_YbAei5361J">Virtual Health</a></li>
-<li><a class="btn-link" href="..com/healthcare-solutions/advanced-care-in-the-home/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/advanced-care-in-the-home/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw19rSW8Fg1QS3E9xb9LZ0E1">Advanced Care in the Home</a></li>
-<li><a class="btn-link" href="..com/healthcare-solutions/clinical-integration/" data-saferedirecturl="https://www.google.com/url?q=https://www.scp-health.com/healthcare-solutions/clinical-integration/&amp;source=gmail&amp;ust=1669957403415000&amp;usg=AOvVaw1z725z3qgcxTZsBxdJskDy">Clinical Integration</a></li>
+<li><a class="btn-link" href="" >Care Delivery</a></li>
+<li><a class="btn-link" href="{{ route('Clinical') }}" >Clinical integrate</a></li>
+<li><a class="btn-link" href="" >Clinical Workforce Optimization</a></li>
 </ul></div>
-</div><a href="..com/company/partner-with-us/" class="btn" target="">Partner with Us</a></div>
+</div><a href="{{ route('Partner') }}" class="btn" target="" style="margin-top: 20px">Partner with Us</a></div>
                                             </div>
                                             <div class="cell-lg-6 "><div class="resource-wrapper"><div class="resource-inner">
                                                                     <a href=".resource/the-no-surprises-act-full-of-surprises/" class="img-wrapper"><img alt="Doctor speaking with a medical professional holding a tablet." src="https://www.scphealth.com/wp-content/uploads/2022/10/CWO_arrow-1568x882.jpg"/></a>
@@ -261,13 +253,13 @@
 <ul style="color: #e87e24;">
 <li><span style="font-size: 14pt; color: #63666b;">Invest in nationwide technology, resources, and capability development </span></li>
 </ul>
-<a class="btn" href="..com/company/partner-with-us/" target="_self">Discover What Together Can Do</a></div>
+<a class="btn" href="{{ route('Partner') }}" target="_self">Discover What Together Can Do</a></div>
     </div></section><section class="fiftyfifty-section left brandedimage" id="50-50-promo-working-with-ahealth-care-partner"><div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2023/11/SCP_Health_Care_Partner.jpg"><div class=" svg-wrapper fiftyfifty-arrow pink"></div></div><div class="promo-content">
         <div class="promo-content-inner "><h2 class="promo-title">Working with a<br>Health Care Partner</h2><p><span style="font-size: 14pt;">We pride ourselves in being a leader in the health care industry, always moving forward with innovative ideas to revitalize health care at every level. Our clinical and operational teams work together to sustainably extend the reach and increase the impact of health care across the nation.</span></p>
-<a class="btn" href="..com/clinicians/clinician-careers/" target="_self">Join Our Team</a></div>
+<a class="btn" href="{{ route('Working') }}" target="_self">Join Our Team</a></div>
     </div></section><section class="fiftyfifty-section right brandedimage" id="50-50-promo-4-strategies-to-transform-the-icu-by-bringing-the-c-suite-to-the-bedside"><div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-695218436-1-scaled.jpeg"><div class=" svg-wrapper fiftyfifty-arrow green"></div></div><div class="promo-content">
         <div class="promo-content-inner "><h2 class="promo-title">4 Strategies to Transform the ICU by Bringing the C-Suite to the Bedside</h2><p><span style="font-size: 14pt;">While the ICU is a critical component of the hospital, it is often viewed as an expensive cost center. <a href="https://www.linkedin.com/in/erika-gabbard/" target="_blank" rel="noopener">Erika Gabbard, DNP, RN, CCNS, CCRN-K</a> explores how to break through siloed thinking and create a new, comprehensive approach and mindset to bring C-suite professionals to the bedside, achieving strategic needs of the hospital and aligning holistic cost with complex clinical management and the well-being of patients who require ICU-level care.</span></p>
-<a class="btn" href="..com/resource/bringing-the-c-suite-to-the-bedside-in-critical-care-medicine/" target="_self">Latest White Paper</a></div>
+</div>
     </div></section><section class="wysiwyg-section">
     <div class="container"><h2 style="text-align: center;">Clinical Workforce Optimization</h2>
 <p><a href="..com/healthcare-solutions/clinical-workforce-optimization/" target="_blank" rel="noopener"><img decoding="async" loading="lazy" class="aligncenter wp-image-255232 size-full" src="https://www.scphealth.com/wp-content/uploads/2022/10/mySCP.png" alt="SCP Health - mySCP Technology Platform." width="1024" height="383" srcset="https://www.scphealth.com/wp-content/uploads/2022/10/mySCP.png 1024w, https://www.scphealth.com/wp-content/uploads/2022/10/mySCP-300x112.png 300w, https://www.scphealth.com/wp-content/uploads/2022/10/mySCP-768x287.png 768w, https://www.scphealth.com/wp-content/uploads/2022/10/mySCP-32x12.png 32w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></p>
@@ -290,10 +282,10 @@
 <li><span style="font-size: 14pt; color: #63666b;">Amplify and accelerate your strategic goals</span></li>
 <li><span style="font-size: 14pt; color: #63666b;">Reduce cost per patient served</span></li>
 </ul>
-<a href="..com/company/advanced-health-care-technology/#dynamic-staffing" href="..com/company/advanced-health-care-technology/#dynamic-staffing" class="btn-link">More on Our Innovation</a></div></div><div rel="imgdrop-2" class="imgdrop-item">
+<a href="..com/company/advanced-health-care-technology/#dynamic-staffing" href="{{ route('Technology') }}" class="btn-link">More on Our Innovation</a></div></div><div rel="imgdrop-2" class="imgdrop-item">
 
 							<div class="list-head"><h5>Technology</h5></div><div class="list-desc" style="display:none"><p><span style="font-size: 14pt;"><span class="NormalTextRun SCXW61147960 BCX0">We provide our clinicians with proprietary, cloud</span><span class="NormalTextRun SCXW61147960 BCX0">&#8211;</span><span class="NormalTextRun SCXW61147960 BCX0">based, secure technology, applications, and tools to further maximize resources, optimize scheduling, enable transparent communications, streamline workflow, reduce administrative tasks</span><span class="NormalTextRun SCXW61147960 BCX0">,</span><span class="NormalTextRun SCXW61147960 BCX0"> and advance operational efficiency.</span></span></p>
-<a href="..com/advanced-health-care-technology/" href="..com/advanced-health-care-technology/" class="btn-link">Discover Our Technology Solutions</a></div></div></div>
+<a href="..com/advanced-health-care-technology/" href="{{ route('Technology') }}" class="btn-link">Discover Our Technology Solutions</a></div></div></div>
 		</div></div>
 </section><section class="wysiwyg-section">
     <div class="container"><h2></h2>
@@ -321,50 +313,45 @@
 		</div></section><section class="vertical-carousel-section" id="vertical-carousel">
     <div class="vertical-carousel-wrapper"><div class="vertical-carousel-infobar"><h2>Accelerate Your Clinical Career</h2><p>We empower physicians, nurse practitioners, and physician assistants like you to pursue a career that aligns with your long-term goals. We focus on putting the right people in the right places by pairing you with a position that fits your needs, offers competitive compensation, and supports your growth as a health care leader. Even after you've found the right position, we still support you, providing proprietary, cloud-based, secure technology, applications, and tools to streamline administrative and extraneous processes so you can focus on caring for patients. </p><a href="/clinicians/clinician-careers/career-results/" target="_self" class="btn-link">View All Positions</a><div class="slick-slider-controls"></div></div><div class="vertical-carousel-rightside">
                 <div class="vertical-carousel-slider"><div class="vertical-carousel-slide">
-                            <a href="/clinicians/clinician-careers/career-results/?pager=1&position_type=59&specialty=69&location=&search_text=" target="_blank" class="vertical-carousel-slide-inner">
+                            <a target="_blank" class="vertical-carousel-slide-inner">
                                 <div class="content-part">
                                     <h4>Emergency Medicine Physician </h4>
-                                    <span class="btn-link">Open Positions</span>
                                 </div>
                                 <div class="img-wrapper">
                                     <img src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-1030323574-1-265x320.jpg" alt="Medical professional speaking with a patient.">
                                 </div>
                             </a>
                         </div><div class="vertical-carousel-slide">
-                            <a href="/clinicians/clinician-careers/career-results/?pager=1&position_type=75&specialty=69&location=&search_text=" target="_blank" class="vertical-carousel-slide-inner">
+                            <a  target="_blank" class="vertical-carousel-slide-inner">
                                 <div class="content-part">
                                     <h4>Emergency Medicine NP/PA</h4>
-                                    <span class="btn-link">Open Positions</span>
                                 </div>
                                 <div class="img-wrapper">
                                     <img src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-1209225824-265x320.jpg" alt="Medical professional using a Stethoscope on a patient.">
                                 </div>
                             </a>
                         </div><div class="vertical-carousel-slide">
-                            <a href="/clinicians/clinician-careers/career-results/?pager=1&position_type=74&specialty=&location=&search_text=" target="_blank" class="vertical-carousel-slide-inner">
+                            <a target="_blank" class="vertical-carousel-slide-inner">
                                 <div class="content-part">
                                     <h4>Acute Nurse Practioner</h4>
-                                    <span class="btn-link">Open Positions</span>
                                 </div>
                                 <div class="img-wrapper">
                                     <img src="https://www.scphealth.com/wp-content/uploads/2021/12/GettyImages-1209225824-4-265x320.jpg" alt="Medical professional using a Stethoscope on a patient.">
                                 </div>
                             </a>
                         </div><div class="vertical-carousel-slide">
-                            <a href="/clinicians/clinician-careers/career-results/?pager=1&position_type=85&specialty=&location=&search_text=" target="_blank" class="vertical-carousel-slide-inner">
+                            <a  target="_blank" class="vertical-carousel-slide-inner">
                                 <div class="content-part">
                                     <h4>Medical Director</h4>
-                                    <span class="btn-link">Open Positions</span>
                                 </div>
                                 <div class="img-wrapper">
                                     <img src="https://www.scphealth.com/wp-content/uploads/2021/12/how_we_do_it-265x320.jpg" alt="Group of medical professionals in a meeting.">
                                 </div>
                             </a>
                         </div><div class="vertical-carousel-slide">
-                            <a href="/clinicians/clinician-careers/career-results/?pager=1&position_type=59&specialty=72&location=&search_text=" target="_blank" class="vertical-carousel-slide-inner">
+                            <a  target="_blank" class="vertical-carousel-slide-inner">
                                 <div class="content-part">
                                     <h4>Hospital Medicine Physician </h4>
-                                    <span class="btn-link">Open Positions</span>
                                 </div>
                                 <div class="img-wrapper">
                                     <img src="https://www.scphealth.com/wp-content/uploads/2021/12/GettyImages-1271564743_new-265x320.jpg" alt="Medical professional showing information on a tablet to a patient.">
@@ -372,28 +359,6 @@
                             </a>
                         </div></div>
             </div></div>
-</section><section class="featured-resource" id="featured-resource"><div class="container"><div class="featured-resource-wrapper"><div class="featured-resource-counter"><div class="counter">
-                    <div class="counter-wrapper">
-                        <h2 data-count="36" class="counter-val">0</h2><h2>+</h2></div><p>states</p></div><div class="counter">
-                    <div class="counter-wrapper">
-                        <h2 data-count="469" class="counter-val">0</h2><h2>+</h2></div><p>health care facilities </p></div><div class="counter">
-                    <div class="counter-wrapper">
-                        <h2 data-count="10" class="counter-val">0</h2><h2>M+</h2></div><p>patients treated annually</p></div><div class="counter">
-                    <div class="counter-wrapper">
-                        <h2 data-count="7500" class="counter-val">0</h2><h2>+</h2></div><p>talented clinicians</p></div></div><div class="featured-resource-news"><div class="featured-post"><div class="featured-post-wrapper">
-                                <div class="bg-decoration"></div>
-                                <div class="featured-post-img">
-                                    <img src="https://www.scphealth.com/wp-content/uploads/2023/11/health_care_partner.png" alt="SCP Health - Your Trusted Health Care Partner.">
-                                    <div class="content-part text-white">
-                                        <strong class="post-category">Featured Post</strong><h4><a href=".resource/annual-review-2022/">Annual Review 2022</a></h4>
-                                            <p>SCP Health's 2022 Annual Review details our newly expanded portfolio, quality performance metrics and reports, and nation-wide health care advocacy opportunities.</p>
-                                    </div>
-                                </div>
-                            </div></div><div class="other-news">
-                    <div class="other-news-wrapper"><h5>Related Resources</h5><div class="news-listing"><div class="news-list"><a href=".resource/6-hospital-medicine-roi-value-drivers/" class="news-link btn-link">6 Hospital Medicine ROI Value Drivers</a><a href=".resource/healthcare-transformation-from-insights-to-innovation/" class="news-link btn-link">Insights to Interventions</a><a href=".resource/right-sizing-emergency-care-amid-healthcare-reform/" class="news-link btn-link">Right-Sizing Emergency Care Amid Healthcare Reform</a><a href=".resource/building-a-vision-for-the-future-during-covid-19/" class="news-link btn-link">Building A Vision for the Future During COVID-19</a></div></div>
-                    </div>
-                </div></div></div>
-</div>
 </section><section class="contactform-section bg-blue" id="contact-form"><div class="container">
             <div class="contactform-wrapper"><div class="contact-left"><h2>Contact Us</h2><p>Interested in a strategic health care partnership or career advancement by working with SCP Health? Please reach out by filling out the form to:</p>
 <ul style="color: #e87e24;">

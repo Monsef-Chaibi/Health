@@ -4,7 +4,7 @@
 
 <!doctype html>
 <html lang="en-US" >
- 
+
 @include('include/link')
 
 
@@ -19,10 +19,10 @@
 					</figure>
 				</div><div class="services-info left-part">
                 <h1>Emergency Medicine Specialists</h1><p>SCP Health is your premiere emergency medicine specialist, leveraging over 50 years of experience in acute unscheduled care, beginning in the emergency department. <br><br>
-Our clinical and operational experts lead and empower strong clinical teams, providing continuous support and development to deliver exceptional acute patient care in the communities we serve.  </p><div class="btn-group"><a href="..com/wp-content/uploads/2022/05/SCP_EM.pdf" target="_blank" class="btn">Learn More</a><a href="..com/healthcare-services/emergency-medicine/#contact-us" target="" class="btn-link">Contact Us</a></div></div></div></div></section><div class="main-content"><section class="four-column-section" id="four-column-icon">
+Our clinical and operational experts lead and empower strong clinical teams, providing continuous support and development to deliver exceptional acute patient care in the communities we serve.  </p><div class="btn-group"><a  target="_blank" class="btn">Learn More</a></div></div></div></div></section><div class="main-content"><section class="four-column-section" id="four-column-icon">
         <div class="container"><div class="sec-heading text-center"><h2>Emergency Medicine Services Results</h2><p>SCP Health collaborates with our clients, balancing the unique needs of each organization and making data-driven decisions to improve outcomes and performance for acute patient care.</p></div><div class="four-column row justify-content-center"><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/Doctor_Magenta-1.svg" alt="SCP Health - Anchored in strong leadership." ></div><h4>Anchored in <br>Strong Leadership</h4><p><b><a href="..com/company/leadership/">Strong clinical leadership</a></b>, including experienced medical directors and senior medical experts, head a highly collaborative clinical team that fully aligns and integrates with your hospital and medical staff.</p></div></div></div><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/Retention-Rates_Magenta-1a.svg" alt="SCP Health - Retention Rates." ></div><h4>Patient-Centered Approach</h4><p>Our patient-centered approach focuses on enabling and delivering exceptional care with a positive patient experience, before, during, and after clinical encounters. </p></div></div></div><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/Data_driven.svg" alt="SCP Health - Data-driven results." ></div><h4>Data-Driven Results</h4><p>We drive continuous improvement in quality through <b><a href="..com/advanced-health-care-technology/"> innovative technology</a></b>, data-driven insights, and actionable analytics, resulting in reduced clinical variability, and cost-effective care.</p></div></div></div><div class="four-column-item cell-lg-3 cell-md-6"><div class="four-column-inner"><div class="four-column-hover"><div class="icon"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/Peak_Performance.svg" alt="SCP Health - Peak Performance." ></div><h4>Achieve Peak Potential</h4><p>Financial stability, high recruitment and retention rates, and <b><a href="..com/company/partner-with-us/">long-term partnerships</a></b> allow your health system to achieve strategic goals and pave the way for new and innovative value-based models.</p></div></div></div></div></div>
     </section><section class="searvices-accordion" id="accordion-content">
-	<div class="container"><div class="heading-part"><h2>Acute Unscheduled Care Services: <br>Quality, Benefits, and Impact</h2><p>SCP Health aligns clinical and operational teams, using local leadership, dynamic scheduling, and proven care delivery models. Our EM specialists deliver scalable approaches that help prioritize patient care while achieving strategic goals. </p></div><div class="searvices-accordion-wrapper"><div class="service-accordion-single" rel="service-1">
+	<div class="container"><div class="heading-part"><p>SCP Health aligns clinical and operational teams, using local leadership, dynamic scheduling, and proven care delivery models. Our EM specialists deliver scalable approaches that help prioritize patient care while achieving strategic goals. </p></div><div class="searvices-accordion-wrapper"><div class="service-accordion-single" rel="service-1">
 						<div class="list-head">
 							<h5>Comprehensive Quality</h5>
 							<span class="indicator"></span>
@@ -90,7 +90,7 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 <li data-leveltext="" data-font="Symbol" data-listid="34" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span style="font-size: 14pt;"><b>Data-Driven Decisions: </b>Real-time data collection of clinical and operational metrics to provide actionable analytics enabling ongoing process improvement and high-quality outcomes.<b> </b> </span></li>
 <li data-leveltext="" data-font="Symbol" data-listid="34" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span style="font-size: 14pt;"><b>Minimal Disruption: </b>Customized solutions reduce administrative burden and improve operational performance without changing your current employment strategy. </span></li>
 </ul>
-<a class="btn" href="/contact-us-emergency-medicine-solutions/" target="_self">Request a Consultation</a></div>
+</div>
     </div></section><section class="fiftyfifty-section left " id="50-50-promo-virtual-triage-program"><div class="promo-image"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/Telehealth_Intensivist.jpg" alt="Intensivist conducting a Telehealth appointment with a patient."></div><div class="promo-content">
         <div class="promo-content-inner "><span class="promo-label">Telehealth in the ED</span><h2 class="promo-title">Virtual Triage Program</h2><p><span style="font-size: 14pt;">Flexible and customizable program options leverage technology to extend quality care via:</span></p>
 <ul>
@@ -98,7 +98,7 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 <li data-leveltext="" data-font="Symbol" data-listid="35" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span style="font-size: 14pt;">Dedicated providers in triage </span></li>
 <li data-leveltext="" data-font="Symbol" data-listid="35" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span style="font-size: 14pt;">Surge support for on-site clinicians </span></li>
 </ul>
-<a class="btn" href="..com/resource/faqs-teletriage-program/" target="_blank">Learn More About the Teletriage Program</a></div>
+</div>
     </div></section><section class="benefitbox-section bg-blue" id="card-promo">
         <div class="container">
             <div class="sec-heading"><h2>Virtual Health Solutions <br> for Acute Patient Care</h2></div><div class="benefitbox row justify-content-center"><div class="benefitbox-item cell-lg-3 cell-md-6"><div class="benefitbox-inner"><h4>Care Coordination</h4><div class="benefitbox-desc"><p><span style="font-size: 14pt;"><span class="NormalTextRun SCXW209687078 BCX0">Our care coordinators support patients </span><span class="NormalTextRun SCXW209687078 BCX0">after they leave the hospital, </span><span class="NormalTextRun SCXW209687078 BCX0">ensuring timely and appropriate follow-up care and </span><span class="NormalTextRun SCXW209687078 BCX0">providing </span><span class="NormalTextRun SCXW209687078 BCX0">support along the next steps of the care journey</span><span class="NormalTextRun SCXW209687078 BCX0">.</span></span></p>
@@ -133,35 +133,35 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 		<div class="custom-controls">
 			<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 		</div></section><section class="resource-promo-comp">
-    <div class="container"><div class="stories-heading"><h2>Emergency Care Services & EM Expertise</h2><p>Our EM specialists are collectively passionate about delivering exceptional, acute patient care and driving operational efficiencies by sharing insights and expertise.</p></div><div class="resource-promo-wrapper"><div class="resource-promo-img"><div class="img-wrapper"><img src="https://www.scphealth.com/wp-content/uploads/2023/10/EM_Diverse_Doctors.jpg" alt="Our Emergency Medicine Specialists discussing information."></div><div class="detail-part"><span class="date-block">December 06, 2021</span><h2>Insights to Interventions</h2><p>Using the unique vantage point of the emergency department to drive transformation.</p><a href=".resource/healthcare-transformation-from-insights-to-innovation/" class="btn-link">Learn More</a></div></div><div class="resource-promo-info"><div class="heading-wrapper"><h3 class="h3">Related Resources</h3></div><div class="resource-blog-row"><div class="resource-blog-col">
+    <div class="container"><div class="stories-heading"><h2>Emergency Care Services & EM Expertise</h2><p>Our EM specialists are collectively passionate about delivering exceptional, acute patient care and driving operational efficiencies by sharing insights and expertise.</p></div><div class="resource-promo-wrapper"><div class="resource-promo-img"><div class="img-wrapper"><img src="https://www.scphealth.com/wp-content/uploads/2023/10/EM_Diverse_Doctors.jpg" alt="Our Emergency Medicine Specialists discussing information."></div><div class="detail-part"><span class="date-block">December 06, 2021</span><h2>Insights to Interventions</h2><p>Using the unique vantage point of the emergency department to drive transformation.</p></div></div><div class="resource-promo-info"><div class="heading-wrapper"><h3 class="h3">Related Resources</h3></div><div class="resource-blog-row"><div class="resource-blog-col">
 								<div class="resource-blog-inner">
 									<div class="resource-blog-col-top"><h6><a href=".resource/right-sizing-emergency-care-amid-healthcare-reform/">Right-Sizing Emergency Care Amid Healthcare Reform</a></h6><p>Learn how your hospital can leverage the ED's unique position to produ ...</p></div>
 									<div class="link">
-										<a href=".resource/right-sizing-emergency-care-amid-healthcare-reform/" class="btn-link">Learn More</a>
+
 									</div>
 								</div>
 							</div><div class="resource-blog-col">
 								<div class="resource-blog-inner">
 									<div class="resource-blog-col-top"><h6><a href=".resource/essential-strategies-for-team-alignment/">Team Alignment Strategies for Emergency and Hospital Medicine</a></h6><p>Proven strategies to improve interdepartmental communication, establis ...</p></div>
 									<div class="link">
-										<a href=".resource/essential-strategies-for-team-alignment/" class="btn-link">Learn More</a>
+
 									</div>
 								</div>
 							</div><div class="resource-blog-col">
 								<div class="resource-blog-inner">
 									<div class="resource-blog-col-top"><h6><a href=".resource/unified-hospital-emergency-and-urgent-care-improves-access-and-metrics/">Unified Hospital, Emergency, And Urgent Care Improves Access And Metrics</a></h6><p>SCP Health's partnership with this not-for-profit facility successfull ...</p></div>
 									<div class="link">
-										<a href=".resource/unified-hospital-emergency-and-urgent-care-improves-access-and-metrics/" class="btn-link">Learn More</a>
+
 									</div>
 								</div>
 							</div><div class="resource-blog-col">
 								<div class="resource-blog-inner">
 									<div class="resource-blog-col-top"><h6><a href=".resource/aligning-em-hm-teams-with-joint-operations-committee-joc/">Aligning EM-HM Teams with Joint Operations Committee (JOC)</a></h6><p>Establish a regular, multi-disciplinary meeting cadence and genuine sh ...</p></div>
 									<div class="link">
-										<a href=".resource/aligning-em-hm-teams-with-joint-operations-committee-joc/" class="btn-link">Learn More</a>
+
 									</div>
 								</div>
-							</div></div><div class="resource-promo-cta-block"><span class="cta-1"><a href="..com/resources/" target="" class="btn-link">View All</span></a></div></div></div>
+							</div></div><div class="resource-promo-cta-block"><span class="cta-1"></div></div></div>
     </div>
 </section><section class="contactform-section bg-blue" id="contact-form"><div class="container">
             <div class="contactform-wrapper"><div class="contact-left"><h2>Contact Us</h2><p>Would you like to learn more about emergency medicine services for your hospital? Please reach out by filling out the form to:</p>
@@ -229,7 +229,7 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 	</div>
 
 
-	
+
 	@include('include/footer')
 
 
