@@ -1,0 +1,130 @@
+.logo1
+{
+    width : 60px !important;
+    height : 80px !important;
+}
+.btn
+{
+    border: 2px solid #00B4B0 !important;
+    background-color:  #00B4B0 !important;
+}
+.tb-top 
+{
+    background-color:  #00B4B0 !important;
+    color: black !important;
+}
+
+
+.tabbed-section .tb-wrapper .tb-top li a.active, .tabbed-section .tb-wrapper .tb-top li a:hover .btn-link:focus, .btn-link:hover, a:hover .btn-link {
+    color :  #00B4B0 !important;
+}
+.tabbed-section .tab-content  .desc-wrapper ul li:before {
+    background-color:  #00B4B0 !important;   
+}
+.testimonial-section .testimonial-slider {
+    background-color:  #00B4B0 !important;   
+}
+.testimonial-section .testimonial-slider-wrapper .slick-cutsom-dot span:before {
+    background-color:  #00B4B0 !important;   
+}
+.fiftyfifty-section .promo-content-inner ul li:before {
+    background-color:  #00B4B0 !important;   
+}
+.tabbed-features-module .tfmcontent .tfm-right .imgdrop-tab .imgdrop-item ul li:before {
+    background-color:  #00B4B0 !important;   
+}
+.testimonial-section .new-arrows .arrows{
+    color:  #00B4B0 !important;   
+}
+.tabbed-features-module .tfmcontent .tfm-right .imgdrop-tab .imgdrop-item h5 {
+    color:  #00B4B0 !important;   
+}
+.fiftyfifty-section .green svg g path 
+{
+    fill :  #00B4B0 !important;   
+}
+.fiftyfifty-section .pink svg g path 
+{
+    fill :  #f49b3e !important;   
+}
+.success-stories-comp .custom-controls .progress {
+    background-image: linear-gradient(to right,#00B4B0, #00B4B0) !important;
+}
+.tabbed-features-module .tfmcontent .tfm-right .imgdrop-tab .imgdrop-item h5:after {
+    border: solid #00B4B0 !important;
+    content: "" !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 12px !important;
+    border-width: 0 3px 3px 0 !important;
+    display: inline-block !important;
+    padding: 3px !important;
+    transition: .3s !important;
+    transform: rotate(45deg) !important;
+}
+.slick-arrow.slick-disabled  {
+    background-color: #00B4B0 !important;
+}
+.slick-slider-controls .slick-arrow:hover {
+    background-color: #00B4B0 !important;
+}
+
+.vertical-carousel-slide-inner .content-part:before {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    content: "";
+    clip-path: polygon(0 0, 65% 50%, 0 100%, 0 100%, 65% 50%, 0 0);
+    background-color: #00B4B0 !important;
+    transition: .4s ease;
+}
+.btn, .btn-wrap a, .careers-map-inner .map-wrapper .filter-form-wrapper .form-field input[type=submit], .main-header .header-right .header-top li.nav-btn a, button, input[type=button], input[type=reset], input[type=submit]
+{
+    border: 2px solid  #00B4B0 !important;
+}
+.contact-right .gform_footer input {
+
+    background-color: #00B4B0 !important;
+}
+.contactform .gfield.focused .ginput_container input, .contactform .gfield.focused .ginput_container textarea {
+    box-shadow: 0 0 3px  #00B4B0 !important;
+}
+.main-footer .footer-right .widget-title{
+    color:  #00B4B0 !important;   
+}
+.main-footer .footer-right li a:hover {
+    color: #00B4B0 !important; 
+}
+.searvices-accordion .searvices-accordion-wrapper .service-accordion-single.active .list-head:before
+{
+    background-color: #00B4B0 !important;
+}
+.searvices-accordion .searvices-accordion-wrapper .service-accordion-single.active .list-desc {
+    background-color: #00B4B0 !important;
+}
+.single-resource-promo-image:after {
+        background-image : none !important;
+}
+.full-width-cta.green {
+    background-color: #f49b3e !important;
+}
+.vertical-carousel-infobar .slick-slider-controls .slick-arrow:focus, .vertical-carousel-infobar .slick-slider-controls .slick-arrow:hover
+{
+    background-color: #00B4B0 !important;
+}
+.hero-wrapper .btn-group .btn-link
+{
+    color: #f49b3e !important; 
+
+}
+.testimonial-promo .testimonial-promo-items .testimonial-promo-item .testimonial-card-section .testimonial-promo-cards .testimonial-promo-card .icon-list-arrow
+{
+    background-color: #00B4B0 !important;
+
+}
+
+.testimonial-promo .testimonial-promo-items .testimonial-promo-item .testimonial-card-section .testimonial-promo-cards .testimonial-promo-card:hover .icon-list-arrow {
+    color: #f49b3e !important; 
+}
