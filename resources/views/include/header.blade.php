@@ -57,7 +57,7 @@
 			</div><!-- header part -->
 			<header class="main-header ">
 				<div class="container justify-content-between d-flex align-items-center">
-					<a href="/" class="brand"><img src="{{ asset('img/lightlogo.png') }}" alt=""  class="light logo2 sm:ml-20"><img src="{{ asset('img/logo.png') }}" alt="" class="dark logo1 sm:ml-20 h-40"></a>
+					<a href="/" class="brand"><img src="{{ asset('img/lightlogo.png') }}" alt=""  class="light logo2"><img src="{{ asset('img/logo.png') }}" alt="" class="dark logo1 h-40"></a>
 					<div class="header-right">
 						<div class="header-top"><!-- hamburger -->
 							<a href="javascript:;" class="hamburger" title="Mobile Menu">
