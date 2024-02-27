@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Session;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,3 +69,10 @@ Route::prefix('New-Resources')->group(function () {
 
 
 Route::match(['get', 'post'], '/Contact-Us', [Controller::class, 'ContactUs'])->name('Contact-Us');
+
+
+
+Route::get('/change-locale/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+    return back();
+})->name('change-locale');

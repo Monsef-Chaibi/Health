@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en-US" >
+<html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}">
 
 	@include('include/link')
 
@@ -12,7 +12,13 @@
 	<!-- banner area part -->
 	<section class="hero-section "><div class="hero-banner"><img src="https://www.scphealth.com/wp-content/uploads/2023/08/SCP_Home_Hero_Image.jpg" alt="SCP Health - Your strategic health care partner, providing quality health solutions to all health care services."></div><div class="hero-wrapper">
 				<div class="container">
-					<div class="hero-content "><h1>Your Strategic Health Care Partner</h1><p><p>SCP Health is a physician-led team of clinical and operational experts, collectively passionate about revitalizing health care.<br><br>Using our clinical and operational expertise, we are leading the future with scalable health care solutions by engaging, activating, and optimizing clinicians to deliver exceptional patient care.</p><div class="btn-group"><a href="{{ route('Health') }}" target="_self" class="btn">About Us</a></div></div>
+					<div class="hero-content "><h1>{{ __('messages.welcomeTitel') }}</h1><p><p>
+                        SCP Health is a physician-led team of clinical and operational experts, collectively passionate about revitalizing health care.
+                        <br><br>
+                        Using our clinical and operational expertise, we are leading the future with scalable health care solutions by engaging, activating, and optimizing clinicians to deliver exceptional patient care.
+                    </p><div class="btn-group"><a href="{{ route('Health') }}" target="_self" class="btn">
+                        About Us
+                    </a></div></div>
 				</div>
 			</div></section><div class="main-content"><section class="tabbed-section ">
         <div class="tb-wrapper">
