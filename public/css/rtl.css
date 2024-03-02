@@ -1,0 +1,26 @@
+body{
+    font-family: 'Tajawal', sans-serif !important;
+}
+.main-header .header-right .navigation .menu>li {
+    border-left: 1px solid #fff !important;
+    border-right: none !important;
+}
+.menu>li
+{
+    margin-left: 10px !important;
+}
+.menu>li:first-child
+{
+    padding-left: 15px !important;
+}
+
+.hero-banner {
+    left: 0 !important;
+    right: auto !important;
+}
+.list-style ul li:before, .main-content section ul li:before {
+    right: -23px !important;
+}
+.btn-link::after  {
+    display: none !important;
+}

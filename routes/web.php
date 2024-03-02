@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
@@ -76,3 +78,17 @@ Route::get('/change-locale/{locale}', function ($locale) {
     Session::put('locale', $locale);
     return back();
 })->name('change-locale');
+
+
+
+Route::prefix('Admin')->group(function () {
+
+    Route::match(['get', 'post'], '/Login', [Admin::class, 'Login'])->name('Login');
+
+    Route::match(['get', 'post'], '/loginRequest', [Admin::class, 'loginRequest'])->name('loginRequest');
+
+    Route::match(['get', 'post'], '/Dash', [Admin::class, 'Dash'])->name('Dash');
+
+    Route::match(['get', 'post'], '/Plans/Add', [Admin::class, 'AddPlans'])->name('AddPlans');
+
+});

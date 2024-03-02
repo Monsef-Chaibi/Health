@@ -216,3 +216,8 @@ body.home .main-header {
 .hero-section.heroimage .hero-wrapper h1 {
     color: #fff !important;
 }
+
+.hero-contact-inner h1 {
+    color: #db8b3d !important;
+    margin-top: -150px !important;
+}

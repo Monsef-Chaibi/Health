@@ -10,38 +10,38 @@
 <ul class="sub-menu">
 	<li id="menu-item-4946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4946"><a href="#">Col &#8211; 1</a>
 	<ul class="sub-menu">
-		<li id="menu-item-4939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4939"><a href="/Emergency"><div class="submenu-box-wrap">{{ __('header.Emergency') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Emergency-Medicine_Magenta.svg" alt="SCP Health - Emergency Medicine."><p>Scalable approaches that prioritize acute patient care while achieving strategic goals.</p></div></a></li>
-		<li id="menu-item-4940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4940"><a href="/Hospital"><div class="submenu-box-wrap">Hospital Medicine<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Hosptial-Medicine_Magenta.svg" alt="SCP Health - Hospital Medicine."><p>Streamlined management and virtual care solutions to maximize efficiency. </p></div></a></li>
+		<li id="menu-item-4939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4939"><a href="/Emergency"><div class="submenu-box-wrap">{{ __('header.Emergency') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Emergency-Medicine_Magenta.svg" alt="SCP Health - Emergency Medicine."><p>{{ __('header.EmerText') }}</p></div></a></li>
+		<li id="menu-item-4940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4940"><a href="/Hospital"><div class="submenu-box-wrap">{{ __('header.Hospital') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Hosptial-Medicine_Magenta.svg" alt="SCP Health - Hospital Medicine."><p>{{ __('header.HosText') }}</p></div></a></li>
 	</ul>
 </li>
 	<li id="menu-item-4947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4947"><a href="#">Col &#8211; 2</a>
 	<ul class="sub-menu">
-		<li id="menu-item-4938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4938"><a href="/Critical"><div class="submenu-box-wrap">Critical Care Medicine<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Critical-Care-Medicine_Magenta.svg" alt="SCP Health - Critical Care Medicine."><p>Intensivist staffing and management, leveraging technology for quality care.</p></div></a></li>
-		<li id="menu-item-258945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258945"><a href="/Clinical"><div class="submenu-box-wrap">Clinical Integration<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_Clinical_Integration_Magenta.svg" alt="SCP Health - Clinical Integration."><p>Solutions to align and integrate processes and understanding across departments. </p></div></a></li>
+		<li id="menu-item-4938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4938"><a href="/Critical"><div class="submenu-box-wrap">{{ __('header.Critical') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Critical-Care-Medicine_Magenta.svg" alt="SCP Health - Critical Care Medicine."><p>{{ __('header.CriText') }}</p></div></a></li>
+		<li id="menu-item-258945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258945"><a href="/Clinical"><div class="submenu-box-wrap">{{ __('header.Clinical') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_Clinical_Integration_Magenta.svg" alt="SCP Health - Clinical Integration."><p>{{ __('header.ClinText') }} </p></div></a></li>
 	</ul>
 </li>
 	<li id="menu-item-646785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-646785"><a href="#">Col &#8211; 3</a>
 	<ul class="sub-menu">
-		<li id="menu-item-258946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258946"><a href="/Virtual"><div class="submenu-box-wrap">Virtual Health<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_virtual-health_Magenta.svg" alt="SCP Health - Virtual Health."><p>Leverage technology to expand coverage &amp; support both in and outside of the hospital.</p></div></a></li>
-		<li id="menu-item-643790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643790"><a href="/Connected"><div class="submenu-box-wrap">Connected Care<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Employer-Patient-Engagement_Magenta.svg" alt="SCP Health - Patient Engagement."><p>Engaging with patients for proactive planning and preventative health.</p></div></a></li>
+		<li id="menu-item-258946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258946"><a href="/Virtual"><div class="submenu-box-wrap">{{ __('header.Virtual') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_virtual-health_Magenta.svg" alt="SCP Health - Virtual Health."><p>{{ __('header.VirText') }}</p></div></a></li>
+		<li id="menu-item-643790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643790"><a href="/Connected"><div class="submenu-box-wrap">{{ __('header.Connected') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Employer-Patient-Engagement_Magenta.svg" alt="SCP Health - Patient Engagement."><p>{{ __('header.ConText') }}</p></div></a></li>
 	</ul>
 </li>
 </ul>
 </li>
 <li id="menu-item-4505" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4505"><a href="#">{{ __('header.Company') }}</a>
 <ul class="sub-menu">
-	<li id="menu-item-4187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">About SCP Health</a></li>
-	<li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">Partner With Us</a></li>
-	<li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">Leadership</a></li>
-	<li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">Technology</a></li>
-	<li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">Sustainability</a></li>
-	<li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">Corporate Careers</a></li>
+    <li id="menu-item-4187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">{{ __('header.about') }}</a></li>
+    <li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">{{ __('header.partner') }}</a></li>
+    <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li>
+    <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
+    <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
+    <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>    
 </ul>
 </li>
 <li id="menu-item-3902" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><a href="#">{{ __('header.Clinicalcarres') }}</a>
 <ul class="sub-menu">
-	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">Working With SCP</a></li>
-	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">Clinical Education and Training</a></li>
+	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">{{ __('header.working') }}</a></li>
+    <li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">{{ __('header.clinical_education') }}</a></li>
 </ul>
 </li>
 <li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">{{ __('header.New&resources') }}</a>
@@ -49,13 +49,13 @@
 	{{-- <li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a></li>
 	<li id="menu-item-3899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a></li>
 	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a></li> --}}
-	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">Events</a></li>
+	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">{{ __('header.events') }}</a></li>
 </ul>
 </li>
 <li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">{{ __('header.Language') }}</a>
 <ul class="sub-menu">
-	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">ENGLISH</a></li> 
-	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('change-locale', 'ar') }}">ARABIC</a></li>
+	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">{{ __('header.en') }}</a></li> 
+	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('change-locale', 'ar') }}">{{ __('header.ar') }}</a></li>
 </ul>
 </li>
 </ul></div>
@@ -72,38 +72,39 @@
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4946"><a href="#">Col &#8211; 1</a><div class="mega-menu-wrapper">
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4939"><a href="/Emergency"><div class="submenu-box-wrap">{{ __('header.Emergency') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Emergency-Medicine_Magenta.svg" alt="SCP Health - Emergency Medicine."><p>Scalable approaches that prioritize acute patient care while achieving strategic goals.</p></div></a><div class="mega-menu-wrapper"></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4940"><a href="/Hospital"><div class="submenu-box-wrap">Hospital Medicine<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Hosptial-Medicine_Magenta.svg" alt="SCP Health - Hospital Medicine."><p>Streamlined management and virtual care solutions to maximize efficiency. </p></div></a><div class="mega-menu-wrapper"></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4939"><a href="/Emergency"><div class="submenu-box-wrap">{{ __('header.Emergency') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Emergency-Medicine_Magenta.svg" alt="SCP Health - Emergency Medicine."><p>{{ __('header.EmerText') }}</p></div></a><div class="mega-menu-wrapper"></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4940"><a href="/Hospital"><div class="submenu-box-wrap">{{ __('header.Hospital') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Hosptial-Medicine_Magenta.svg" alt="SCP Health - Hospital Medicine."><p>{{ __('header.HosText') }}</p></div></a><div class="mega-menu-wrapper"></li>
 	</ul>
 </li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4947"><a href="#">Col &#8211; 2</a><div class="mega-menu-wrapper">
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4938"><a href="/Critical"><div class="submenu-box-wrap">Critical Care Medicine<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Critical-Care-Medicine_Magenta.svg" alt="SCP Health - Critical Care Medicine."><p>Intensivist staffing and management, leveraging technology for quality care.</p></div></a><div class="mega-menu-wrapper"></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258945"><a href="/Clinical"><div class="submenu-box-wrap">Clinical Integration<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_Clinical_Integration_Magenta.svg" alt="SCP Health - Clinical Integration."><p>Solutions to align and integrate processes and understanding across departments. </p></div></a><div class="mega-menu-wrapper"></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4938"><a href="/Critical"><div class="submenu-box-wrap">{{ __('header.Critical') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Critical-Care-Medicine_Magenta.svg" alt="SCP Health - Critical Care Medicine."><p>{{ __('header.CriText') }}</p></div></a><div class="mega-menu-wrapper"></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258945"><a href="/Clinical"><div class="submenu-box-wrap">{{ __('header.Clinical') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_Clinical_Integration_Magenta.svg" alt="SCP Health - Clinical Integration."><p>{{ __('header.ClinText') }} </p></div></a><div class="mega-menu-wrapper"></li>
 	</ul>
 </li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-646785"><a href="#">Col &#8211; 3</a><div class="mega-menu-wrapper">
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258946"><a href="/Virtual"><div class="submenu-box-wrap">Virtual Health<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_virtual-health_Magenta.svg" alt="SCP Health - Virtual Health."><p>Leverage technology to expand coverage &amp; support both in and outside of the hospital.</p></div></a><div class="mega-menu-wrapper"></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643790"><a href="/Connected"><div class="submenu-box-wrap">Connected Care<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Employer-Patient-Engagement_Magenta.svg" alt="SCP Health - Patient Engagement."><p>Engaging with patients for proactive planning and preventative health.</p></div></a><div class="mega-menu-wrapper"></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258946"><a href="/Virtual"><div class="submenu-box-wrap">{{ __('header.Virtual') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/10/SCP_Icons-40_virtual-health_Magenta.svg" alt="SCP Health - Virtual Health."><p>{{ __('header.VirText') }}</p></div></a><div class="mega-menu-wrapper"></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643790"><a href="/Connected"><div class="submenu-box-wrap">{{ __('header.Connected') }}<img src="https://www.scphealth.com/wp-content/uploads/2022/02/SCP_Icons-40_Employer-Patient-Engagement_Magenta.svg" alt="SCP Health - Patient Engagement."><p>{{ __('header.ConText') }}</p></div></a><div class="mega-menu-wrapper"></li>
 	</ul>
 </li>
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4505"><p class="textMenu">{{ __('header.Company') }}</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">About SCP Health</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">Partner With Us</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">Leadership</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">Technology</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">Sustainability</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">Corporate Careers</a><div class="mega-menu-wrapper"></li>
+    <li id="menu-item-4187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">{{ __('header.about') }}</a></li>
+    <li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">{{ __('header.partner') }}</a></li>
+    <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li>
+    <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
+    <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
+    <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>
+    
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><p class="textMenu">{{ __('header.Clinicalcarres') }}</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">Working With SCP</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">Clinical Education and Training</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">{{ __('header.working') }}</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">{{ __('header.clinical_education') }}</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><p class="textMenu">{{ __('header.New&resources') }}</p><div class="dropdown-menu-wrapper">
@@ -111,16 +112,18 @@
 	{{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a><div class="mega-menu-wrapper"></li> --}}
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">Events</a><div class="mega-menu-wrapper"></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">{{ __('header.events') }}</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><p class="textMenu">{{ __('header.Language') }}</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">ENGLISH</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('change-locale', 'ar') }}">ARABIC</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">{{ __('header.en') }}</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('change-locale', 'ar') }}">{{ __('header.ar') }}</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
-</ul><a href="/Contact-Us" class="btn">CONTACT</a><div class="search-form-box">
+</ul>
+<a href="/Contact-Us" class="btn">{{ __('header.CONTACT') }}</a>
+<div class="search-form-box">
 	<div class="search-form-backdrop"></div>
 	<div class="search-form-wrapper">
 		<span class="close-form"></span>

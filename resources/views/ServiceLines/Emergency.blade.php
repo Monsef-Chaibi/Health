@@ -3,7 +3,7 @@
 <!-- BrightEdge Header Code I ends -->
 
 <!doctype html>
-<html lang="en-US" >
+<html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}" >
 
 @include('include/link')
 
@@ -191,71 +191,11 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 								</div>
 							</div></div><div class="resource-promo-cta-block"><span class="cta-1"></div></div></div>
     </div>
-</section><section class="contactform-section bg-blue" id="contact-form"><div class="container">
-            <div class="contactform-wrapper"><div class="contact-left"><h2>Contact Us</h2><p>Would you like to learn more about emergency medicine services for your hospital? Please reach out by filling out the form to:</p>
-<ul>
-<li>Schedule a VIP meeting</li>
-<li>Request a consultation</li>
-<li>Speak with a clinical expert</li>
-<li>Chat with a recruiter</li>
-<li>Get in touch with a scheduler</li>
-<li>Contact a sales representative</li>
-</ul>
-</div><div class="contact-right grey contactform">
-					<div class="contactform-inner"><form method="post" action="https://go.scp-health.com/l/105652/2023-01-30/qr45h2" id="gform_5" class="contactform">
-<div class="gform_body gform-body">
-<div class="gform_fields">
-	<div class="gfield width-full">
-		<label class="gfield_label">Email*</label>
-		<div class="ginput_container">
-			<input name="email" type="email" value="" class="large" aria-required="true" aria-invalid="false" tabindex="1" required>
-		</div>
-	</div>
-	<div class="gfield width-full">
-		<label class="gfield_label">First Name*</label>
-		<div class="ginput_container">
-			<input name="First Name" type="text" value="" class="large" aria-required="true" aria-invalid="false" tabindex="2" required>
-		</div>
-	</div>
-	<div class="gfield width-full">
-		<label class="gfield_label">Last Name*</label>
-		<div class="ginput_container">
-			<input name="Last Name" type="text" value="" class="large" aria-required="true" aria-invalid="false" tabindex="3" required>
-		</div>
-	</div>
-	<div class="gfield width-full">
-		<label class="gfield_label">Job Title*</label>
-		<div class="ginput_container">
-			<input name="Job Title" type="text" value="" class="large" tabindex="4" >
-		</div>
-	</div>
-	<div class="gfield width-full">
-		<label class="gfield_label">Hospital Name*</label>
-		<div class="ginput_container">
-			<input name="Company" type="text" value="" class="large" aria-required="true" aria-invalid="false" tabindex="5" required>
-		</div>
-	</div>
-	<div class="gfield width-full">
-		<label class="gfield_label">System Affiliation</label>
-		<div class="ginput_container">
-			<input name="Department" type="text" value="" class="large" aria-required="false" aria-invalid="false" tabindex="6">
-		</div>
-	</div>
-	<div class="gfield width-full">
-		<label class="gfield_label">Phone</label>
-		<div class="ginput_container">
-			<input name="Phone" type="text" value="" class="large" tabindex="7" >
-		</div>
-	</div>
+</section>@include('include/form')
+
 
 </div>
-<div class="gform_footer"><input type="submit" class="gform_button button" value="Submit" tabindex="0"></div>
-</form></div>
-				</div></div>
-        </div>
-    </section></div>
 	</div>
-
 
 
 	@include('include/footer')
