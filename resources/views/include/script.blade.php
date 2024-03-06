@@ -311,43 +311,44 @@ var js_variables = {"themeurl":"https:\/\/www.scphealth.com\/wp-content\/themes\
     </script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        @if(session()->has('success'))
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                iconColor: 'white',
-                customClass: {
-                    popup: 'colored-toast',
-                },
-                showConfirmButton: false,
-                timer: 3500,
-                timerProgressBar: true,
-            });
+  document.addEventListener('DOMContentLoaded', (event) => {
+    @if(session()->has('success'))
+        const successToast = Swal.mixin({
+            toast: true,
+            position: 'top-start',
+            iconColor: 'white',
+            customClass: {
+                popup: 'success-toast',
+            },
+            showConfirmButton: false,
+            timer: 3500,
+            timerProgressBar: true,
+        });
 
-            Toast.fire({
-                icon: 'success',
-                title: '{{ session("success") }}',
-            });
-        @endif
-        @if(session()->has('error'))
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                iconColor: 'white',
-                customClass: {
-                    popup: 'colored-toast',
-                },
-                showConfirmButton: false,
-                timer: 5000,
-                timerProgressBar: true,
-            });
+        successToast.fire({
+            icon: 'success',
+            title: '{{ session("success") }}',
+        });
+    @endif
+    @if(session()->has('error'))
+        const errorToast = Swal.mixin({
+            toast: true,
+            position: 'top-start',
+            iconColor: 'white',
+            customClass: {
+                popup: 'error-toast',
+            },
+            showConfirmButton: false,
+            timer: 5000,
+            timerProgressBar: true,
+        });
 
-            Toast.fire({
-                icon: 'error',
-                title: '{{ session("error") }}',
-            });
-        @endif
-    });
+        errorToast.fire({
+            icon: 'error',
+            title: '{{ session("error") }}',
+        });
+    @endif
+});
+
 
 </script>

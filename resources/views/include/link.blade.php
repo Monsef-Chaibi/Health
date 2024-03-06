@@ -57,20 +57,26 @@
       .be-ix-link-block .be-related-link-container {display: flex;align-items: baseline;justify-content: center;}
       .be-ix-link-block .be-related-link-container .be-label {display: inline-block;margin-right: 20px;flex-grow: 0;flex-shrink: 0;}
     }
-    .colored-toast {
-    background-color: #20ab95 !important; /* Example background color */
+    .success-toast {
+    background-color: #20ab95 !important; /* Success green background */
 }
 
-/* Targeting the title inside the toast */
-.colored-toast .swal2-title {
-    color: white !important; /* Ensure text color is white */
-    font-size: 20px !important; /* Adjust font size */
+.error-toast {
+    background-color: #d9534f !important; /* Error red background */
+}
+
+/* Targeting the title inside both toasts */
+.success-toast .swal2-title,
+.error-toast .swal2-title {
+    color: white !important;
+    font-size: 20px !important;
 }
 
 /* If you have custom HTML content inside the toast */
-.colored-toast .swal2-html-container {
-    color: white !important; /* Ensure text color is white */
-    font-size: 16px !important; /* Adjust font size for other text */
+.success-toast .swal2-html-container,
+.error-toast .swal2-html-container {
+    color: white !important;
+    font-size: 16px !important;
 }
 
 

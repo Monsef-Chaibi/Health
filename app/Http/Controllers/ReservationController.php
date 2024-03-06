@@ -2,54 +2,81 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ReservationConfirmation;
+use App\Mail\ReservationConfirmedToAssignee;
 use Illuminate\Http\Request;
 use App\Models\Reservation; // Ensure you have this model
+use App\Models\Service;
+use App\Models\Time;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 
 class ReservationController extends Controller
 {
     public function store(Request $request)
     {
-        try {
-            $request->validate([
-                'email' => 'required|email',
-                'First_Name' => 'required|string|max:255',
-                'Last_Name' => 'required|string|max:255',
-                'Phone' => 'required|string|max:255',
-                'service_id' => 'required|integer',
-                'start_time' => 'required|date',
-                'end_time' => 'required|date',
-                'assignee_name' => 'required|string|max:255',
-            ]);
+        $request->validate([
+            'email' => 'required|email',
+            'First_Name' => 'required|string|max:255',
+            'Last_Name' => 'required|string|max:255',
+            'Phone' => 'required|string|max:255',
+            'service_id' => 'required|integer',
+            'start_time' => 'required|date',
+            'end_time' => 'required|date',
+            'assignee_name' => 'required|string|max:255',
+        ]);
+        
+        $startTime = new \DateTime($request->start_time);
+        $endTime = new \DateTime($request->end_time);
 
-            // Convert the start_time and end_time to a MySQL-compatible format
-            $startDateTime = new \DateTime($request->start_time);
-            $endDateTime = new \DateTime($request->end_time);
+        $confirmed =  Time::where('date_from',$startTime)->where('date_to',$endTime)->first();
 
-            // Format the DateTime objects into strings MySQL can understand
-            $formattedStartTime = $startDateTime->format('Y-m-d H:i:s');
-            $formattedEndTime = $endDateTime->format('Y-m-d H:i:s');
-
-            // Create a new reservation instance and set its properties
-            $reservation = new Reservation();
-            $reservation->email = $request->email;
-            $reservation->first_name = $request->input('First_Name');
-            $reservation->last_name = $request->input('Last_Name');
-            $reservation->phone = $request->Phone;
-            $reservation->service_id = $request->service_id;
-            $reservation->start_time = $formattedStartTime;
-            $reservation->end_time = $formattedEndTime;
-            $reservation->assignee_name = $request->assignee_name;
-
-            // Save the reservation to the database
-            $reservation->save();
-
-            // Redirect back with a success message
-            return redirect()->back()->with('success', 'Reservation successfully created.');
-        } catch (\Exception $e) {
-            // If there's an error, redirect back with an error message
-            return redirect()->back()->with('error', 'Error creating reservation: ' . $e->getMessage());
+        if($confirmed->confirmed)
+        {
+            return redirect()->back()->with('error', 'This time has already been booked');
         }
+        else
+        {
+            try {
+
+                // Convert the start_time and end_time to a MySQL-compatible format
+                $startDateTime = new \DateTime($request->start_time);
+                $endDateTime = new \DateTime($request->end_time);
+
+
+
+                // Format the DateTime objects into strings MySQL can understand
+                $formattedStartTime = $startDateTime->format('Y-m-d H:i:s');
+                $formattedEndTime = $endDateTime->format('Y-m-d H:i:s');
+                $token = Str::random(64);
+                // Create a new reservation instance and set its properties
+                $reservation = new Reservation();
+                $reservation->email = $request->email;
+                $reservation->first_name = $request->input('First_Name');
+                $reservation->last_name = $request->input('Last_Name');
+                $reservation->phone = $request->Phone;
+                $reservation->service_id = $request->service_id;
+                $reservation->start_time = $formattedStartTime;
+                $reservation->end_time = $formattedEndTime;
+                $reservation->assignee_name = $request->assignee_name;
+                $reservation->confirmation_token = $token;
+                // Save the reservation to the database
+                $reservation->save();
+
+                $time = Time::where('date_from', $startDateTime)->where('date_to',$endDateTime)->firstOrFail();
+                $time->token = $token;
+                $time->save();
+
+                Mail::to($reservation->email)->send(new ReservationConfirmation($reservation));
+                // Redirect back with a success message
+                return redirect()->back()->with('success', 'Reservation successfully created and confirmation email sent.');
+            } catch (\Exception $e) {
+                // If there's an error, redirect back with an error message
+                return redirect()->back()->with('error', 'Error creating reservation: ' . $e->getMessage());
+            }
+        }
+
     }
 
     public function edit($id)
@@ -65,7 +92,7 @@ class ReservationController extends Controller
         $reservation->delete();
 
         // Redirect to a specific route with a success message
-        return redirect()->route('your.redirect.route')->with('success', 'Reservation deleted successfully.');
+        return redirect()->back()->with('success', 'Reservation deleted successfully.');
     }
 
 
@@ -87,6 +114,26 @@ class ReservationController extends Controller
         // Redirect back or to another page with a success message
         return redirect()->route('AllReservation')->with('success', 'Reservation updated successfully');
     }
+
+    public function confirm($token)
+    {
+        $reservation = Reservation::where('confirmation_token', $token)->firstOrFail();
+        $reservation->is_confirmed = true;
+        $reservation->confirmation_token = null; // Clear the token after confirmation
+        $reservation->save();
+        $time = Time::where('token', $token)->firstOrFail();
+        $time->confirmed = true;
+        $time->token = null; // Clear the token after confirmation
+        $time->save();
+        $AssigneEmail = Service::where('id',$reservation->service_id)->first();
+        $ServiceName = $AssigneEmail->nameEN;
+
+        Mail::to($AssigneEmail->email)->send(new ReservationConfirmedToAssignee($reservation,$ServiceName));
+
+        // Redirect to a confirmation page or back to the homepage with a success message
+        return redirect('/')->with('success', 'Your reservation has been confirmed.');
+    }
+
 
 }
 

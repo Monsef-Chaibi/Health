@@ -188,6 +188,7 @@
                             <th>Service</th>
                             <th>Start</th>
                             <th>End</th>
+                            <th>Confirmation</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
@@ -200,6 +201,13 @@
                             <td>{{ $reservation->service->nameEN }}</td>
                             <td>{{ $reservation->start_time }}</td>
                             <td>{{ $reservation->end_time }}</td>
+                            <td>
+                                @if ($reservation->is_confirmed)
+                                    ✅
+                                @else
+                                    ❌
+                                @endif
+                            </td>
                             <td>
                               <div class="dropdown">
                                 <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">

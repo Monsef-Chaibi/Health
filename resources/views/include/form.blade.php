@@ -1,7 +1,12 @@
 @php
-    // Fetching services with their related times. Remove 'assignee' since it's not a defined relationship
-    $services = \App\Models\Service::with('times')->get();
+    // Fetching services with their related times that are not confirmed.
+    // This assumes your Service model has a 'times' relationship defined,
+    // and your Time model (or equivalent) has a 'confirmed' column.
+    $services = \App\Models\Service::with(['times' => function($query) {
+        $query->where('confirmed', false); // Assuming 'false' signifies not confirmed
+    }])->get();
 @endphp
+
 
 <section class="contactform-section bg-blue" id="contact-form">
     <div class="container">

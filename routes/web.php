@@ -75,12 +75,12 @@ Route::match(['get', 'post'], '/Contact-Us', [Controller::class, 'ContactUs'])->
 
 
 
-Route::get('/change-locale/{locale}', function ($locale) {
-    Session::put('locale', $locale);
-    return back();
-})->name('change-locale');
+    Route::get('/change-locale/{locale}', function ($locale) {Session::put('locale', $locale);return back();})->name('change-locale');
 
-Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
+    Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
+
+    Route::get('/reservation/confirm/{token}', [ReservationController::class, 'confirm'] )->name('reservation.confirm');
+
 
 Route::prefix('Admin')->group(function () {
 

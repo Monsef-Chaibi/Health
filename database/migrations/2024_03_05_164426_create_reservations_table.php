@@ -21,6 +21,8 @@ return new class extends Migration
             $table->dateTime('start_time');
             $table->dateTime('end_time');
             $table->string('assignee_name');
+            $table->boolean('is_confirmed')->default(false); // Add is_confirmed column
+            $table->string('confirmation_token')->nullable()->unique();
             $table->timestamps();
 
             // Assuming you have a 'services' table and 'service_id' is a foreign key
