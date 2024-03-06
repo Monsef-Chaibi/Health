@@ -193,7 +193,7 @@ return [
     // Alt texts for images in Arabic
     'emergency_medicine_physician_alt' => 'محترف طبي يتحدث مع مريض.',
     'title' => 'اتصل بنا',
-    'description' => 'هل أنت مهتم بشراكة استراتيجية في مجال الرعاية الصحية أو بالتقدم الوظيفي من خلال العمل مع  Health؟ يرجى التواصل من خلال ملء النموذج لـ:',
+    'description' => 'يمكنك اختيار الوقت المناسب لك ',
     'options' => [
         'schedule_vip_meeting' => 'جدولة اجتماع VIP',
         'request_consultation' => 'طلب استشارة',
@@ -243,13 +243,13 @@ return [
         'corporate_compliance' => 'الامتثال الشركات',
     ],
    'Social_Media' => 'وسائل التواصل الاجتماعي'
-   
-   
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
+
+
     // other strings
-]; 
+];

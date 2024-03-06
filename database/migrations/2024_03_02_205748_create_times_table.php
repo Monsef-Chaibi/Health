@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('times', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('service_id')->constrained()->onDelete('cascade');
+            $table->timestamp('date_from')->nullable();
+            $table->timestamp('date_to')->nullable();
             $table->timestamps();
         });
     }

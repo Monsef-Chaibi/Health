@@ -297,23 +297,57 @@ var js_variables = {"themeurl":"https:\/\/www.scphealth.com\/wp-content\/themes\
 
 
 
-<script type="text/javascript">
-    (function(l) {
-    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-    window.lintrk.q=[]}
-    var s = document.getElementsByTagName("script")[0];
-    var b = document.createElement("script");
-    b.type = "text/javascript";b.async = true;
-    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-    s.parentNode.insertBefore(b, s);})(window.lintrk);
-</script>
-<noscript>
-	<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=420378&fmt=gif" />
-</noscript>
 
 <!-- LI Insight Tag End -->
 
 
+<script>
+    $(document).ready(function() {
+      $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true // Allow opening popup on middle mouse click.
+      });
+    });
+    </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        @if(session()->has('success'))
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                iconColor: 'white',
+                customClass: {
+                    popup: 'colored-toast',
+                },
+                showConfirmButton: false,
+                timer: 3500,
+                timerProgressBar: true,
+            });
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-a89fffa42551abb793a","applicationID":"498308175","transactionName":"MlBQY0QFX0RYUhELDQsac1RCDV5ZFkUADxIJVEZSGwxeWlwcFQMFAA==","queueTime":0,"applicationTime":1117,"atts":"HhdTFQwfTEo=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+            Toast.fire({
+                icon: 'success',
+                title: '{{ session("success") }}',
+            });
+        @endif
+        @if(session()->has('error'))
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                iconColor: 'white',
+                customClass: {
+                    popup: 'colored-toast',
+                },
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+            });
+
+            Toast.fire({
+                icon: 'error',
+                title: '{{ session("error") }}',
+            });
+        @endif
+    });
+
+</script>

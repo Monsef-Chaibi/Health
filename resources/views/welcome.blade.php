@@ -4,7 +4,7 @@
 
 	@include('include/link')
 
-
+    
 <body class="home page-template page-template-template-parts page-template-template-home-page page-template-template-partstemplate-home-page-php page page-id-22">
 
 	@include('include/header')
@@ -22,7 +22,7 @@
                                 {{ __('messages.aboutUs') }}
                             </a>
                         </div>
-                    </div>                    
+                    </div>
 				</div>
 			</div></section><div class="main-content"><section class="tabbed-section ">
         <div class="tb-wrapper">
@@ -45,7 +45,7 @@
                                     <span>{{ __('messages.joinOurTeam') }}</span>
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -103,8 +103,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                                
+
+
                         <div class="tab-wrapper">
                             <ul class="tab">
                                 <li class="tab-item ">
@@ -150,8 +150,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                                
+
+
                         <div class="tab-wrapper">
                             <ul class="tab">
                                 <li class="tab-item lottie-anm">
@@ -189,8 +189,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                            
+
+
                             </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                         <div class="desc-wrap">
                             <p style="font-size: 14pt;">
                                 {{ __('messages.sol_careDelivery_description') }}
-                                <a href="{{ url('/healthcare-solutions/care-delivery/') }}">{{ __('messages.sol_careDelivery_linkText') }}</a>, 
+                                <a href="{{ url('/healthcare-solutions/care-delivery/') }}">{{ __('messages.sol_careDelivery_linkText') }}</a>,
                                 {{ __('messages.sol_careDelivery_continuation') }}
                             </p>
                             <ul style="color: #e87e24;">
@@ -271,7 +271,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div id="tab-2" class="tab-content text-white">
                         <h4 class="tab-title">
                             <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Doctor_Call_Orange.png" alt="{{ __('messages.cs_alt') }}">
@@ -281,7 +281,7 @@
                             <p style="text-align: justify;">
                                 <span style="font-size: 14pt;">
                                     {{ __('messages.cs_description') }}
-                                    <a href="{{ url('/healthcare-solutions/clinical-staffing/') }}" target="_blank" rel="noopener">{{ __('messages.cs_linkText') }}</a>, 
+                                    <a href="{{ url('/healthcare-solutions/clinical-staffing/') }}" target="_blank" rel="noopener">{{ __('messages.cs_linkText') }}</a>,
                                     {{ __('messages.cs_continuation') }}
                                 </span>
                             </p>
@@ -302,7 +302,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div id="tab-3" class="tab-content text-white">
                         <h4 class="tab-title">
                             <img src="{{ asset('path/to/image/Doctors_Orange.png') }}" alt="{{ __('messages.cwo_alt') }}">
@@ -323,7 +323,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div id="tab-4" class="tab-content text-white">
                         <h4 class="tab-title">
                             <img src="{{ asset('path/to/image/Document_Orange.png') }}" alt="{{ __('messages.drc_alt') }}">
@@ -347,7 +347,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div id="tab-5" class="tab-content text-white">
                         <h4 class="tab-title">
                             <img src="{{ asset('path/to/image/Technology_Orange.png') }}" alt="{{ __('messages.virtual_health_alt') }}">
@@ -364,7 +364,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div id="tab-6" class="tab-content text-white">
                         <h4 class="tab-title">
                             <img src="{{ asset('path/to/image/ACH_Orange.png') }}" alt="{{ __('messages.advanced_care_home_alt') }}">
@@ -379,7 +379,7 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <div id="tab-7" class="tab-content text-white">
                         <h4 class="tab-title">
                             <img src="{{ asset('path/to/image/Health_Cycle_Orange.png') }}" alt="{{ __('messages.clinical_integration_alt') }}">
@@ -397,11 +397,11 @@
                             </ul>
                         </div>
                     </div>
-                    
+
 </div>
                 </div></div>
     </section>
-    
+
     <section class="four-column-section" id="four-column-icon">
         <div class="container">
             <div class="sec-heading text-center">
@@ -452,8 +452,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="testimonial-section" id="logo-testimonial">
         <div class="container">
             <div class="sec-heading text-center">
@@ -506,7 +506,7 @@
             <div class="testimoniallogo-slider"></div>
         </div>
     </section>
-    
+
     <section class="fiftyfifty-section right" id="50-50-promo-capability-hubs">
         <div class="promo-image">
             <img src="https://www.scphealth.com/wp-content/uploads/2023/05/Screen-Shot-2023-05-31-at-9.04.42-AM-1.png" alt="{{ __('messages.capability_hubs_title') }}">
@@ -532,8 +532,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="fiftyfifty-section left brandedimage" id="50-50-promo-working-with-ahealth-care-partner">
         <div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2023/11/SCP_Health_Care_Partner.jpg">
             <div class="svg-wrapper fiftyfifty-arrow pink"></div>
@@ -546,8 +546,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="fiftyfifty-section right brandedimage" id="50-50-promo-4-strategies-to-transform-the-icu-by-bringing-the-c-suite-to-the-bedside">
         <div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-695218436-1-scaled.jpeg">
             <div class="svg-wrapper fiftyfifty-arrow green"></div>
@@ -559,7 +559,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <section class="wysiwyg-section">
         <div class="container">
@@ -614,7 +614,7 @@
             <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </section>
-    
+
     <section class="vertical-carousel-section" id="vertical-carousel">
         <div class="vertical-carousel-wrapper">
             <div class="vertical-carousel-infobar">
@@ -679,16 +679,13 @@
             </div>
         </div>
     </section>
-    
-	@include('include/form')
-    
+    @include('include/form')
+</div>
 
 </div>
-	</div>
 
 
 	@include('include/footer')
-
 
 </div>
 

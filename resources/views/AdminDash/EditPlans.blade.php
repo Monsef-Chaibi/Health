@@ -26,7 +26,29 @@
 
   <body>
 
+    @if (session('success'))
+      <script>
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title:  '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
+    @if (session('error'))
+        <script>
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title:  '{{ session('error') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
 
 
@@ -151,63 +173,70 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Plans /</span> Add</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Plans /</span> Edit</h4>
 
-              <form action="{{ route('services.store') }}" method="POST" id="serviceForm">
-                @csrf
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <h5 class="card-header">in English</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Service name</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameEN" id="nameEN" />
-                                    </div>
+              <div class="card">
+                <h5 class="card-header">Plans</h5>
+                <div class="table-responsive text-nowrap">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>SERVICE NAME</th>
+                            <th>اسم الخدمة</th>
+                            <th>THE ASSIGNEE</th>
+                            <th>اسم المكلف</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          @foreach($services as $service)
+                          <tr>
+                            <td><strong>{{ $service->nameEN }}</strong></td>
+                            <td>{{ $service->nameAR }}</td>
+                            <td>{{ $service->UserEN }}</td>
+                            <td>{{ $service->UserAR }}</td>
+                            <td>{{ $service->email }}</td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="{{ route('editServiceRouteName', $service->id) }}">
+                                    <i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                    <button type="button" onclick="confirmDeletion({{ $service->id }})" class="dropdown-item">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </button>
                                 </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">The name of the assignee</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserEN" id="UserEN" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Email</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="email" name="email" id="email" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6" dir="rtl">
-                        <div class="card mb-4">
-                            <h5 class="card-header">باللغة العربية</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم الخدمة</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameAR" id="nameAR" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم المكلف</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserAR" id="UserAR" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                              </div>
+                            </td>
+                          </tr>
+                          @endforeach
+                          @if(empty($services))
+                          <tr>
+                            <td colspan="6" rowspan="2" class=" text-center font-bold text-green-600">
+                                There is no service
+                            </td>
+                          </tr>
+                          @endif
+                        </tbody>
+                    </table>
                 </div>
-                <div id='calendar'></div>
-                <!-- Hidden field for dates -->
-                <input type="hidden" name="selectedDates" id="selectedDates">
-                <div class=" flex justify-center mt-6">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  Save  </button>
-                </div>
-            </form>
+            </div>
+            <div class="mt-6">
+                {{ $services->links() }}
+            </div>
+
+            @if($services->isNotEmpty())
+                @foreach ($services as $service)
+                    <!-- Your form or any other HTML that uses $service -->
+                    <form id="deleteServiceForm{{ $service->id }}" action="{{ route('deleteServiceRouteName', $service->id) }}" method="POST" style="display: none;">
+                        @csrf
+                        @method('DELETE')
+                    </form>
+                @endforeach
+            @endif
 
             </div>
             <!-- / Content -->
@@ -223,65 +252,38 @@
     </div>
     <!-- / Layout wrapper -->
 
+    <script>
+        function confirmDeletion(serviceId) {
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Construct the form ID
+                    var formId = "deleteServiceForm" + serviceId;
+                    // Submit the form
+                    document.getElementById(formId).submit();
 
+                    // Optionally, show a success message (may not be seen if the page reloads)
+                    /*
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your file has been deleted.",
+                        icon: "success"
+                    });
+                    */
+                }
+            });
+        }
+
+    </script>
 
     @include('AdminDash/include/script')
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var selectedEventsInput = document.getElementById('selectedDates'); // Ensure this input is in your form
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['interaction', 'timeGrid'],
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: ''
-                },
-                initialView: 'timeGridWeek',
-                initialDate: new Date(),
-                navLinks: false,
-                selectable: true,
-                allDaySlot: false,
-                selectMirror: true,
-                select: function(arg) {
-                    var defaultTitle = 'Selected range';
-
-                    var event = {
-                        title: defaultTitle,
-                        start: arg.start,
-                        end: arg.end,
-                        allDay: arg.allDay,
-                        textColor: 'white' // Keeping the event text color as white
-                    };
-
-                    calendar.addEvent(event);
-                    updateSelectedEvents();
-                },
-                eventClick: function(arg) {
-                    arg.event.remove();
-                    updateSelectedEvents();
-                },
-                editable: true,
-                eventLimit: true
-            });
-
-            calendar.render();
-
-            function updateSelectedEvents() {
-                var events = calendar.getEvents();
-                var selectedEvents = events.map(function(event) {
-                    return {
-                        start: event.start.toISOString(), // Capture start in ISO string format
-                        end: event.end ? event.end.toISOString() : event.start.toISOString() // Ensure end is captured correctly, defaulting to start if end is not defined
-                    };
-                });
-
-                selectedEventsInput.value = JSON.stringify(selectedEvents); // Update the hidden input's value
-            }
-        });
-        </script>
 
   </body>
 </html>

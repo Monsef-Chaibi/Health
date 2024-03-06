@@ -16,15 +16,14 @@
 
     <ul class="menu-inner py-1">
       <!-- Dashboard -->
-      <li class="menu-item active">
-        <a href="{{route('Dash')}}" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-home-circle"></i>
-          <div data-i18n="Analytics">Dashboard</div>
+      <li class="menu-item {{ request()->routeIs('Dash') ? 'active' : '' }}">
+        <a href="{{ route('Dash') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+            <div data-i18n="Analytics">Dashboard</div>
         </a>
       </li>
-
       <!-- Layouts -->
-      <li class="menu-item">
+      <li class="menu-item {{ request()->routeIs('AddPlans','EditPlans','editServiceRouteName') ? 'active' : '' }}">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-layout"></i>
           <div data-i18n="Layouts">Plans</div>
@@ -35,11 +34,8 @@
             <a href="{{route('AddPlans')}}" class="menu-link">
               <div data-i18n="Without menu">Add +</div>
             </a>
-            <a href="layouts-without-menu.html" class="menu-link">
-              <div data-i18n="Without menu">Edit !</div>
-            </a>
-            <a href="layouts-without-menu.html" class="menu-link">
-              <div data-i18n="Without menu">Remove -</div>
+            <a href="{{route('EditPlans')}}" class="menu-link">
+              <div data-i18n="Without menu">Edit Or Remove</div>
             </a>
           </li>
         </ul>
@@ -55,7 +51,7 @@
         </a>
         <ul class="menu-sub">
           <li class="menu-item">
-            <a href="pages-account-settings-account.html" class="menu-link">
+            <a href="{{route('AllReservation')}}" class="menu-link">
               <div data-i18n="Account">View All</div>
             </a>
           </li>

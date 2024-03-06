@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 /*
@@ -79,7 +80,7 @@ Route::get('/change-locale/{locale}', function ($locale) {
     return back();
 })->name('change-locale');
 
-
+Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
 
 Route::prefix('Admin')->group(function () {
 
@@ -90,5 +91,31 @@ Route::prefix('Admin')->group(function () {
     Route::match(['get', 'post'], '/Dash', [Admin::class, 'Dash'])->name('Dash');
 
     Route::match(['get', 'post'], '/Plans/Add', [Admin::class, 'AddPlans'])->name('AddPlans');
+
+    Route::match(['get', 'post'], '/Plans/Edit', [Admin::class, 'EditPlans'])->name('EditPlans');
+
+    Route::post('/services/store', [Admin::class, 'store'])->name('services.store');
+
+    Route::get('/services/edit/{service}', [Admin::class, 'edit'])->name('editServiceRouteName');
+
+    Route::delete('/service/{service}', [Admin::class, 'delete'])->name('deleteServiceRouteName');
+
+    Route::match(['get', 'post' , 'put'], '/UpService//{service}', [Admin::class, 'UpService'])->name('UpService');
+
+    Route::match(['get', 'post'], '/AllReservation', [Admin::class, 'AllReservation'])->name('AllReservation');
+
+    Route::match(['get', 'post'], '/Reservation/Edit', [Admin::class, 'ReservationEdit'])->name('ReservationEdit');
+
+    // In routes/web.php
+
+    // Route for showing the edit form
+    Route::get('/reservations/{id}/edit', [ReservationController::class, 'edit'])->name('reservations.edit');
+
+    // Route for the delete action
+    Route::delete('/reservations/{id}', [ReservationController::class, 'destroy'])->name('reservations.destroy');
+
+    Route::put('/reservations/{reservation}', [ReservationController::class, 'update'])->name('reservations.update');
+
+
 
 });

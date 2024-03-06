@@ -193,7 +193,7 @@ return [
     // Alt texts for images
     'emergency_medicine_physician_alt' => 'Medical professional speaking with a patient.',
     'title' => 'Contact Us',
-    'description' => 'Interested in a strategic health care partnership or career advancement by working with SCP Health? Please reach out by filling out the form to:',
+    'description' => 'You can choose the time that suits you',
     'options' => [
         'schedule_vip_meeting' => 'Schedule a VIP meeting',
         'request_consultation' => 'Request a consultation',
@@ -243,18 +243,18 @@ return [
         'corporate_compliance' => 'Corporate Compliance',
     ],
     'Social_Media' => 'Social Media'
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     // other strings
 ];

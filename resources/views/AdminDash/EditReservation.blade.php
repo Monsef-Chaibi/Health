@@ -3,9 +3,6 @@
   lang="en"
   class="light-style layout-menu-fixed"
   dir="ltr"
-  data-theme="theme-default"
-  data-assets-path="../assets/"
-  data-template="vertical-menu-template-free"
 >
   <head>
     <meta charset="utf-8" />
@@ -26,7 +23,29 @@
 
   <body>
 
+    @if (session('success'))
+      <script>
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title:  '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
+    @if (session('error'))
+        <script>
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title:  '{{ session('error') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
 
 
@@ -149,67 +168,65 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
-
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Plans /</span> Add</h4>
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Reservation /</span> Edit</h4>
 
-              <form action="{{ route('services.store') }}" method="POST" id="serviceForm">
-                @csrf
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <h5 class="card-header">in English</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Service name</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameEN" id="nameEN" />
+                <form action="{{ route('reservations.update', $reservation->id) }}" method="POST" id="serviceForm">
+                    @csrf
+                    @method('PUT') <!-- Important for Laravel to recognize this as an update request -->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card mb-4">
+                                <h5 class="card-header"></h5>
+                                <div class="card-body">
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="nameEN">Last Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="nameEN" id="nameEN" value="{{$reservation->first_name}}" required />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="UserEN">First Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="UserEN" id="UserEN" value="{{$reservation->last_name}}" required />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">The name of the assignee</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserEN" id="UserEN" />
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card mb-4">
+                                <h5 class="card-header"></h5>
+                                <div class="card-body">
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="nameAR">Email</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="nameAR" id="nameAR" value="{{$reservation->email}}" required />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Email</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="email" name="email" id="email" />
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="UserAR">Phone</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="UserAR" id="UserAR" value="{{$reservation->phone}}" required />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6" dir="rtl">
-                        <div class="card mb-4">
-                            <h5 class="card-header">باللغة العربية</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم الخدمة</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameAR" id="nameAR" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم المكلف</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserAR" id="UserAR" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id='calendar'></div>
-                <!-- Hidden field for dates -->
-                <input type="hidden" name="selectedDates" id="selectedDates">
-                <div class=" flex justify-center mt-6">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  Save  </button>
-                </div>
-            </form>
 
+                    <div id='calendar'></div>
+                    <input type="hidden" name="start_time" id="start_time" value="{{ $reservation->start_time }}">
+                    <input type="hidden" name="end_time" id="end_time" value="{{ $reservation->end_time }}">
+
+                    <div class="text-center mt-3">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  Save  </button>
+                    </div>
+                </form>
             </div>
+
+
             <!-- / Content -->
             <div class="content-backdrop fade"></div>
           </div>
@@ -223,65 +240,68 @@
     </div>
     <!-- / Layout wrapper -->
 
-
-
     @include('AdminDash/include/script')
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var selectedEventsInput = document.getElementById('selectedDates'); // Ensure this input is in your form
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['interaction', 'timeGrid'],
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: ''
-                },
-                initialView: 'timeGridWeek',
-                initialDate: new Date(),
-                navLinks: false,
-                selectable: true,
-                allDaySlot: false,
-                selectMirror: true,
-                select: function(arg) {
-                    var defaultTitle = 'Selected range';
-
-                    var event = {
-                        title: defaultTitle,
-                        start: arg.start,
-                        end: arg.end,
-                        allDay: arg.allDay,
-                        textColor: 'white' // Keeping the event text color as white
-                    };
-
-                    calendar.addEvent(event);
-                    updateSelectedEvents();
-                },
-                eventClick: function(arg) {
-                    arg.event.remove();
-                    updateSelectedEvents();
-                },
-                editable: true,
-                eventLimit: true
-            });
-
-            calendar.render();
-
-            function updateSelectedEvents() {
-                var events = calendar.getEvents();
-                var selectedEvents = events.map(function(event) {
-                    return {
-                        start: event.start.toISOString(), // Capture start in ISO string format
-                        end: event.end ? event.end.toISOString() : event.start.toISOString() // Ensure end is captured correctly, defaulting to start if end is not defined
-                    };
-                });
-
-                selectedEventsInput.value = JSON.stringify(selectedEvents); // Update the hidden input's value
-            }
-        });
-        </script>
 
   </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['interaction', 'timeGrid'],
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: ''
+        },
+        initialView: 'timeGridWeek',
+        initialDate: new Date(), // Adjust if needed
+        navLinks: false,
+        selectable: true,
+        allDaySlot: false,
+        selectMirror: true,
+        events: [
+            {
+                title: 'Existing Reservation',
+                start: document.getElementById('start_time').value,
+                end: document.getElementById('end_time').value || document.getElementById('start_time').value, // Use start time if end time is absent
+                allDay: false, // Adjust based on your requirements
+                textColor: 'white' // For better visibility
+            }
+        ],
+        select: function(selectionInfo) {
+            // Remove the existing reservation event before adding a new selection
+            var events = calendar.getEvents();
+            events.forEach(function(evt) {
+                if (evt.title === 'Existing Reservation') {
+                    evt.remove();
+                }
+            });
+
+            // Add new selection as 'Existing Reservation' to reflect the change immediately on the calendar
+            calendar.addEvent({
+                title: 'Existing Reservation',
+                start: selectionInfo.start,
+                end: selectionInfo.end,
+                allDay: selectionInfo.allDay
+            });
+
+            // Update hidden input fields to reflect new selection
+            document.getElementById('start_time').value = selectionInfo.startStr;
+            document.getElementById('end_time').value = selectionInfo.endStr || selectionInfo.startStr;
+            calendar.unselect(); // Clear current selection
+        },
+        eventDrop: function(info) {
+            // Update hidden inputs when an existing event is moved
+            document.getElementById('start_time').value = info.event.startStr;
+            document.getElementById('end_time').value = info.event.endStr || info.event.startStr;
+        },
+        editable: true,
+        eventLimit: true
+    });
+
+    calendar.render();
+});
+
+</script>
+

@@ -26,7 +26,29 @@
 
   <body>
 
+    @if (session('success'))
+      <script>
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title:  '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
+    @if (session('error'))
+        <script>
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title:  '{{ session('error') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
 
 
@@ -149,67 +171,71 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
-
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Plans /</span> Add</h4>
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Services /</span> Edit</h4>
 
-              <form action="{{ route('services.store') }}" method="POST" id="serviceForm">
-                @csrf
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <h5 class="card-header">in English</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Service name</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameEN" id="nameEN" />
+                <form action="{{ route('UpService', $service->id) }}"  method="POST" id="serviceForm">
+                    @csrf
+                    @method('PUT') <!-- Important for Laravel to recognize this as an update request -->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card mb-4">
+                                <h5 class="card-header">Details in English</h5>
+                                <div class="card-body">
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="nameEN">Service Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="nameEN" id="nameEN" value="{{ $service->nameEN }}" required />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="UserEN">Assignee Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="UserEN" id="UserEN" value="{{ $service->UserEN }}" required />
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="email">Email</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="email" name="email" id="email" value="{{ $service->email }}" required />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">The name of the assignee</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserEN" id="UserEN" />
+                            </div>
+                        </div>
+                        <div class="col-xl-6" dir="rtl">
+                            <div class="card mb-4">
+                                <h5 class="card-header">Details in Arabic</h5>
+                                <div class="card-body">
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="nameAR">اسم الخدمة</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="nameAR" id="nameAR" value="{{ $service->nameAR }}" required />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Email</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="email" name="email" id="email" />
+                                    <div class="mb-3 row">
+                                        <label class="col-md-3 col-form-label" for="UserAR">اسم المكلف</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="UserAR" id="UserAR" value="{{ $service->UserAR }}" required />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6" dir="rtl">
-                        <div class="card mb-4">
-                            <h5 class="card-header">باللغة العربية</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم الخدمة</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameAR" id="nameAR" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم المكلف</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserAR" id="UserAR" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id='calendar'></div>
-                <!-- Hidden field for dates -->
-                <input type="hidden" name="selectedDates" id="selectedDates">
-                <div class=" flex justify-center mt-6">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  Save  </button>
-                </div>
-            </form>
 
+                    <div id='calendar'></div>
+                    <!-- Hidden field for dates -->
+                    <input type="hidden" name="selectedDates" id="selectedDates" value='@json($selectedDates)'>
+
+                    <div class="text-center mt-3">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  Save  </button>
+                    </div>
+                </form>
             </div>
+
+
             <!-- / Content -->
             <div class="content-backdrop fade"></div>
           </div>
@@ -226,62 +252,82 @@
 
 
     @include('AdminDash/include/script')
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
-            var selectedEventsInput = document.getElementById('selectedDates'); // Ensure this input is in your form
+            var selectedDatesInput = document.getElementById('selectedDates'); // The hidden input where selected dates will be stored
+            var preloadedEvents = @json($selectedDates);
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'timeGrid'],
                 header: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: ''
+                    right: '' // Hide day/week buttons
                 },
                 initialView: 'timeGridWeek',
                 initialDate: new Date(),
-                navLinks: false,
+                navLinks: true,
                 selectable: true,
-                allDaySlot: false,
                 selectMirror: true,
+                allDaySlot: false,
+                events: preloadedEvents,
                 select: function(arg) {
-                    var defaultTitle = 'Selected range';
-
-                    var event = {
-                        title: defaultTitle,
+                    calendar.addEvent({
+                        title: '', // Add without title
                         start: arg.start,
                         end: arg.end,
-                        allDay: arg.allDay,
-                        textColor: 'white' // Keeping the event text color as white
-                    };
-
-                    calendar.addEvent(event);
+                        allDay: arg.allDay
+                    });
                     updateSelectedEvents();
+                    calendar.unselect();
                 },
                 eventClick: function(arg) {
-                    arg.event.remove();
-                    updateSelectedEvents();
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: 'Do you want to remove this event?',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes, delete it!'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            arg.event.remove();
+                            updateSelectedEvents();
+                        }
+                    });
                 },
                 editable: true,
-                eventLimit: true
+                eventDrop: updateSelectedEvents, // Call when an event is dragged and dropped to a new date/time
+                eventResize: updateSelectedEvents // Call when an event is resized to a new duration
             });
 
             calendar.render();
 
+            // Function to update the hidden input with the latest selected dates
             function updateSelectedEvents() {
                 var events = calendar.getEvents();
                 var selectedEvents = events.map(function(event) {
                     return {
-                        start: event.start.toISOString(), // Capture start in ISO string format
-                        end: event.end ? event.end.toISOString() : event.start.toISOString() // Ensure end is captured correctly, defaulting to start if end is not defined
+                        start: event.start.toISOString(),
+                        end: event.end ? event.end.toISOString() : event.start.toISOString()
                     };
                 });
-
-                selectedEventsInput.value = JSON.stringify(selectedEvents); // Update the hidden input's value
+                selectedDatesInput.value = JSON.stringify(selectedEvents);
             }
+
+            // Call to update the input with initial preloaded events
+            updateSelectedEvents();
+
+            // Ensure the latest events are captured before form submission
+            document.getElementById('serviceForm').addEventListener('submit', function(e) {
+                updateSelectedEvents();
+            });
         });
         </script>
+
+
 
   </body>
 </html>

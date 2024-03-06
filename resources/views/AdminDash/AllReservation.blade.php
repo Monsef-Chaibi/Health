@@ -26,7 +26,29 @@
 
   <body>
 
+    @if (session('success'))
+      <script>
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title:  '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
+    @if (session('error'))
+        <script>
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title:  '{{ session('error') }}',
+            showConfirmButton: false,
+            timer: 2000
+            });
+      </script>
+    @endif
 
 
 
@@ -151,63 +173,70 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Plans /</span> Add</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Plans /</span> Edit</h4>
 
-              <form action="{{ route('services.store') }}" method="POST" id="serviceForm">
-                @csrf
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <h5 class="card-header">in English</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Service name</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameEN" id="nameEN" />
-                                    </div>
+              <div class="card">
+                <h5 class="card-header">Plans</h5>
+                <div class="table-responsive text-nowrap">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Service</th>
+                            <th>Start</th>
+                            <th>End</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                        @foreach ($reservations as $reservation)
+                          <tr>
+                            <td><strong>{{ $reservation->first_name }}</strong></td>
+                            <td>{{ $reservation->last_name }}</td>
+                            <td>{{ $reservation->phone }}</td>
+                            <td>{{ $reservation->email }}</td>
+                            <td>{{ $reservation->service->nameEN }}</td>
+                            <td>{{ $reservation->start_time }}</td>
+                            <td>{{ $reservation->end_time }}</td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{{ route('reservations.edit', $reservation->id) }}">
+                                        <i class="bx bx-edit-alt me-1"></i> Edit
+                                    </a>
+                                    <button type="button" onclick="confirmDeletion({{ $reservation->id }})" class="dropdown-item">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </button>
+                                    <form id="delete-form-{{ $reservation->id }}" action="{{ route('reservations.destroy', $reservation->id) }}" method="POST" style="display: none;">
+                                        @csrf
+                                        @method('DELETE')
+                                    </form>
                                 </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">The name of the assignee</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserEN" id="UserEN" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">Email</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="email" name="email" id="email" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6" dir="rtl">
-                        <div class="card mb-4">
-                            <h5 class="card-header">باللغة العربية</h5>
-                            <div class="card-body">
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم الخدمة</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="nameAR" id="nameAR" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <label class="col-md-2 col-form-label">اسم المكلف</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" name="UserAR" id="UserAR" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                              </div>
+                            </td>
+                          </tr>
+                          @endforeach
+                          @if(empty($reservations))
+                          <tr>
+                            <td colspan="6" rowspan="2" class=" text-center font-bold text-green-600">
+                                There is no reservation
+                            </td>
+                          </tr>
+                          @endif
+                        </tbody>
+                    </table>
                 </div>
-                <div id='calendar'></div>
-                <!-- Hidden field for dates -->
-                <input type="hidden" name="selectedDates" id="selectedDates">
-                <div class=" flex justify-center mt-6">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  Save  </button>
-                </div>
-            </form>
+            </div>
+            <div class="mt-6">
+                {{ $reservations->links() }}
+            </div>
+
+
 
             </div>
             <!-- / Content -->
@@ -222,66 +251,13 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-
-
-
     @include('AdminDash/include/script')
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var selectedEventsInput = document.getElementById('selectedDates'); // Ensure this input is in your form
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['interaction', 'timeGrid'],
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: ''
-                },
-                initialView: 'timeGridWeek',
-                initialDate: new Date(),
-                navLinks: false,
-                selectable: true,
-                allDaySlot: false,
-                selectMirror: true,
-                select: function(arg) {
-                    var defaultTitle = 'Selected range';
-
-                    var event = {
-                        title: defaultTitle,
-                        start: arg.start,
-                        end: arg.end,
-                        allDay: arg.allDay,
-                        textColor: 'white' // Keeping the event text color as white
-                    };
-
-                    calendar.addEvent(event);
-                    updateSelectedEvents();
-                },
-                eventClick: function(arg) {
-                    arg.event.remove();
-                    updateSelectedEvents();
-                },
-                editable: true,
-                eventLimit: true
-            });
-
-            calendar.render();
-
-            function updateSelectedEvents() {
-                var events = calendar.getEvents();
-                var selectedEvents = events.map(function(event) {
-                    return {
-                        start: event.start.toISOString(), // Capture start in ISO string format
-                        end: event.end ? event.end.toISOString() : event.start.toISOString() // Ensure end is captured correctly, defaulting to start if end is not defined
-                    };
-                });
-
-                selectedEventsInput.value = JSON.stringify(selectedEvents); // Update the hidden input's value
-            }
-        });
-        </script>
-
-  </body>
+    </body>
 </html>
+<script>
+    function confirmDeletion(id) {
+        if (confirm('Are you sure you want to delete this reservation?')) {
+            document.getElementById('delete-form-' + id).submit();
+        }
+    }
+    </script>

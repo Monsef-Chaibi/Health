@@ -1,3 +1,26 @@
+@if (session('success'))
+<script>
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title:  '{{ session('success') }}',
+      showConfirmButton: false,
+      timer: 2000
+      });
+</script>
+@endif
+
+@if (session('error'))
+  <script>
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title:  '{{ session('error') }}',
+      showConfirmButton: false,
+      timer: 2000
+      });
+</script>
+@endif
     <!-- Core JS -->
     <script src="{{ asset('AdminDash/AdminDash/assets/vendor/libs/jquery/jquery.js') }}"></script>
     <script src="{{ asset('AdminDash/AdminDash/assets/vendor/libs/popper/popper.js') }}"></script>
@@ -17,46 +40,4 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          var calendarEl = document.getElementById('calendar');
-
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-            plugins: [ 'interaction', 'timeGrid' ],
-            header: {
-              left: 'prev,next today',
-              center: 'title',
-              right: ''
-            },
-            initialView: 'timeGridWeek', // Set initial view to week view
-            initialDate: new Date(), // Set initial date to today's date
-            navLinks: false,
-            selectable: true,
-            allDaySlot: false,
-            selectMirror: true,
-            select: function(arg) {
-              var startDate = arg.start.toLocaleString();
-              var endDate = arg.end.toLocaleString();
-              var defaultTitle = 'Selected range: ' + startDate + ' to ' + endDate;
-
-              calendar.addEvent({
-                title: defaultTitle,
-                start: arg.start,
-                end: arg.end,
-                allDay: arg.allDay,
-                textColor: 'white'
-              });
-              calendar.unselect();
-            },
-            eventClick: function(arg) {
-              arg.event.remove();
-            },
-            editable: true,
-            eventLimit: true
-          });
-
-          calendar.render();
-        });
-        </script>
 

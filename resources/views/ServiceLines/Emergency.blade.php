@@ -111,7 +111,7 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 </div></div></div>
                 </div></div>
     </section>
-        
+
         <section class="fiftyfifty-section right " id="50-50-promo-management-by-emergency-medicine-specialists"><div class="promo-image"><img src="https://www.scphealth.com/wp-content/uploads/2021/12/management_services-2.jpg" alt="Diverse group of medical professionals discussing SCP Health's Clinical & Emergency Care Services."></div><div class="promo-content">
         <div class="promo-content-inner "><span class="promo-label">Clinical Services</span><h2 class="promo-title">Management by Emergency Medicine Specialists</h2><ul>
 <li data-leveltext="" data-font="Symbol" data-listid="34" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span style="font-size: 14pt;"><b>Goal Alignment: </b><span class="NormalTextRun SCXW149230614 BCX0">E</span><span class="NormalTextRun SCXW149230614 BCX0">xpertise </span><span class="NormalTextRun SCXW149230614 BCX0">and experience align</span><span class="NormalTextRun SCXW149230614 BCX0"> your hospital’s </span><span class="NormalTextRun SCXW149230614 BCX0">unique</span><span class="NormalTextRun SCXW149230614 BCX0"> needs with clinical leadership, recruitment, staffing optimization</span><span class="NormalTextRun SCXW149230614 BCX0">, quality objectives</span><span class="NormalTextRun SCXW149230614 BCX0">, documentation</span><span class="NormalTextRun SCXW149230614 BCX0"> assurance,</span><span class="NormalTextRun SCXW149230614 BCX0"> and revenue cycle</span><span class="NormalTextRun SCXW149230614 BCX0"> support</span><span class="NormalTextRun SCXW149230614 BCX0">.</span></span></li>
@@ -191,7 +191,9 @@ Our clinical and operational experts lead and empower strong clinical teams, pro
 								</div>
 							</div></div><div class="resource-promo-cta-block"><span class="cta-1"></div></div></div>
     </div>
-</section>@include('include/form')
+</section>
+
+@include('include/form')
 
 
 </div>

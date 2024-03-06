@@ -9,6 +9,32 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
     <script src="https://kit.fontawesome.com/f8183aa58e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- FullCalendar CSS -->
+<link href='https://fullcalendar.io/releases/fullcalendar/4.0.0-alpha.2/fullcalendar.css' rel='stylesheet' />
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- FullCalendar JS -->
+<script src='https://fullcalendar.io/releases/fullcalendar/4.0.0-alpha.2/fullcalendar.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link href='https://unpkg.com/fullcalendar@5/main.min.css' rel='stylesheet' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
+    <script src='https://unpkg.com/fullcalendar@5/main.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     @if(App::getLocale() === 'ar')
     <!-- Load RTL CSS for Arabic -->
         <link rel="stylesheet" href="{{ asset('css/rtl.css') }}">
@@ -31,6 +57,22 @@
       .be-ix-link-block .be-related-link-container {display: flex;align-items: baseline;justify-content: center;}
       .be-ix-link-block .be-related-link-container .be-label {display: inline-block;margin-right: 20px;flex-grow: 0;flex-shrink: 0;}
     }
+    .colored-toast {
+    background-color: #20ab95 !important; /* Example background color */
+}
+
+/* Targeting the title inside the toast */
+.colored-toast .swal2-title {
+    color: white !important; /* Ensure text color is white */
+    font-size: 20px !important; /* Adjust font size */
+}
+
+/* If you have custom HTML content inside the toast */
+.colored-toast .swal2-html-container {
+    color: white !important; /* Ensure text color is white */
+    font-size: 16px !important; /* Adjust font size for other text */
+}
+
 
     </style>
 

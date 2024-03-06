@@ -31,3 +31,15 @@
 
 <link href='fullcalendar/main.css' rel='stylesheet' />
 <script src='fullcalendar/main.js'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+<style>
+    .fc-icon-chevron-left:before {
+    color: black !important;
+}
+    .fc-icon-chevron-right:before {
+    color: black !important;
+}
+</style>
