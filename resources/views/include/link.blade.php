@@ -78,6 +78,9 @@
     color: white !important;
     font-size: 16px !important;
 }
+.fc .fc-daygrid-day, .fc .fc-timegrid-slot {
+    cursor: pointer !important;
+}
 
 
     </style>

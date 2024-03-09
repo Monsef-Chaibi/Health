@@ -11,7 +11,7 @@ return [
     'submit' => 'Submit',
     'best_price' => 'BEST PRICE',
     'the_best_workers' => 'THE BEST WORKERS',
-    'patient_billing_alt' => 'SCP Health - Patient Billing.',
-    'provider_portal_alt' => 'SCP Health - Provider Portal.',
+    'patient_billing_alt' => 'Arkan - Patient Billing.',
+    'provider_portal_alt' => 'Arkan - Provider Portal.',
     // Add more translations here
 ];

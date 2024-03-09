@@ -1,11 +1,11 @@
 
 <!doctype html>
-<html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}">
+<html >
 
 	@include('include/link')
 
-    
-<body class="home page-template page-template-template-parts page-template-template-home-page page-template-template-partstemplate-home-page-php page page-id-22">
+
+<body  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}" class="home page-template page-template-template-parts page-template-template-home-page page-template-template-partstemplate-home-page-php page page-id-22">
 
 	@include('include/header')
 

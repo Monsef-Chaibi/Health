@@ -26,7 +26,7 @@ class ReservationController extends Controller
             'end_time' => 'required|date',
             'assignee_name' => 'required|string|max:255',
         ]);
-        
+
         $startTime = new \DateTime($request->start_time);
         $endTime = new \DateTime($request->end_time);
 
@@ -129,7 +129,7 @@ class ReservationController extends Controller
         $ServiceName = $AssigneEmail->nameEN;
 
         Mail::to($AssigneEmail->email)->send(new ReservationConfirmedToAssignee($reservation,$ServiceName));
-
+        
         // Redirect to a confirmation page or back to the homepage with a success message
         return redirect('/')->with('success', 'Your reservation has been confirmed.');
     }

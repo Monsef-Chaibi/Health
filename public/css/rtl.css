@@ -24,3 +24,6 @@ body{
 .btn-link::after  {
     display: none !important;
 }
+*{
+ text-align: right !important;
+}

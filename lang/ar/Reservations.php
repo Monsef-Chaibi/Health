@@ -11,8 +11,8 @@ return [
     'submit' => 'إرسال',
     'best_price' => 'أفضل سعر',
     'the_best_workers' => 'أفضل العمال',
-    'patient_billing_alt' => 'SCP Health - فوترة المرضى.',
-    'provider_portal_alt' => 'SCP Health - بوابة المزود.',
+    'patient_billing_alt' => ' Arkan - فوترة المرضى.',
+    'provider_portal_alt' => ' Arkan - بوابة المزود.',
 
     // Add more Arabic translations here
 ];

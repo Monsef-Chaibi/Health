@@ -348,7 +348,34 @@ var js_variables = {"themeurl":"https:\/\/www.scphealth.com\/wp-content\/themes\
             title: '{{ session("error") }}',
         });
     @endif
+    @if ($errors->any())
+    const errorToast = Swal.mixin({
+            toast: true,
+            position: 'top-start',
+            iconColor: 'white',
+            customClass: {
+                popup: 'error-toast',
+            },
+            showConfirmButton: false,
+            timer: 5000,
+            timerProgressBar: true,
+        });
+
+        errorToast.fire({
+            icon: 'error',
+            title: '{{ session("error") }}',
+        });
+    @endif
+
 });
 
+// Initialization for ES Users
+import {
+  Modal,
+  Ripple,
+  initTWE,
+} from "tw-elements";
+
+initTWE({ Modal, Ripple });
 
 </script>
