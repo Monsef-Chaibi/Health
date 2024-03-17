@@ -4,7 +4,7 @@
 			<!-- device menu -->
 			<div class="mbnav__overlay"></div>
 			<div class="mbnav">
-				<div class="mbnav__state" data-clickable="true">
+				<div class="mbnav__state" data-clickable="true"> 
 					<!--  main responsive menu -->
 					<div class="mbnav__inner"><ul id="menu-main-navigation" class="menu"><li id="menu-item-4937" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937 "><a href="#">{{ __('header.Service') }}</a>
 <ul class="sub-menu">
@@ -35,7 +35,7 @@
     <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li>
     <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
     <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
-    <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>    
+    <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>
 </ul>
 </li>
 <li id="menu-item-3902" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><a href="#">{{ __('header.Clinicalcarres') }}</a>
@@ -54,7 +54,7 @@
 </li>
 <li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">{{ __('header.Language') }}</a>
 <ul class="sub-menu">
-	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">{{ __('header.en') }}</a></li> 
+	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">{{ __('header.en') }}</a></li>
 	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('change-locale', 'ar') }}">{{ __('header.ar') }}</a></li>
 </ul>
 </li>
@@ -98,7 +98,7 @@
     <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
     <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
     <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>
-    
+
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><p class="textMenu">{{ __('header.Clinicalcarres') }}</p><div class="dropdown-menu-wrapper">

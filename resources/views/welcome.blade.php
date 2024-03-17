@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html >
+<html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}">
 
 	@include('include/link')
 
@@ -15,10 +15,15 @@
     </div><div class="hero-wrapper">
 				<div class="container">
 					<div class="hero-content">
-                        <h1>{{ __('messages.welcomeTitle') }}</h1>
-                        <p>{!! __('messages.heroContent') !!}</p>
+                        <h1>
+                            {{ __('messages.welcomeTitle') }}
+                            <span class="text-base font-bold">
+                            {{ __('messages.welcomeTitle2') }}
+                            </span>
+                        </h1>
+                        <p class="text-sm">{!! __('messages.heroContent') !!}</p>
                         <div class="btn-group">
-                            <a href="{{ route('Health') }}" target="_self" class="btn">
+                            <a href="{{ route('Health') }}" target="_self" class="btn" style="margin-top: 45px">
                                 {{ __('messages.aboutUs') }}
                             </a>
                         </div>
@@ -72,17 +77,17 @@
                                                 <div class="gca-column one-half first">
                                                     <p style="font-weight: 400;"><strong>{{ __('messages.services') }}</strong></p>
                                                     <ul style="color: #e87e24;">
-                                                        <li><a class="btn-link" href="{{ route('Health') }}">{{ __('messages.emergencyMedicine') }}</a></li>
-                                                        <li><a class="btn-link" href="{{ route('Hospital') }}">{{ __('messages.hospitalMedicine') }}</a></li>
-                                                        <li><a class="btn-link" href="{{ route('Critical') }}">{{ __('messages.criticalCareMedicine') }}</a></li>
+                                                        @foreach(__('messages.emergencyMedicine_list') as $item)
+                                                        <li class="text-base font-bold text-black">{{ $item }}</li>
+                                                        @endforeach
                                                     </ul>
                                                 </div>
                                                 <div class="gca-column one-half">
                                                     <p style="font-weight: 400;"><strong>{{ __('messages.solutions') }}</strong></p>
                                                     <ul style="color: #e87e24;">
-                                                        <li><a class="btn-link" href="">{{ __('messages.careDelivery') }}</a></li>
-                                                        <li><a class="btn-link" href="{{ route('Clinical') }}">{{ __('messages.clinicalIntegration') }}</a></li>
-                                                        <li><a class="btn-link" href="">{{ __('messages.clinicalWorkforceOptimization') }}</a></li>
+                                                        @foreach(__('messages.solutions_list') as $item)
+                                                        <li class="text-base font-bold text-black">{{ $item }}</li>
+                                                        @endforeach
                                                     </ul>
                                                 </div>
                                             </div>
@@ -95,8 +100,6 @@
                                                 <a href=".resource/the-no-surprises-act-full-of-surprises/" class="img-wrapper">
                                                     <img alt="Doctor speaking with a medical professional holding a tablet." src="https://www.scphealth.com/wp-content/uploads/2022/10/CWO_arrow-1568x882.jpg"/>
                                                 </a>
-                                                <span class="asset-type">{{ __('messages.guide') }}</span>
-                                                <a href=".resource/the-no-surprises-act-full-of-surprises/" class="title">{{ __('messages.noSurprisesActTitle') }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -122,15 +125,9 @@
                                             <div class="desc-wrapper">
                                                 <p style="font-weight: 400;">{!! __('messages.cliniciansDescription') !!}</p>
                                                 <ul style="color: #e87e24;">
-                                                    <li><span style="color: #000000;">{{ __('messages.nationwideOpportunities') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.workLifeBalance') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.leadingBenefits') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.marketBasedCompensation') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.remoteCareDelivery') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.residencyPositions') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.careerDevelopment') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.clinicalTechnologyTools') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.ongoingTrainingAndEducation') }}</span></li>
+                                                    @foreach(__('messages.clinicians_list') as $item)
+                                                    <li class="text-base font-bold text-black">{{ $item }}</li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                             <a href="..com/clinicians/clinician-careers/" class="btn" target="">{{ __('messages.searchAllClinicalOpenings') }}</a>
@@ -169,13 +166,10 @@
                                             <div class="desc-wrapper">
                                                 <p style="font-weight: 400;">{{ __('messages.joinOurTeamDescription') }}</p>
                                                 <ul style="color: #e87e24;">
-                                                    <li><span style="color: #000000;">{{ __('messages.valuesBasedEnvironment') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.remoteHybridInPersonOpportunities') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.companyStabilityGrowth') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.significantEmployeeSupport') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.workLifeBalanceJoin') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.comprehensiveBenefitsJoin') }}</span></li>
-                                                    <li><span style="color: #000000;">{{ __('messages.marketBasedCompensationJoin') }}</span></li>
+                                                    @foreach(__('messages.clinicians_list') as $item)
+                                                         <li><span style="color: #000000;">{{$item}}</span></li>
+                                                    @endforeach
+
                                                 </ul>
                                             </div>
                                             <a href="/company/corporate-careers/" class="btn" target="">{{ __('messages.elevateYourCareer') }}</a>
@@ -196,211 +190,9 @@
             </div>
         </div>
     </section>
-    <section class="sidebartab-section bg-blue" id="sidebar-slider">
-        <div class="container">
-            <div class="sec-heading text-center">
-                <h2>{{ __('messages.solution_healthSolutions') }}</h2>
-                <p>{{ __('messages.solution_healthSolutionsDescription') }}</p>
-            </div>
-            <div class="sidebartabs justify-content-center">
-                <div class="sidebartab-left">
-                    <ul class="tabs">
-                        <li>
-                            <a href="javascript:;" rel="#tab-1" title="{{ __('messages.solution_careDelivery') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Hands_Health_Orange.png" alt="{{ __('messages.solution_careDelivery') }}">
-                                {{ __('messages.solution_careDelivery') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" rel="#tab-2" title="{{ __('messages.solution_clinicalStaffing') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Doctor_Call_Orange.png" alt="{{ __('messages.solution_clinicalStaffing') }}">
-                                {{ __('messages.solution_clinicalStaffing') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" rel="#tab-3" title="{{ __('messages.solution_clinicalWorkforceOptimization') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Doctors_Orange.png" alt="{{ __('messages.solution_clinicalWorkforceOptimization') }}">
-                                {{ __('messages.solution_clinicalWorkforceOptimization') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" rel="#tab-4" title="{{ __('messages.solution_documentationRevenueCycle') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Document_Orange.png" alt="{{ __('messages.solution_documentationRevenueCycle') }}">
-                                {{ __('messages.solution_documentationRevenueCycle') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" rel="#tab-5" title="{{ __('messages.solution_virtualHealth') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Technology_Orange.png" alt="{{ __('messages.solution_virtualHealth') }}">
-                                {{ __('messages.solution_virtualHealth') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" rel="#tab-6" title="{{ __('messages.solution_advancedCareDashboard') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/ACH_Orange.png" alt="{{ __('messages.solution_advancedCareDashboard') }}">
-                                {{ __('messages.solution_advancedCareDashboard') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" rel="#tab-7" title="{{ __('messages.solution_clinicalIntegration') }}">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Health_Cycle_Orange.png" alt="{{ __('messages.solution_clinicalIntegration') }}">
-                                {{ __('messages.solution_clinicalIntegration') }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="sidebartab-right">
-                    <div id="tab-1" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Hands_Health_Orange.png" alt="{{ __('messages.sol_careDelivery_alt') }}">
-                            {{ __('messages.sol_careDelivery') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="font-size: 14pt;">
-                                {{ __('messages.sol_careDelivery_description') }}
-                                <a href="{{ url('/healthcare-solutions/care-delivery/') }}">{{ __('messages.sol_careDelivery_linkText') }}</a>,
-                                {{ __('messages.sol_careDelivery_continuation') }}
-                            </p>
-                            <ul style="color: #e87e24;">
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.sol_scheduling') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.sol_standardizationOfCare') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.sol_inPersonCareDelivery') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.sol_virtualCareDelivery') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.sol_dischargeProcesses') }}</span></li>
-                            </ul>
-                        </div>
-                    </div>
+	@include('include/Desc')
 
-                    <div id="tab-2" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="https://www.scphealth.com/wp-content/uploads/2023/10/Doctor_Call_Orange.png" alt="{{ __('messages.cs_alt') }}">
-                            {{ __('messages.cs_title') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">
-                                    {{ __('messages.cs_description') }}
-                                    <a href="{{ url('/healthcare-solutions/clinical-staffing/') }}" target="_blank" rel="noopener">{{ __('messages.cs_linkText') }}</a>,
-                                    {{ __('messages.cs_continuation') }}
-                                </span>
-                            </p>
-                            <p>{{ __('messages.cs_mySCP') }}</p>
-                            <p><span style="font-size: 14pt;"><strong>{{ __('messages.cs_recruitingRetention') }}</strong></span></p>
-                            <ul style="color: #e87e24;">
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_screening') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_providerResources') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_training') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_recruiters') }}</span></li>
-                            </ul>
-                            <p><span style="font-size: 14pt;"><strong>{{ __('messages.cs_developmentEngagement') }}</strong></span></p>
-                            <ul style="color: #e87e24;">
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_mlc') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_support') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_leadershipDevelopment') }}</span></li>
-                                <li><span style="font-size: 14pt; color: #ffffff;">{{ __('messages.cs_educationOpportunities') }}</span></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="tab-3" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="{{ asset('path/to/image/Doctors_Orange.png') }}" alt="{{ __('messages.cwo_alt') }}">
-                            {{ __('messages.cwo_title') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.cwo_description_1') }}</span>
-                            </p>
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.cwo_description_2') }}</span>
-                            </p>
-                            <p><strong><span style="font-size: 14pt;"><a href="{{ url('path/to/clinical-workforce-optimization') }}" target="_blank" rel="noopener">{{ __('messages.cwo_linkText') }}</a></span><span style="font-size: 14pt;"> includes:</span></strong></p>
-                            <ul style="color: #e87e24;">
-                                @foreach(__('messages.cwo_list') as $item)
-                                    <li><span style="font-size: 14pt; color: #ffffff;">{{ $item }}</span></li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="tab-4" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="{{ asset('path/to/image/Document_Orange.png') }}" alt="{{ __('messages.drc_alt') }}">
-                            {{ __('messages.drc_title') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.drc_description') }}</span>
-                            </p>
-                            <p><strong><span style="font-size: 14pt;">{{ __('messages.drc_cost_management_title') }}</span></strong></p>
-                            <ul style="color: #e87e24;">
-                                @foreach(__('messages.drc_cost_management_list') as $item)
-                                    <li><span style="font-size: 14pt; color: #ffffff;">{{ $item }}</span></li>
-                                @endforeach
-                            </ul>
-                            <p><strong><span style="font-size: 14pt;">{{ __('messages.drc_revenue_growth_title') }}</span></strong></p>
-                            <ul style="color: #e87e24;">
-                                @foreach(__('messages.drc_revenue_growth_list') as $item)
-                                    <li><span style="font-size: 14pt; color: #ffffff;">{{ $item }}</span></li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="tab-5" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="{{ asset('path/to/image/Technology_Orange.png') }}" alt="{{ __('messages.virtual_health_alt') }}">
-                            {{ __('messages.virtual_health_title') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.virtual_health_description') }}</span>
-                            </p>
-                            <ul style="color: #e87e24;">
-                                @foreach(__('messages.virtual_health_list') as $item)
-                                    <li><span style="font-size: 14pt; color: #ffffff;">{{ $item }}</span></li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="tab-6" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="{{ asset('path/to/image/ACH_Orange.png') }}" alt="{{ __('messages.advanced_care_home_alt') }}">
-                            {{ __('messages.advanced_care_home_title') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.advanced_care_home_description1') }}</span>
-                            </p>
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.advanced_care_home_description2') }}</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="tab-7" class="tab-content text-white">
-                        <h4 class="tab-title">
-                            <img src="{{ asset('path/to/image/Health_Cycle_Orange.png') }}" alt="{{ __('messages.clinical_integration_alt') }}">
-                            {{ __('messages.clinical_integration_title') }}
-                        </h4>
-                        <div class="desc-wrap">
-                            <p style="text-align: justify;">
-                                <span style="font-size: 14pt;">{{ __('messages.clinical_integration_description1') }}</span>
-                            </p>
-                            <p><span style="font-size: 14pt;">{{ __('messages.clinical_integration_enablement') }}</span></p>
-                            <ul style="color: #e87e24;">
-                                @foreach(__('messages.clinical_integration_features') as $feature)
-                                    <li><span style="font-size: 14pt; color: #ffffff;">{{ $feature }}</span></li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-
-</div>
-                </div></div>
-    </section>
 
     <section class="four-column-section" id="four-column-icon">
         <div class="container">
@@ -459,51 +251,13 @@
             <div class="sec-heading text-center">
                 <h2>{{ __('messages.health_care_services_experience_title') }}</h2>
             </div>
-            <div class="new-arrows">
-                <div class="container">
-                    <div class="arrows left-arrow"></div>
-                    <div class="arrows right-arrow"></div>
-                </div>
-            </div>
-            <div class="testimonial-slider-wrapper">
-                <div class="slide-anm"></div>
-                <div class="testimonial-slider">
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner">
-                            <p>{{ __('messages.testimonial_1_text') }}</p>
-                            <div class="testimonial-meta">
-                                <p><strong>{{ __('messages.testimonial_1_author') }}</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner">
-                            <p>{{ __('messages.testimonial_2_text') }}</p>
-                            <div class="testimonial-meta">
-                                <p><strong>{{ __('messages.testimonial_2_author') }}</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner">
-                            <p>{{ __('messages.testimonial_3_text') }}</p>
-                            <div class="testimonial-meta">
-                                <p><strong>{{ __('messages.testimonial_3_author') }}</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-inner">
-                            <p>{{ __('messages.testimonial_4_text') }}</p>
-                            <div class="testimonial-meta">
-                                <p><strong>{{ __('messages.testimonial_4_author') }}</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-cutsom-dot"></div>
-            </div>
-            <div class="testimoniallogo-slider"></div>
+            <swiper-container class="mySwiper my-20" navigation="true">
+                @foreach(__('messages.swipper_list') as $item)
+                    <swiper-slide>
+                        {!! nl2br(e($item)) !!}
+                    </swiper-slide>
+                @endforeach
+            </swiper-container>
         </div>
     </section>
 
@@ -555,7 +309,14 @@
         <div class="promo-content">
             <div class="promo-content-inner">
                 <h2 class="promo-title">{{ __('messages.strategies_transform_icu_title') }}</h2>
-                <p><span style="font-size: 14pt;">{{ __('messages.strategies_transform_icu_description') }} <a href="https://www.linkedin.com/in/erika-gabbard/" target="_blank" rel="noopener">{{ __('messages.erika_gabbard_name') }}</a> {{ __('messages.strategies_transform_icu_followup') }}</span></p>
+                @for ($i = 1; $i <= 2; $i++)
+                    <p class="text-xl my-8 font-bold text-[#db8b3d]">{{ __('messages.strategies_transform_icu_title_'.$i) }}</p>
+                        <ul style="color: #e87e24;">
+                            @foreach(__('messages.strategies_transform_icu_list_'.$i) as $item)
+                                <li><span style="font-size: 14pt; color: #000000;">{{$item}}</span></li>
+                            @endforeach
+                        </ul>
+                @endfor
             </div>
         </div>
     </section>
@@ -566,6 +327,7 @@
             <h2 style="text-align: center;">{{ __('messages.clinical_integration_title1') }}</h2>
             <h3 style="text-align: center;">{{ __('messages.clinical_integration_subtitle') }}</h3>
             <p><span style="font-size: 14pt;">{{ __('messages.clinical_integration_description') }}</span></p>
+            <p><span style="font-size: 14pt;">{{ __('messages.clinical_integration_description1') }}</span></p>
         </div>
     </section>
     <section class="success-stories-comp" id="resource-slider">
@@ -620,7 +382,7 @@
             <div class="vertical-carousel-infobar">
                 <h2>{{ __('messages.accelerate_your_clinical_career') }}</h2>
                 <p>{{ __('messages.clinical_career_description') }}</p>
-                <a href="/clinicians/clinician-careers/career-results/" target="_self" class="btn-link">{{ __('messages.view_all_positions') }}</a>
+
                 <div class="slick-slider-controls"></div>
             </div>
             <div class="vertical-carousel-rightside">

@@ -82,9 +82,27 @@
     cursor: pointer !important;
 }
 
-
+swiper-slide {
+      text-align: center !important;
+      font-size: 25px;
+      font-weight: bold;
+      background-color: #20ab95;
+      border-radius: 20px;
+      color: black;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height:  3rem;
+    }
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
     </style>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <script data-cfasync="false" id="marvel" data-customerid="f00000000293897" src="https://marvel-b2-cdn.bc0a.com/marvel.js"></script>
 
@@ -453,7 +471,9 @@
     }
     .postid-3017 .hero-post + p {
         display: none;
-    }		</style>
+    }
+
+    </style>
                 <!-- Global site tag (gtag.js) - Google Analytics -->
         <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2753491-28"></script>
         <script>
