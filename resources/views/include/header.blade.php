@@ -32,7 +32,7 @@
 <ul class="sub-menu">
     <li id="menu-item-4187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">{{ __('header.about') }}</a></li>
     <li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">{{ __('header.partner') }}</a></li>
-    <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li>
+    {{-- <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li> --}}
     <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
     <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
     <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>
@@ -94,7 +94,7 @@
 <ul class="sub-menu">
     <li id="menu-item-4187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="{{ route('Health') }}">{{ __('header.about') }}</a></li>
     <li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="{{ route('Partner') }}">{{ __('header.partner') }}</a></li>
-    <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li>
+    {{-- <li id="menu-item-3884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3884"><a href="{{ route('Leaders') }}">{{ __('header.leadership') }}</a></li> --}}
     <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
     <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
     <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>

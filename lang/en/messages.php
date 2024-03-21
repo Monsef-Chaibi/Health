@@ -2,7 +2,7 @@
 
 return [
     'welcomeTitel' => 'Your Strategic Partner in Healthcare',
-    'Firstimg' => 'img/homepage/homeimg.png',
+    'Firstimg'=> 'https://lirp.cdn-website.com/702d27aa/dms3rep/multi/opt/Doctors+in+medical+practice+in+Saudi+Arabia-1920w.jpg',
     'welcomeTitle' => 'Arkan Care',
     'welcomeTitle2' => 'The first Saudi platform specialized in the digital transformation of the medical sector, opens its doors for an exceptional journey towards a bright future for healthcare in the Kingdom.',
     'heroContent' => 'We provide services in establishing, managing, and developing medical complexes and clinics, in addition to digital consulting services in healthcare. We rely on best global practices to offer services enhanced by innovation and local vision. Arkan was established with the goal of improving healthcare quality in the Kingdom and using digital transformation to develop and manage medical facilities in innovative ways aimed at achieving Vision 2030.',

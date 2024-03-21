@@ -18,7 +18,7 @@
             <div class="services-row align-items-center">
                 <div class="services-img right-part">
                     <figure>
-                        <img src="{{ __('virtual.real_estate.image_src') }}" alt="{{ __('virtual.real_estate.alt_text') }}">
+                        <img src="https://daalacademy.com/wp-content/uploads/2022/06/%D8%B5%D9%81%D8%A7%D8%AA-%D9%8A%D8%AA%D9%85%D8%AA%D8%B9-%D8%A8%D9%87%D8%A7-%D8%B7%D8%A8%D9%8A%D8%A8-%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86.jpg" alt="{{ __('virtual.real_estate.alt_text') }}">
                     </figure>
                 </div>
                 <div class="services-info left-part">
@@ -114,7 +114,7 @@
 
                 <section class="fiftyfifty-section right" id="50-50-promo-virtual-health-clinicians">
                     <div class="promo-image">
-                        <img src="{{ __('virtual.comprehensive_services.image_src') }}" alt="{{ __('virtual.comprehensive_services.alt_text') }}">
+                        <img src="https://cdn.arabsstock.com/uploads/images/12118/image-12118-portrait-two-saudi-arabian-doctors-smiling-looking-camera-thumbnail.webp" alt="{{ __('virtual.comprehensive_services.alt_text') }}">
                     </div>
                     <div class="promo-content">
                         <div class="promo-content-inner">

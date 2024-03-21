@@ -3,7 +3,8 @@
 <!-- BrightEdge Header Code I ends -->
 
 <!doctype html>
-<html lang="en-US" >
+<html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}">
+
 
     @include('include/link')
 
@@ -11,119 +12,88 @@
 
     @include('include/header')
 
-<section class="hero-career hero-career has-overlay jobsearch"><div class="hero-career-img"><img src="https://www.scphealth.com/wp-content/uploads/2024/01/clinical_careers_banner.jpg" alt="Join SCP Health's Clinical Team and elevate your journey with SCP Careers."></div><div class="hero-wrapper">
+    <section class="hero-career hero-career has-overlay jobsearch">
+        <div class="hero-career-img">
+            <img src="https://img.freepik.com/free-photo/doctor-crossing-arms-while-holding-stethoscope-white-coat_176474-8491.jpg?size=626&ext=jpg&ga=GA1.1.311507984.1694124201&semt=sph" alt="@lang('Reservations.hero_title1')">
+        </div>
+        <div class="hero-wrapper">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Join Our Clinical Team</h1><p>As a physician-led organization, SCP Health puts patient care and clinician empowerment at the center of all we do. Our clinical and operational teams are collectively passionate about delivering exceptional patient care and revitalizing health care.</p><div class="btn-group"><a href="{{ route('Health') }}" class="btn">Learn More About SCP Health</a></div></div><div class="social-share mobile">
-                        <span class="social-share-title">SHARE</span>
-                        <ul>
-                            <li><a href="" class="icon-linked-in" target="_blank"></a></li>
-                            <li><a href="" class="icon-twitter" target="_blank"></a></li>
-                            <li><a href="" class="icon-facebook" target="_blank"></a></li>
-                            <li><a href="" class="copy_text icon-link" target="_blank"></a></li>
-                        </ul>
-                    </div></div>
-        </div><div class="filter-form-wrapper">
-        <div class="container">
+                    <h1>@lang('Reservations.hero_title1')</h1>
+                    <p>@lang('Reservations.hero_description')</p>
 
-        </div></div></section>
-<section class="employee-testimonial-section" id="employee-testimonial">
-        <div class="container">
-            <div class="employee-testimonial-inner bg-blue"><div class="employee-testimonial-img">
-                        <img src="https://www.scphealth.com/wp-content/uploads/2021/09/author-image.png" alt="A medical resident with his arms crossed smiling.">
-                    </div><div class="employee-testimonial-content"><p>I know if I’m doing the right thing for the patient that I’ll be supported by our company. And that’s why we’re in this business, to take care of patients. They allow us to take care of patients.</p><div class="authormeta"><span class="authorname">Matthew Bernard, M.D</span><span class="authortitle">Medical Director</span></div><div class="employee-testimonial-cta">
-
-                                </div></div></div>
+                </div>
+                <div class="social-share mobile">
+                    <span class="social-share-title">@lang('Reservations.share')</span>
+                    <ul>
+                        <li><a href="{{ config('Reservations.social_links.linkedin') }}" class="icon-linked-in" target="_blank"></a></li>
+                        <li><a href="{{ config('Reservations.social_links.twitter') }}" class="icon-twitter" target="_blank"></a></li>
+                        <li><a href="{{ config('Reservations.social_links.facebook') }}" class="icon-facebook" target="_blank"></a></li>
+                        <!-- The copy text functionality would require some JavaScript to copy the current page's URL -->
+                        <li><a href="#" class="copy_text icon-link" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter-form-wrapper">
+            <div class="container">
+                <!-- Your filter form content goes here -->
+            </div>
         </div>
     </section>
-  <section class="testimonial-promo space-md-m" id="testimonial-promo">
-	<div class="container">
-				<div class="testimonial-promo-items d-flex justify-content-between">
-			<div class="testimonial-promo-item">
-								<div class="testimonial-promo-content">
-					<p>“For a Medical Director, every day is a balancing act. I love working for SCP Health because they have a team behind me that supports me. I can pick up the phone or email, and I have answers to my questions right away.”</p>					<span class="name">Danielle Richards, MD</span>					<span class="company-name">Medical Director </span>				</div>
-								<div class="testimonial-card-section">
-											<h6 class="heading-for-cards">Accelerate Your Career</h6>
-															<div class="testimonial-promo-cards d-flex justify-content-center">
-												<div class="testimonial-promo-card">
-							<a href="./clinicians/clinician-careers/career-results/?pager=1&position_type=&specialty=69&location=&search_text=" target="">
-								<span class="promo-head">Emergency Medicine</span>
-								<span class="icon-list-arrow"></span>
-							</a>
-						</div>
-												<div class="testimonial-promo-card">
-							<a href="./clinicians/clinician-careers/career-results/?pager=1&position_type=&specialty=72&location=&search_text=" target="">
-								<span class="promo-head">Hospital Medicine</span>
-								<span class="icon-list-arrow"></span>
-							</a>
-						</div>
-												<div class="testimonial-promo-card">
-							<a href="./clinicians/clinician-careers/career-results/?pager=1&position_type=&specialty=199&location=&search_text=" target="">
-								<span class="promo-head">Telemedicine</span>
-								<span class="icon-list-arrow"></span>
-							</a>
-						</div>
-
-					</div>
-
-				</div>
-							</div>
-			<div class="testimonial-image-item">
-								<figure>
-					<img src="https://www.scphealth.com/wp-content/uploads/2022/07/Danielle-Richards-4_3.jpg" alt="SCP Health - Danielle Richards.">
-				</figure>
-								<div class="btn-group text-center"></div>			</div>
-		</div>
-	</div>
-</section>
-<section class="fiftyfifty-section right brandedimage" id="50-50-promo-clinical-leadership-careers"><div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2022/02/GettyImages-1080663958-1-2-e1637613096597.png"><div class=" svg-wrapper fiftyfifty-arrow green"></div></div><div class="promo-content">
-        <div class="promo-content-inner "><h2 class="promo-title"><a href ="#clinical_leadership">Clinical Leadership Careers</a></h2><p><span data-contrast="auto">Medical Directors and Lead NPs and PAs must constantly balance the clinical and business needs of their organizations. At SCP Health, we find where clinical reverence meets administrative expectations. We invest in </span><a href="./advanced-health-care-technology/"><span data-contrast="none">technology</span></a><span data-contrast="auto"> and </span><a href="./blog/2022-medical-leadership-conference-providing-opportunities-and-showing-appreciation/"><span data-contrast="none">development</span></a><span data-contrast="auto"> to help </span><a href="./blog/2022-emerging-medical-leaders/"><span data-contrast="none">clinical leaders thrive</span></a><span data-contrast="auto">.</span><span data-contrast="auto"> </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
-<p><span data-contrast="auto">Our innovative scheduling technology and predictive models streamline operations while direct program assistance provides pathways to unwavering clinical and leadership support. We help you meet your professional goals and deliver exceptional care.<a id="physicians"></a></span></p>
-</div>
-    </div></section><section class="fiftyfifty-section left brandedimage" id="50-50-promo-staff-physician-careers"><div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-1301541137-1-e1637629708132.jpeg"><div class=" svg-wrapper fiftyfifty-arrow pink"></div></div><div class="promo-content">
-        <div class="promo-content-inner "><h2 class="promo-title"><p id="physicians"><h2>Staff Physician Careers</a></h2><p><span data-contrast="auto">As the health care environment continues to change, SCP Health relieves physicians like you of administrative burden, so you can focus on what you do best – delivering exceptional patient care.</span><span data-contrast="auto"> </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
-<p><span data-contrast="auto">Our physician leaders know what it’s like to be in your shoes. We support your career growth and development with <a href="./clinical-education-and-training/">CME opportunities</a>, performance insights, and transparent feedback. <a id="np_pa"></a></span></p>
+    <section class="fiftyfifty-section right brandedimage" id="{{ __('Reservations.clinical_leadership_careers.section_id') }}">
+        <div class="promo-image branded desktop-image" data-src="https://img.freepik.com/premium-photo/front-view-doctor-holding-stethoscope_23-2149551150.jpg?size=626&ext=jpg&ga=GA1.1.311507984.1694124201&semt=sph">
+            <div class="svg-wrapper fiftyfifty-arrow green"></div>
         </div>
-    </div></section><section class="fiftyfifty-section right brandedimage" id="50-50-promo-nurse-practitioner-and-physician-assistant-careers"><div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-1352251616.jpeg"><div class=" svg-wrapper fiftyfifty-arrow orange"></div></div><div class="promo-content">
-        <div class="promo-content-inner "><h2 class="promo-title"><p id="nppa"><h2>Nurse Practitioner and Physician Assistant Careers</a></h2><p><span data-contrast="auto">Nurse Practitioners and Physician Assistants are seeing job responsibilities expand to include clinical support during physician shortages, prescribing rights, and managing patient care loads.</span><span data-contrast="auto"> </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
-<p><span data-contrast="auto">At SCP Health, we hold Physician Assistants and Nurse Practitioners as part of the fundamental core of each patient care team. We provide essential tools for reducing administrative burden, continuing education, and leadership development so you can both keep the patient at the core and propel your career.<a id="residents"></a></span></p>
+        <div class="promo-content">
+            <div class="promo-content-inner">
+                <h2 class="promo-title"><a href="#clinical_leadership">{{ __('Reservations.clinical_leadership_careers.title') }}</a></h2>
+                <p>
+                    {{ __('Reservations.clinical_leadership_careers.description_part1') }}
+                    <a href="{{ __('Reservations.clinical_leadership_careers.technology_link_url') }}">{{ __('Reservations.clinical_leadership_careers.technology_link_text') }}</a>
+                    {{ __('Reservations.clinical_leadership_careers.and') }}
+                    <a href="{{ __('Reservations.clinical_leadership_careers.development_link_url') }}">{{ __('Reservations.clinical_leadership_careers.development_link_text') }}</a>
+                    <a href="{{ __('Reservations.clinical_leadership_careers.clinical_leaders_link_url') }}">{{ __('Reservations.clinical_leadership_careers.clinical_leaders_link_text') }}</a>.
+                </p>
+                <p>{{ __('Reservations.clinical_leadership_careers.description_part2') }}</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="fiftyfifty-section left brandedimage" id="{{ __('Reservations.staff_physician_careers.section_id') }}">
+        <div class="promo-image branded desktop-image" data-src="https://img.freepik.com/free-photo/i-trying-be-best-doctor_329181-2188.jpg?size=626&ext=jpg&ga=GA1.1.311507984.1694124201&semt=sph">
+            <div class="svg-wrapper fiftyfifty-arrow pink"></div>
+        </div>
+        <div class="promo-content">
+            <div class="promo-content-inner">
+                <h2 class="promo-title" id="physicians">{{ __('Reservations.staff_physician_careers.title') }}</h2>
+                <p>{{ __('Reservations.staff_physician_careers.description1') }}</p>
+                <p>
+                    {{ __('Reservations.staff_physician_careers.description2') }}
+                    <a href="{{ __('Reservations.staff_physician_careers.cme_opportunities_url') }}">{{ __('Reservations.staff_physician_careers.cme_opportunities_text') }}</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fiftyfifty-section right brandedimage" id="{{ __('Reservations.nurse_pa_careers.section_id') }}">
+        <div class="promo-image branded desktop-image" data-src="https://img.freepik.com/free-photo/portrait-smiling-male-doctor_171337-1532.jpg?size=626&ext=jpg&ga=GA1.1.311507984.1694124201&semt=sph">
+            <div class="svg-wrapper fiftyfifty-arrow orange"></div>
+        </div>
+        <div class="promo-content">
+            <div class="promo-content-inner">
+                <h2 class="promo-title" id="nppa">{{ __('Reservations.nurse_pa_careers.title') }}</h2>
+                <p>{{ __('Reservations.nurse_pa_careers.description1') }}</p>
+                <p>{{ __('Reservations.nurse_pa_careers.description2') }}</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
 </div>
-    </div></section><section class="fiftyfifty-section left brandedimage" id="50-50-promo-medical-resident-careers"><div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2021/12/resident.jpg"><div class=" svg-wrapper fiftyfifty-arrow green"></div></div><div class="promo-content">
-        <div class="promo-content-inner "><h2 class="promo-title"><p id="residents"><h2>Medical Resident Careers</a></h2><p><span data-contrast="auto">For residents like you, it’s all about excitement and uncertainty. What are your next steps in working independently? At SCP Health, we help guide you in the next step and in every step of your health care career.</span><span data-contrast="auto"> </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
-<p><span data-contrast="auto">New physicians, nurse practitioners, and physician assistants benefit from our residency resource team, which includes guided onboarding, mentorship, and continuing education along with specialized financial assistance with loan repayment. We have residency partnerships with more than 170 programs and offer resident moonlighting opportunities, community relocation, and immigration assistance.</span></p>
-</div>
-    </div></section><section class="resource-promo-comp">
-    <div class="container"><div class="stories-heading"><h2>Clinician Resources</h2></div><div class="resource-promo-wrapper"><div class="resource-promo-img"><div class="img-wrapper"><img src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-499062115-scaled.jpeg" alt="Health professional holding a patients hand."></div><div class="detail-part"><span class="date-block">February 10, 2022</span><h2>The Outstanding Benefits of Empathy</h2><p>Discover the many outstanding benefits of clinician empathy in the practice of medicine and how it helps improve patient care.</p></div></div><div class="resource-promo-info"><div class="heading-wrapper"><h3 class="h3">Related Resources</h3></div><div class="resource-blog-row"><div class="resource-blog-col">
-								<div class="resource-blog-inner">
-									<div class="resource-blog-col-top"><h6><a href="">Collecting Data Insights in a World of Data Overload in Health Care</a></h6><p>How do you turn raw data into insights? Use these key healthcare strat ...</p></div>
-									<div class="link">
-										
-									</div>
-								</div>
-							</div><div class="resource-blog-col">
-								<div class="resource-blog-inner">
-									<div class="resource-blog-col-top"><h6><a href="">A Mindful Clinician&#8217;s Checklist</a></h6><p>Clinicians who are attentive and present with patents have higher pati ...</p></div>
-									<div class="link">
-										
-									</div>
-								</div>
-							</div><div class="resource-blog-col">
-								<div class="resource-blog-inner">
-									<div class="resource-blog-col-top"><h6><a href="">Daily Habits to Preserve Your Practice</a></h6><p>Best practice to-dos for clinicians to stay organized and comprehensiv ...</p></div>
-									<div class="link">
-									
-									</div>
-								</div>
-							</div><div class="resource-blog-col">
-								<div class="resource-blog-inner">
-									<div class="resource-blog-col-top"><h6><a href="">&#8220;Doctor Speak&#8221; Cheat Sheet &#8211; Simplifying Medical Terminology</a></h6><p>Need help trading complex medical terms for simple ones? Here's a list ...</p></div>
-									<div class="link">
-										
-									</div>
-								</div>
-							</div></div><div class="resource-promo-cta-block"></div></div></div>
-    </div>
-</section></div>
 	</div>
 
 

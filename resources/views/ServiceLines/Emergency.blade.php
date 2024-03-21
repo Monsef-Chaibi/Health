@@ -18,7 +18,7 @@
             <div class="services-row align-items-center">
                 <div class="services-img right-part">
                     <figure>
-                        <img src="https://www.scphealth.com/wp-content/uploads/2021/12/Emergency-Medicine_new.jpg" alt="{{ __('emergency.hero_title') }}">
+                        <img src="https://media.istockphoto.com/id/583846392/photo/saudi-arab-doctors-working-with-a-tablet.jpg?s=612x612&w=0&k=20&c=6x2_CwQ0Yxv2zHa6Pd41I2x9tew0YC214869CxHxhJM=" alt="{{ __('emergency.hero_title') }}">
                     </figure>
                 </div>
                 <div class="services-info left-part">
@@ -36,7 +36,7 @@
 
     <section class="fiftyfifty-section right " id="50-50-promo-management-by-emergency-medicine-specialists">
         <div class="promo-image">
-            <img src="https://www.scphealth.com/wp-content/uploads/2021/12/management_services-2.jpg">
+            <img src="https://cdn.arabsstock.com/uploads/images/9805/image-9805-old-man-appointment-two-saudi-specialist-consultant-doctors-thumbnail.webp">
         </div>
         <div class="promo-content">
             <div class="promo-content-inner">
@@ -55,7 +55,7 @@
 
     <section class="fiftyfifty-section left " id="50-50-promo-virtual-triage-program">
         <div class="promo-image">
-            <img src="https://www.scphealth.com/wp-content/uploads/2021/12/Telehealth_Intensivist.jpg">
+            <img src="https://media.istockphoto.com/id/583845988/photo/saudi-arab-doctors-working-with-a-tablet.jpg?s=612x612&w=0&k=20&c=d-gWY1s5Nq2p-4VR86_vQfQm7eZwq_-Qll0eOqTjRTk=">
         </div>
         <div class="promo-content">
             <div class="promo-content-inner">

@@ -11,7 +11,7 @@
 
 	<!-- banner area part -->
 	<section class="hero-section "><div class="hero-banner">
-        <img src="{{ asset(__('messages.Firstimg')) }}" alt="SCP Health - Your strategic health care partner, providing quality health solutions to all health care services.">
+        <img src="{{ __('messages.Firstimg') }}" alt="SCP Health - Your strategic health care partner, providing quality health solutions to all health care services.">
     </div><div class="hero-wrapper">
 				<div class="container">
 					<div class="hero-content">
@@ -98,7 +98,7 @@
                                         <div class="resource-wrapper">
                                             <div class="resource-inner">
                                                 <a href=".resource/the-no-surprises-act-full-of-surprises/" class="img-wrapper">
-                                                    <img alt="Doctor speaking with a medical professional holding a tablet." src="https://www.scphealth.com/wp-content/uploads/2022/10/CWO_arrow-1568x882.jpg"/>
+                                                    <img alt="Doctor speaking with a medical professional holding a tablet." src="https://media.istockphoto.com/id/491210683/photo/arab-saudi-doctor-woman-examining-patient.jpg?s=612x612&w=0&k=20&c=rQ03mT_BUFuMJutOAPgUEV-uRkMKVxmme1fo0L65msM="/>
                                                 </a>
                                             </div>
                                         </div>
@@ -137,7 +137,7 @@
                                         <div class="resource-wrapper">
                                             <div class="resource-inner">
                                                 <a href=".blog/9-be-attitudes-for-making-connections-in-virtual-practice/" class="img-wrapper">
-                                                    <img alt="Health professionals engaged in a virtual meeting." src="https://www.scphealth.com/wp-content/uploads/2022/10/Hospital_Virtual_Care_Delivery.jpg"/>
+                                                    <img alt="Health professionals engaged in a virtual meeting." src="https://media.istockphoto.com/id/1176308871/photo/middle-eastern-female-nurse.jpg?s=612x612&w=0&k=20&c=Rl0_vzTbfM2dKJ9dvyxHW9QGBWaY1rPUnqNY6jdyR6s="/>
                                                 </a>
                                                 <span class="asset-type"></span>
                                                 <a href=".blog/9-be-attitudes-for-making-connections-in-virtual-practice/" class="title">{{ __('messages.beAttitudesVirtualPractice') }}</a>
@@ -289,7 +289,7 @@
 
 
     <section class="fiftyfifty-section left brandedimage" id="50-50-promo-working-with-ahealth-care-partner">
-        <div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2023/11/SCP_Health_Care_Partner.jpg">
+        <div  class="promo-image branded desktop-image" data-src="https://media.istockphoto.com/id/526112999/photo/surgeon-doctor-posing-standing-with-folded-arms.jpg?s=612x612&w=0&k=20&c=c-mCjnbqG5HFehgHBnri_2DxjB9hcyqePzKs-_Q3jtk=">
             <div class="svg-wrapper fiftyfifty-arrow pink"></div>
         </div>
         <div class="promo-content">
@@ -303,7 +303,7 @@
 
 
     <section class="fiftyfifty-section right brandedimage" id="50-50-promo-4-strategies-to-transform-the-icu-by-bringing-the-c-suite-to-the-bedside">
-        <div class="promo-image branded desktop-image" data-src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-695218436-1-scaled.jpeg">
+        <div class="promo-image branded desktop-image" data-src="https://media.istockphoto.com/id/832275832/photo/female-medical-proffesional-from-middle-east-standing-in-a-hospital-hallway-looking-at-a-smart.jpg?s=612x612&w=0&k=20&c=18JBdRMS5mVGsfInw6dhwSHKyu4HLDAvWOuT_sJ7vAY=">
             <div class="svg-wrapper fiftyfifty-arrow green"></div>
         </div>
         <div class="promo-content">
@@ -330,52 +330,7 @@
             <p><span style="font-size: 14pt;">{{ __('messages.clinical_integration_description1') }}</span></p>
         </div>
     </section>
-    <section class="success-stories-comp" id="resource-slider">
-        <div class="slider-wrapper">
-            <div class="stories-slider">
-                {{-- Success Stories Images --}}
-                <div class="item">
-                    <div class="stories-img"><img src="https://www.scphealth.com/wp-content/uploads/2022/09/NSA-Web-banner-1-scaled.jpg" alt="{{ __('messages.story1_alt') }}"></div>
-                </div>
-                <div class="item">
-                    <div class="stories-img"><img src="https://www.scphealth.com/wp-content/uploads/2022/09/CCM-Web-banner_c-scaled.jpg" alt="{{ __('messages.story2_alt') }}"></div>
-                </div>
-                <div class="item">
-                    <div class="stories-img"><img src="https://www.scphealth.com/wp-content/uploads/2022/10/Documentation_Revenue_Cycle_Management_Case-Study_01-scaled.jpg" alt="{{ __('messages.story3_alt') }}"></div>
-                </div>
-            </div>
-            <div class="stories-desc-wrapper">
-                <div class="stories-desc">
-                    <ul class="stories-tab">
-                        <li class="active-tab">{{ __('messages.tab1') }}</li>
-                        <li>{{ __('messages.tab2') }}</li>
-                        <li>{{ __('messages.tab3') }}</li>
-                    </ul>
-                    <div class="stories-title-slider">
-                        {{-- Success Stories Titles and Descriptions --}}
-                        <div class="stories-title-item">
-                            <h3>{{ __('messages.title1') }}</h3>
-                            <p>{{ __('messages.description1') }}</p>
-                            <a href="..com/resource/how-to-establish-an-emergency-medicine-hospital-medicine-joint-operations-committee/" class="btn-link orange">{{ __('messages.cta1') }}</a>
-                        </div>
-                        <div class="stories-title-item">
-                            <h3>{{ __('messages.title2') }}</h3>
-                            <p>{{ __('messages.description2') }}</p>
-                            <a href="..com/resource/20-key-questions-to-align-your-emergency-medicine-and-hospital-medicine-teams/" class="btn-link orange">{{ __('messages.cta2') }}</a>
-                        </div>
-                        <div class="stories-title-item">
-                            <h3>{{ __('messages.title3') }}</h3>
-                            <p>{{ __('messages.description3') }}</p>
-                            <a href="..com/resource/5-collaborative-solutions-to-prevent-ed-physician-and-hospitalist-conflict/" class="btn-link orange">{{ __('messages.cta3') }}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="custom-controls">
-            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-    </section>
+
 
     <section class="vertical-carousel-section" id="vertical-carousel">
         <div class="vertical-carousel-wrapper">
@@ -385,61 +340,7 @@
 
                 <div class="slick-slider-controls"></div>
             </div>
-            <div class="vertical-carousel-rightside">
-                <div class="vertical-carousel-slider">
-                    <div class="vertical-carousel-slide">
-                        <a target="_blank" class="vertical-carousel-slide-inner">
-                            <div class="content-part">
-                                <h4>{{ __('messages.emergency_medicine_physician') }}</h4>
-                            </div>
-                            <div class="img-wrapper">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-1030323574-1-265x320.jpg" alt="{{ __('messages.emergency_medicine_physician_alt') }}">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="vertical-carousel-slide">
-                        <a target="_blank" class="vertical-carousel-slide-inner">
-                            <div class="content-part">
-                                <h4>{{ __('messages.emergency_medicine_np_pa') }}</h4>
-                            </div>
-                            <div class="img-wrapper">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2021/11/GettyImages-1209225824-265x320.jpg" alt="{{ __('messages.emergency_medicine_np_pa_alt') }}">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="vertical-carousel-slide">
-                        <a target="_blank" class="vertical-carousel-slide-inner">
-                            <div class="content-part">
-                                <h4>{{ __('messages.acute_nurse_practitioner') }}</h4>
-                            </div>
-                            <div class="img-wrapper">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2021/12/GettyImages-1209225824-4-265x320.jpg" alt="{{ __('messages.acute_nurse_practitioner_alt') }}">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="vertical-carousel-slide">
-                        <a target="_blank" class="vertical-carousel-slide-inner">
-                            <div class="content-part">
-                                <h4>{{ __('messages.medical_director') }}</h4>
-                            </div>
-                            <div class="img-wrapper">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2021/12/how_we_do_it-265x320.jpg" alt="{{ __('messages.medical_director_alt') }}">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="vertical-carousel-slide">
-                        <a target="_blank" class="vertical-carousel-slide-inner">
-                            <div class="content-part">
-                                <h4>{{ __('messages.hospital_medicine_physician') }}</h4>
-                            </div>
-                            <div class="img-wrapper">
-                                <img src="https://www.scphealth.com/wp-content/uploads/2021/12/GettyImages-1271564743_new-265x320.jpg" alt="{{ __('messages.hospital_medicine_physician_alt') }}">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> 
     </section>
     @include('include/form')
 </div>

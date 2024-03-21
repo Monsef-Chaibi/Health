@@ -99,6 +99,11 @@ swiper-slide {
       width: 100%;
       height: 100%;
     }
+
+    image{
+        height: 339px !important;
+        width:309px !important
+    }
     </style>
 
 

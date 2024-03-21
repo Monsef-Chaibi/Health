@@ -19,7 +19,7 @@
             <div class="services-row align-items-center">
                 <div class="services-img right-part">
                     <figure>
-                        <img src="{{ __('hospital.hero_services.image_src') }}" alt="{{ __('hospital.hero_services.image_alt') }}">
+                        <img src="https://cdn.al-ain.com/lg/images/2021/12/25/78-221753-saudi-leads-medical-team-america-surgery-3.jpeg" alt="{{ __('hospital.hero_services.image_alt') }}">
                     </figure>
                 </div>
                 <div class="services-info left-part">

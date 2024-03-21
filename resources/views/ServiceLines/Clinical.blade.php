@@ -17,8 +17,8 @@
             <div class="services-row align-items-center">
                 <div class="services-img right-part">
                     <figure>
-                        <img src="{{ __('clinical.hero_services.image_src') }}" alt="{{ __('clinical.hero_services.image_alt') }}">
-                    </figure>
+                        <img src="https://www.clevelandclinicabudhabi.ae/health-byte/-/media/images/health-byte/article-image/x-ray-imaging-is-it-a-risk-to-my-health/x-ray-imaging-is-it-a-risk-to-my-health-lg.png?h=514&w=877&la=ar-AE&hash=5E15D79065D50B3E60D066EA812889A8" alt="{{ __('clinical.hero_services.image_alt') }}">
+                    </figure>src'
                 </div>
                 <div class="services-info left-part">
                     <h1>{{ __('clinical.hero_services.title') }}</h1>
@@ -166,7 +166,7 @@
 
 
 
-   
+
 @include('include/form')
 </div>
 	</div>

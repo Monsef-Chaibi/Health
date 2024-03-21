@@ -3,7 +3,8 @@
 <!-- BrightEdge Header Code I ends -->
 
 <!doctype html>
-<html lang="en-US" >
+<html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}">
+
 	@include('include/link')
 
 
@@ -13,9 +14,13 @@
 
 	<section class="hero-section heroimage"><img src="https://www.scphealth.com/wp-content/uploads/2022/10/Leadership-Web-banner-scaled.jpg" alt="Our SCP Health Leaders, from our clinical leadership to executive leadership."><div class="hero-wrapper">
 				<div class="container">
-					<div class="hero-content"><h1>Our Health Leaders</h1><p>Founded and led by physicians, we keep patient-centered care <br> at the heart of all we do. We align clinical and operational leadership <br> to balance the unique needs of health care organizations <br> and deliver exceptional patient care, together.  </p><div class="btn-group"><a href="/company/" href="/company/" class="btn">Who We Are</a></div></div>
+					<div class="hero-content"><h1>Our Health Leaders</h1><p>Founded and led by physicians, we keep patient-centered care <br> at the heart of all we do. We align clinical and operational leadership <br> to balance the unique needs of health care organizations <br> and deliver exceptional patient care, together.  </p>
+
+                    </div></div>
 				</div>
-			</div></section><div class="main-content"><section class="overview-section" id="overview">
+			</div>
+    </section>
+    <div class="main-content"><section class="overview-section" id="overview">
         <div class="container">
             <div class="row">
                 <div class="cell-md-5 content-part"><h2>Clinical Leadership</h2></div>

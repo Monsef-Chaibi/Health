@@ -17,7 +17,7 @@
         <div class="services-row align-items-center">
             <div class="services-img right-part">
                 <figure>
-                    <img src="https://www.scphealth.com/wp-content/uploads/2021/11/critical-care-1.jpg" alt="{{ __('healthcare.experienced_investors_title') }}">
+                    <img src="https://img.freepik.com/premium-photo/smiling-arabic-doctor-hospital-with-tablet-stethoscope_155404-185.jpg" alt="{{ __('healthcare.experienced_investors_title') }}">
                 </figure>
             </div>
             <div class="services-info left-part">
@@ -120,7 +120,7 @@
 
     <section class="fiftyfifty-section right" id="50-50-promo-high-intensity-staffing-and-management-services">
         <div class="promo-image">
-            <img src="{{ __('healthcare.network_expansion.image_src') }}" alt="{{ __('healthcare.network_expansion.image_alt') }}">
+            <img src="https://png.pngtree.com/background/20230330/original/pngtree-the-arab-saudi-doctor-with-stethoscope-in-hospital-arab-saudi-doctor-picture-image_2200089.jpg" alt="{{ __('healthcare.network_expansion.image_alt') }}">
         </div>
         <div class="promo-content">
             <div class="promo-content-inner">
@@ -145,7 +145,7 @@
 
     <section class="fiftyfifty-section left" id="50-50-promo-telehealth-intensivist-programs">
         <div class="promo-image">
-            <img src="{{ __('healthcare.advanced_analytics.image_src') }}" alt="{{ __('healthcare.advanced_analytics.image_alt') }}">
+            <img src="https://cdn.arabsstock.com/uploads/images/9822/image-9822-old-man-appointment-two-saudi-specialist-consultant-doctors-thumbnail.webp" alt="{{ __('healthcare.advanced_analytics.image_alt') }}">
         </div>
         <div class="promo-content">
             <div class="promo-content-inner">
