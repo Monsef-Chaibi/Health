@@ -47,7 +47,7 @@
 <ul class="sub-menu">
 	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">{{ __('header.working') }}</a></li>
     <li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">{{ __('header.clinical_education') }}</a></li>
-    <li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="#">{{ __('header.work_with_us') }}</a></li>
+
 </ul>
 </li>
 <li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903">
@@ -119,7 +119,6 @@
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">{{ __('header.working') }}</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">{{ __('header.clinical_education') }}</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="#">{{ __('header.clinical_education') }}</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903">
@@ -140,7 +139,7 @@
 </ul>
 </div></li>
 </ul>
-<a href="/Contact-Us" class="btn h-8 w-20 font-bold text-lg">{{ __('header.CONTACT') }}</a>
+<a href="/Contact-Us" style="font-size: 22px !important" class="btn">{{ __('header.CONTACT') }}</a>
 <div class="search-form-box">
 	<div class="search-form-backdrop"></div>
 	<div class="search-form-wrapper">

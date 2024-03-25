@@ -15,7 +15,7 @@
                 <h2>{{ __('messages.title') }}</h2>
                 <p>{{ __('messages.description') }}</p>
 
-
+ 
             </div>
             <div class="contact-right grey contactform">
                 <div class="contactform-inner">

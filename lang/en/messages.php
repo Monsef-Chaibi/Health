@@ -6,12 +6,14 @@ return [
     'welcomeTitle' => 'Arkan Care',
     'welcomeTitle2' => 'The first Saudi platform specialized in the digital transformation of the medical sector, opens its doors for an exceptional journey towards a bright future for healthcare in the Kingdom.',
     'heroContent' => 'We provide services in establishing, managing, and developing medical complexes and clinics, in addition to digital consulting services in healthcare. We rely on best global practices to offer services enhanced by innovation and local vision. Arkan was established with the goal of improving healthcare quality in the Kingdom and using digital transformation to develop and manage medical facilities in innovative ways aimed at achieving Vision 2030.',
-    'aboutUs' => 'Discover more about our solutions',
-    'healthCareExecutives' => 'Healthcare Executives',
-    'clinicians' => 'Clinicians',
+    'aboutUs' => 'Explore more about ArKan',
+    'healthCareExecutives' => 'Arkan services',
+    'clinicians' => 'Customized solutions for dentists and dermatologists',
     'joinOurTeam' => 'Join Our Team',
-    'healthCareExecutivesTitle' => 'Executives in Healthcare',
-    'healthCareExecutivesDesc' => 'Our scalable healthcare solutions align and integrate with your strategic goals to improve quality, accelerate decision-making, and drive progress across all service lines.',
+    'healthCareExecutivesTitle' => 'Arkan services',
+    'healthCareExecutivesDesc' => 'Arkan is your trusted partner in your journey towards success in the world of healthcare!
+
+    From establishing and operating your medical project to achieving your financial and expansion goals, we provide you with comprehensive services that guarantee you exceptional efficiency and effectiveness.',
     'services' => 'Services:',
     'solutions' => 'Solutions:',
     'emergencyMedicine_list' => [
@@ -42,31 +44,22 @@ return [
         'Crisis and emergency management',
     ],
     'clinicians_list' => [
-        'Diverse opportunities for career and professional development',
-        'Work-life balance',
-        'Leading benefits',
-        'Competitive compensations',
-        'Remote care provision',
-        'Residence locations',
-        'Career development',
-        'Clinical technology tools',
-        'Continuous training and education',
-        'Opportunities to follow up on modern medical developments',
-        'Opportunities to participate in social initiatives',
-        'Career advancement opportunities',
-        'Incentive programs and rewards',
-        'Wellness and health programs',
+        'Investment and Expansion Opportunities: We offer support and consultations regarding healthcare sector investments. Whether you re looking to own and establish a clinic, seeking a successful partnership, or interested in mergers and acquisitions, we provide tailored support and advice to help you achieve your goals and professional growth.',
+        'Management and Operation: We offer innovative solutions for efficiently managing and operating medical clinics, implementing the latest technologies and digital solutions, and supporting operational process development.',
+        'Customized Consultations and Comprehensive Support: We provide customized consultations for doctors, including training, investment opportunities, financial and legal advice. We also offer tailored training programs to develop the skills of doctors and their teams, along with comprehensive support aimed at improving performance and increasing efficiency in daily operations.',
+        'Digital Marketing and Personal Brand Building: We offer advanced solutions in digital marketing and personal brand development for doctors, using the latest technologies and marketing strategies.',
     ],
+
     'hospitalMedicine' => 'Dermatology Clinics',
 'criticalCareMedicine' => 'Critical Care',
 'careDelivery' => 'Care Delivery',
 'clinicalIntegration' => 'Clinical Integration',
 'clinicalWorkforceOptimization' => 'Clinical Workforce Optimization',
-'partnerWithUs' => 'Partner With Us',
+'partnerWithUs' => 'Explore more about Arkan',
 'guide' => 'Guide',
 'noSurprisesActTitle' => 'The No Surprises Act... Full of Surprises!',
-'cliniciansTitle' => 'Clinicians',
-'cliniciansDescription' => 'We are committed to empowering <strong>physicians, nurse practitioners, and physician assistants</strong> with the tools, technology, and support needed to deliver exceptional patient care.',
+'cliniciansTitle' => 'Custom Solutions for Dentists and Dermatologists',
+'cliniciansDescription' => 'Comprehensive and customized solutions for dentists and dermatologists looking to expand and succeed in the healthcare sector in the Kingdom. With our deep understanding of your needs and aspirations, we are here to support you at every step of your operational and investment journey.',
 'nationwideOpportunities' => 'Nationwide Opportunities',
 'workLifeBalance' => 'Work-Life Balance',
 'leadingBenefits' => 'Leading Benefits',
@@ -76,10 +69,10 @@ return [
 'careerDevelopment' => 'Career Development',
 'clinicalTechnologyTools' => 'Clinical Technology Tools',
 'ongoingTrainingAndEducation' => 'Ongoing Training and Education',
-'searchAllClinicalOpenings' => 'Search All Clinical Openings',
+'searchAllClinicalOpenings' => 'Contact Us',
 'beAttitudesVirtualPractice' => 'Attitudes for Making Connections in Virtual Practice',
 'joinOurTeam1' => 'Join Our Team',
-'joinOurTeamDescription' => 'As leaders in clinical practice management, we strive to unite clinical and operational teams to deliver exceptional patient care and make a difference in the healthcare industry. Join our team and be a part of revolutionizing healthcare in the Kingdom.',
+'joinOurTeamDescription' => 'Advance your career, join the Arkan team and be part of the transformation of the healthcare industry in Saudi Arabia',
 'joinOurTeam_list' =>
 [
     'A value-based environment',
@@ -90,7 +83,8 @@ return [
     'Comprehensive benefits',
     'Market-based compensations',
 ],
-'elevateYourCareer' => 'Elevate your career and join the Arkan team!',
+'elevateYourCareer' => 'Explore Opportunities',
+'elevateYourCareer1' => 'Redirect here to the careers page',
 'solution_healthSolutions' => 'Arkan Solutions',
 'solution_healthSolutionsDescription' => 'Arkan is committed to providing innovative and advanced services that meet the needs of medical complexes and clinics in the Kingdom of Saudi Arabia. We aim to ensure sustainable growth for our clients through our tailored solutions and extensive experience.',
 
@@ -103,9 +97,9 @@ return [
 'solution_advancedCareDashboard' => 'Marketing and Branding',
 'solution_clinicalIntegration' => 'Clinical Integration',
 'sol_careDelivery_alt' => 'Arkan - Care Delivery.',
-
+'getmore' => 'Learn more' ,
 'sol_careDelivery' => 'Healthcare Sector Investment Solutions',
-'sol_careDelivery_description' => 'With "Arkan", we offer you the first and comprehensive gateway to promising investment opportunities in the healthcare sector. Whether you re looking to acquire a new clinic, establish a distinguished medical complex, or even sell your current medical complex, we are here to ensure a smooth and profitable investment experience.',
+'sol_careDelivery_description' => 'Arkan, your premier and comprehensive gateway to promising investment opportunities in the healthcare sector. Whether you re looking to acquire a new clinic, establish a distinguished medical complex, or even sell your current medical complex, we are here to ensure a smooth and profitable investment experience.',
 'sol_careDelivery_titel_1' => 'Partnership, Acquisition, and Merger',
 'sol_careDelivery_list_1' =>
     [
@@ -134,7 +128,7 @@ return [
         ],
     'cs_alt' => 'Management, Operation, and Maintenance of Healthcare Facilities',
     'cs_title' => 'Management, Operation, and Maintenance of Healthcare Facilities',
-    'cs_description' => 'Providing full administrative and operational services for hospitals and clinics, including human resources management, financial management, and quality assurance.',
+    'cs_description' => 'Arkan Company seeks to provide comprehensive and advanced solutions in the management, operation and maintenance of health facilities, with the aim of improving the efficiency of medical services and enhancing the patient experience. We provide integrated administrative and operational services including human resources management, financial and administrative services, operations management, quality and compliance, in addition to technology and innovation.',
     'cs_titel_2'=> 'Recruitment and Selection of Medical and Administrative Staff',
     'cs_list' =>
     [
@@ -225,7 +219,7 @@ return [
 
 'cwo_alt' => 'e-Health and Telemedicine Solutions',
 'cwo_title' => 'e-Health and Telemedicine Solutions',
-'cwo_description_1' => 'With 50 years of experience in deploying clinical care and practice management expertise, we leverage talents, tools, and technology, including AI-supported dynamic recruitment, to support all aspects of clinical care, health, and wellness while accelerating and expanding your strategy.',
+'cwo_description_1' => 'At Arkan, we provide integrated solutions in the field of e-health and telemedicine, combining modern technology with medical expertise to improve the quality of healthcare and provide convenience to patients and medical practitioners. You can diagnose and monitor patients remotely, improving the efficiency and effectiveness of the healthcare system, in addition to advanced applications for patients to track their health, communicate with doctors, and manage medications and medical appointments.',
 
 'cwo_titel_1'=>'Developing Telemedicine Platforms:',
 'cwo_list_1' =>
@@ -256,7 +250,7 @@ return [
 ],
 'drc_alt' => 'Arkan - Documentation and Revenue Cycle.',
 'drc_title' => 'Documentation and Revenue Cycle',
-'drc_description' => 'Integrated solutions for managing, operating, and maintaining dental, dermatological clinics, and medical complexes. By offering a wide range of services, the company can help its clients improve efficiency and profitability, provide high-quality medical services, and achieve growth and sustainability in the market.',
+'drc_description' => 'We provide integrated solutions for the management, operation, and development of dental, dermatology, and beauty clinics, through a specialized team and our extensive experience in the medical sector, which enables our clients to make the most of their investments and provide competitive, high-quality medical services. Join us to develop your clinics and achieve your professional and commercial goals.',
 'drc_titel_1'=>'Strategic Planning and Development',
 'drc_list_1'=>
 [
@@ -327,7 +321,7 @@ return [
 ],
 'virtual_health_alt' => 'Supporting Foreign Companies to Enter the Saudi Market',
 'virtual_health_title' => 'Supporting Foreign Companies to Enter the Saudi Market',
-'virtual_health_description' => 'Healthcare extends beyond hospital walls. Our virtual health solutions apply advanced technology to expand your business scope and increase your impact on care. Clinical support at every stage of the healthcare journey aims to enhance patient satisfaction, engage physicians, and build trust in the community.',
+'virtual_health_description' => 'We provide support services for foreign companies to enter the Saudi market with flexibility and professionalism. Our specialized team works to provide comprehensive consultations and support in various medical and administrative fields. Through market analysis and strategy development, to providing support in obtaining licenses and accreditations, digital marketing and brand development, we seek to facilitate your entry into the Saudi market and achieve success in it.',
 
 'virtual_health_titel_1'=>'Business Consulting and Feasibility Studies',
 'virtual_health_list_1' => [
@@ -388,7 +382,7 @@ return [
 ],
 'advanced_care_home_title' => 'Marketing and Branding',
 'advanced_care_home_alt' => 'Arkan - Advanced Home Care.',
-'advanced_care_home_description1' => 'Our virtual clinical care teams help health systems and hospitals extend high-quality acute care beyond the four walls of the hospital to patients homes.',
+'advanced_care_home_description1' => 'Our marketing and branding service aims to increase brand awareness and attract more patients, as well as build a strong reputation for medical institutions online. We professionally design and implement digital marketing and brand development strategies, including improving online presence and managing the online reputation of clinics and medical complexes.',
 'advanced_care_home_titel_1' => 'Objective',
 'advanced_care_home_list_1' =>
 [
@@ -458,17 +452,17 @@ return [
 'testimonial_3_author' => 'Joseph Rose, MD',
 'testimonial_4_text' => 'Our partnership with Arkan has been an immense asset to our hospital. With the resources they provide, we have the capability to recruit nationally...',
 'testimonial_4_author' => 'Emergency Medicine Director',
-'capability_hubs_title' => 'Capability Centers',
+'capability_hubs_title' => 'Employment and Capability Development',
 'capability_hubs_intro' => 'A Local, Regional, and National Approach',
-'capability_hubs_description' => 'We organize systems for success, integrating technology, tools, and talent in a closed process that enhances evidence-based approaches, boosts training and empowerment, and ensures outcomes are achieved.',
-'capability_hubs_local' => 'Local',
-'capability_hubs_local_description' => 'Recruiting and retaining local physicians, medical directors, and aligning with your strategic goals.',
-'capability_hubs_regional' => 'Regional',
-'capability_hubs_regional_description' => 'Providing regional administrative and clinical support, training, and mentorship.',
-'capability_hubs_national' => 'National',
-'capability_hubs_national_description' => 'Investing in national-level technology, resources, and capability development.',
+'capability_hubs_description' => 'Discover job opportunities and skill development at Arkan, where we integrate technology, tools, expertise, and talented staff. With a focus on training and empowering individuals, we ensure the achievement of desired outcomes.',
+'capability_hubs_local' => 'Local Level',
+'capability_hubs_local_description' => 'We focus on employing and retaining local physicians and medical managers, integrating this with your strategic goals.',
+'capability_hubs_regional' => 'Regional Level',
+'capability_hubs_regional_description' => 'We provide administrative and regional support, training, and mentoring, to ensure capacity enhancement and development.',
+'capability_hubs_national' => 'National Level',
+'capability_hubs_national_description' => 'We invest in technology and resources at the national level, supporting capability development and achieving growth.',
 'capability_hubs_cta' => 'Discover what we can do together',
-'working_with_health_care_partner_title' => 'Working with a Healthcare Partner',
+'working_with_health_care_partner_title' => 'The ideal partnership in the healthcare sector',
 'working_with_health_care_partner_description' => 'We pride ourselves on being leaders in the healthcare industry, always advancing with innovative ideas to rejuvenate healthcare at every level. Our clinical and operational teams work together to scale healthcare and sustainably increase its impact nationwide.',
 'join_our_team' => 'Join Our Team',
 'strategies_transform_icu_title' => 'Why Choose Arkan Company?',
@@ -561,5 +555,18 @@ return [
 
         "\"Arkan\": Your partner in achieving success in the healthcare world.\n\"At Arkan, we believe that effective management and operation are the keys to success in the healthcare world. We provide our clients with the expertise and support necessary to achieve their strategic goals.\"",
     ],
+    'consultations' => [
+        'title' => 'Consultations',
+        'description' => 'We offer specialized consultations in healthcare, from digital transformation to health investments and feasibility studies.',
+    ],
+    'facility_management' => [
+        'title' => 'Healthcare Facility Management and Operation',
+        'description' => 'Complete administrative and operational services, including human resources management, financial management, and quality assurance.',
+    ],
+    'ehealth_solutions' => [
+        'title' => 'E-Health Solutions and Innovation',
+        'description' => 'Advanced healthcare solutions, from remote diagnostics to specialized treatments and digital marketing for your brand.',
+    ],
+    'joinOurli' => 'At Arkan, we believe in the importance of talent development and empowering individuals to reach their full potential in the healthcare field. We support innovation and excellence and strive to create a work environment that encourages continuous learning and professional growth.',
 
 ];

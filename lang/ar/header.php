@@ -22,7 +22,7 @@ return [
     'partner' => 'شريك معنا',
     'leadership' => 'القيادة',
     'technology' => 'التكنولوجيا',
-    'sustainability' => 'الاستدامة',
+    'sustainability' => 'الاستدامة', 
     'careers' => 'المهن الشركاتية',
     'working' => 'العمل معنا',
     'clinical_education' => 'التعليم والتدريب السريري',
