@@ -4,7 +4,7 @@
 			<!-- device menu -->
 			<div class="mbnav__overlay"></div>
 			<div class="mbnav">
-				<div class="mbnav__state" data-clickable="true"> 
+				<div class="mbnav__state" data-clickable="true">
 					<!--  main responsive menu -->
 					<div class="mbnav__inner"><ul id="menu-main-navigation" class="menu"><li id="menu-item-4937" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4937 "><a href="#">{{ __('header.Service') }}</a>
 <ul class="sub-menu">
@@ -36,21 +36,28 @@
     <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
     <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
     <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>
+    @foreach(__('header.items') as $item)
+    <li id="{{ $item['id'] }}" class="menu-item menu-item-type-post_type menu-item-object-page">
+        <a href="{{ $item['url'] }}">{{ $item['name'] }}</a>
+    </li>
+@endforeach
 </ul>
 </li>
 <li id="menu-item-3902" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3902"><a href="#">{{ __('header.Clinicalcarres') }}</a>
 <ul class="sub-menu">
 	<li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">{{ __('header.working') }}</a></li>
     <li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">{{ __('header.clinical_education') }}</a></li>
+    <li id="menu-item-523123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="#">{{ __('header.work_with_us') }}</a></li>
 </ul>
 </li>
-<li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">{{ __('header.New&resources') }}</a>
-<ul class="sub-menu">
-	{{-- <li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a></li>
+<li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903">
+    <a href="#">{{ __('header.New&resources') }}</a>
+{{-- <ul class="sub-menu">
+<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a></li>
 	<li id="menu-item-3899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a></li>
-	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a></li> --}}
+	<li id="menu-item-3882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a></li>
 	<li id="menu-item-85690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">{{ __('header.events') }}</a></li>
-</ul>
+</ul> --}}
 </li>
 <li id="menu-item-3903" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><a href="#">{{ __('header.Language') }}</a>
 <ul class="sub-menu">
@@ -98,6 +105,13 @@
     <li id="menu-item-8115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8115"><a href="{{ route('Technology') }}">{{ __('header.technology') }}</a></li>
     <li id="menu-item-4367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4367"><a href="{{ route('Sustainability') }}">{{ __('header.sustainability') }}</a></li>
     <li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="{{ route('Corporate') }}">{{ __('header.careers') }}</a></li>
+        @foreach(__('header.items') as $item)
+            <li id="{{ $item['id'] }}" class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="{{ $item['url'] }}">{{ $item['name'] }}</a>
+            </li>
+        @endforeach
+
+
 
 </ul>
 </div></li>
@@ -105,16 +119,20 @@
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('Working') }}">{{ __('header.working') }}</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="{{ route('ClinicalEducation') }}">{{ __('header.clinical_education') }}</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523123"><a href="#">{{ __('header.clinical_education') }}</a><div class="mega-menu-wrapper"></li>
 </ul>
 </div></li>
-<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><p class="textMenu">{{ __('header.New&resources') }}</p><div class="dropdown-menu-wrapper">
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903">
+    <p class="textMenu">{{ __('header.New&resources') }}</p>
+{{-- <div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
-	{{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a><div class="mega-menu-wrapper"></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href=".resources/">Resources</a><div class="mega-menu-wrapper"></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3899"><a href=".blog/">Blog</a><div class="mega-menu-wrapper"></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a><div class="mega-menu-wrapper"></li> --}}
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href=".news/">News</a><div class="mega-menu-wrapper"></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85690"><a href="{{ route('Events') }}">{{ __('header.events') }}</a><div class="mega-menu-wrapper"></li>
 </ul>
-</div></li>
+</div> --}}
+</li>
 <li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3903"><p class="textMenu">{{ __('header.Language') }}</p><div class="dropdown-menu-wrapper">
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3882"><a href="{{ route('change-locale', 'en') }}">{{ __('header.en') }}</a><div class="mega-menu-wrapper"></li>
@@ -122,7 +140,7 @@
 </ul>
 </div></li>
 </ul>
-<a href="/Contact-Us" class="btn">{{ __('header.CONTACT') }}</a>
+<a href="/Contact-Us" class="btn h-8 w-20 font-bold text-lg">{{ __('header.CONTACT') }}</a>
 <div class="search-form-box">
 	<div class="search-form-backdrop"></div>
 	<div class="search-form-wrapper">

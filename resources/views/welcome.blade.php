@@ -1,4 +1,4 @@
-
+ 
 <!doctype html>
 <html  dir="{{ (app()->getLocale() == 'ar') ? 'rtl' : 'ltr' }}">
 
@@ -340,7 +340,7 @@
 
                 <div class="slick-slider-controls"></div>
             </div>
-        </div> 
+        </div>
     </section>
     @include('include/form')
 </div>

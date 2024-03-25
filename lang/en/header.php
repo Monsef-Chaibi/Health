@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'Service' => 'SERVICE LINES',
-    'Company' => 'COMPANY',
-    'Clinicalcarres' => 'CLINICAL CAREERS',
-    'New&resources' => 'NEWS & RESOURCES',
+    'Service' => 'Our Investment Services',
+    'Company' => 'About Arkan',
+    'Clinicalcarres' => 'Professions',
+    'New&resources' => 'Blog',
     'Language' => 'LANGUAGE',
     'Emergency' => 'Beginners in medical investment',
     'Hospital' => 'Experienced investors',
@@ -12,12 +12,12 @@ return [
     'Clinical' => 'Investors interested in buying or selling',
     'Virtual' => 'Medical complexes, dental and dermatology clinics',
     'Connected' => 'Foreign partnerships',
-    'EmerText' => 'We offer workshops and training to introduce you to the basics of investment and medical complex management, in addition to providing strategic consulting to help you understand the market and identify the best investment opportunities.',
-    'HosText' => 'We provide you with the opportunity to expand your networks through access to new partnerships and collaboration opportunities, in addition to offering advanced market analytics and data to identify new trends and future growth opportunities.',
-    'CriText' => 'We offer comprehensive management solutions to facilitate merger and acquisition processes and improve operational efficiency, and assist you in developing medical programs and enhancing the quality of services offered, to increase patient satisfaction and enhance market reputation.',
-    'ClinText' => 'Providing an opportunity to explore a wide range of clinics and medical complexes available for sale in various specialties, in addition to providing comprehensive support from financial and technical evaluation to completing the purchase or sale process, with a guarantee of a fair and transparent evaluation of your clinic or medical complex.',
-    'VirText' => 'Comprehensive support for medical complexes and clinics from the initial project idea to expansion and growth, contributing to enhancing the quality of healthcare, improving operational efficiency, and ensuring sustainable growth in the Saudi market.',
-    'ConText' => 'Comprehensive consulting services for foreign companies seeking to explore opportunities to enter the healthcare market in the Kingdom of Saudi Arabia. Through building local partnerships and facilitating entry and expansion processes, to achieve sustainable success and mutual opportunities for growth and development in their medical projects.',
+    'EmerText' => 'Discover the secrets of investment and medical complexes management with professional workshops and training sessions.',
+    'CriText' => 'Expand your network and find new investment opportunities through advanced market analysis.',
+    'HosText' => 'Comprehensive management solutions for smooth mergers, acquisitions, and operational efficiency improvement.',
+    'ClinText' => 'Explore available clinics and medical complexes for sale with fair evaluation and comprehensive support.',
+    'VirText' => 'Comprehensive support from the idea to expansion to improve care quality and increase patient satisfaction.',
+    'ConText' => 'Smooth entry and huge growth opportunities in the Saudi healthcare market, with comprehensive consultations and strong local partnerships.',
     'about' => 'About Arkan Care',
     'partner' => 'Partner With Us',
     'leadership' => 'Leadership',
@@ -27,9 +27,15 @@ return [
     'working' => 'Working With SCP',
     'clinical_education' => 'Clinical Education and Training',
     'events' => 'Events',
+    'work_with_us' => 'Work with us',
     'ar' => 'ARABIC',
     'en' => 'ENGLISH',
     'CONTACT' => 'RESERVATIONS',
-
+    'items' => [
+        ['name' => 'About Us', 'url' => '#', 'id' => 'menu-item-3883'],
+        ['name' => 'Our Solutions', 'url' => '#', 'id' => 'menu-item-3884'],
+        ['name' => 'Partner with Us', 'url' => '#', 'id' => 'menu-item-3885'],
+        ['name' => 'Contact Us', 'url' => '#', 'id' => 'menu-item-3886'],
+    ],
     // other strings
 ];
