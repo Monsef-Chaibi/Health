@@ -14,45 +14,43 @@
             <div class="contact-left">
                 <h2>{{ __('messages.title') }}</h2>
                 <p>{{ __('messages.description') }}</p>
-
- 
             </div>
             <div class="contact-right grey contactform">
                 <div class="contactform-inner">
                     <div class="contactform-inner">
-                    <form method="post" action="{{ route('reservations.store') }}" id="gform_5" class="contactform">
+                    <form method="post" action="{{ route('reservations.store') }}" id="gform_5" class="contactform" dir="{{ App::getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                         @csrf
                         <div class="gform_body gform-body">
                         <div class="gform_fields">
                             <div class="gfield width-full">
-                                <label class="gfield_label">Email*</label>
+                                <label class="gfield_label">{{ App::getLocale() == 'en' ? 'Email*' : 'البريد الإلكتروني*' }}</label>
                                 <div class="ginput_container">
                                     <input name="email" type="email" value="" class="large" aria-required="true" aria-invalid="false" tabindex="1" required>
                                 </div>
                             </div>
                             <div class="gfield width-full">
-                                <label class="gfield_label">First Name*</label>
+                                <label class="gfield_label">{{ App::getLocale() == 'en' ? 'First Name*' : 'الاسم الأول*' }}</label>
                                 <div class="ginput_container">
                                     <input name="First_Name" type="text" value="" class="large" aria-required="true" aria-invalid="false" tabindex="2" required>
                                 </div>
                             </div>
                             <div class="gfield width-full">
-                                <label class="gfield_label">Last Name*</label>
+                                <label class="gfield_label">{{ App::getLocale() === 'en' ? 'Last Name*' : 'اسم العائلة*' }}</label>
                                 <div class="ginput_container">
                                     <input name="Last_Name" type="text" value="" class="large" aria-required="true" aria-invalid="false" tabindex="3" required>
                                 </div>
                             </div>
                             <div class="gfield width-full">
-                                <label class="gfield_label">Phone *</label>
+                                <label class="gfield_label">{{ App::getLocale() === 'en' ? 'Phone*' : 'الهاتف*' }}</label>
                                 <div class="ginput_container">
                                     <input name="Phone" type="text" value="" class="large" tabindex="7" aria-required="true" aria-invalid="false" required>
                                 </div>
                             </div>
                             <div class="gfield width-full">
-                                <label class="gfield_label1">Choose the service type</label>
+                                <label class="gfield_label1">{{ App::getLocale() === 'en' ? 'Choose the service type' : 'اختر نوع الخدمة' }}</label>
                                 <div class="ginput_container">
                                     <select name="service_id" id="serviceSelect" class="large" style="padding: 10px" tabindex="4" aria-required="true" aria-invalid="false" required>
-                                        <option hidden>Choose the service type</option>
+                                        <option hidden>{{ App::getLocale() === 'en' ? 'Choose the service type' : 'اختر نوع الخدمة' }}</option>
                                         @foreach($services as $service)
                                             <option value="{{ $service->id }}">{{ app()->getLocale() === 'en' ? $service->nameEN : $service->nameAR }}</option>
                                         @endforeach
@@ -60,28 +58,78 @@
                                 </div>
                             </div>
                             <div class="gfield width-full">
-                                <label class="gfield_label1">Choose The Right Time For You</label>
+                                <label class="gfield_label1">{{ App::getLocale() === 'en' ? 'Choose The Right Time For You' : 'اختر الوقت المناسب لك' }}</label>
                                 <div class="flex items-center justify-center">
                                     <button type="button" class="bg-[#20ab95] text-white rounded-md px-1 py-1 hover:bg-[#008872] transition" onclick="openModal('modelConfirm')">
-                                        Click to choice Time
+                                        {{ App::getLocale() === 'en' ? 'Click to choice Time' : 'انقر لاختيار الوقت' }}
                                     </button>
                                 </div>
                                 <div class="ginput_container">
-                                    <span class="text-xs">Your choice :</span>
+                                    <span class="text-xs">{{ App::getLocale() === 'en' ? 'Your choice :' : 'اختيارك :' }}</span>
                                     <span id="Show-Time-Selected" class="text-xs text-green-600" required></span>
                                 </div>
                                 <input type="hidden" name="start_time" id="start_time">
                                 <input type="hidden" name="end_time" id="end_time">
                             </div>
                             <div class="gfield width-full">
-                                <label class="gfield_label1">The Name Of The Assignee</label>
+                                <label class="gfield_label1">{{ App::getLocale() === 'en' ? 'The Name Of The Assignee' : 'اسم المكلف' }}</label>
                                 <div class="">
                                     <input name="assignee_name" type="text" id="assigneeName" value="" readonly class="large" tabindex="6" required>
                                 </div>
                             </div>
+                               <!-- Optional Website Field -->
+            <div class="gfield width-full">
+                <label class="gfield_label">{{ app()->getLocale() == 'en' ? 'Your Website (Optional)' : 'موقعك الإلكتروني (اختياري)' }}</label>
+                <div class="ginput_container">
+                    <input name="website" type="url" value="" class="large" aria-invalid="false">
+                </div>
+            </div>
+
+            <!-- Category Field -->
+            <div class="gfield width-full">
+                <label class="gfield_label">{{ app()->getLocale() == 'en' ? 'You are?' : 'أنت؟' }}</label>
+                <div class="ginput_container">
+                    <select name="category" id="categorySelect" class="large" onchange="if (this.value=='other'){document.getElementById('otherCategory').style.display='block';}else{document.getElementById('otherCategory').style.display='none';}" required>
+                        <option value="">{{ app()->getLocale() == 'en' ? 'Choose...' : 'اختر...' }}</option>
+                        <option value="clinic_owner">{{ app()->getLocale() == 'en' ? 'Clinic Owner' : 'صاحب عيادة' }}</option>
+                        <option value="dentist">{{ app()->getLocale() == 'en' ? 'Dentist' : 'طبيب أسنان' }}</option>
+                        <option value="dermatologist">{{ app()->getLocale() == 'en' ? 'Dermatologist' : 'طبيب جلدية' }}</option>
+                        <option value="local_investor">{{ app()->getLocale() == 'en' ? 'Local Investor' : 'مستثمر محلي' }}</option>
+                        <option value="foreign_investor">{{ app()->getLocale() == 'en' ? 'Foreign Investor' : 'مستثمر أجنبي' }}</option>
+                        <option value="other">{{ app()->getLocale() == 'en' ? 'Other' : 'أخرى' }}</option>
+                    </select>
+                    <input name="other_category" type="text" id="otherCategory" value="" class="large" style="display:none;" placeholder="{{ app()->getLocale() == 'en' ? 'Other (Please specify)' : 'أخرى (يرجى التوضيح)' }}">
+                </div>
+            </div>
+
+            <!-- Service Type Field -->
+            <div class="gfield width-full">
+                <label class="gfield_label">{{ app()->getLocale() == 'en' ? 'Type of Service Required' : 'نوع الخدمة المطلوبة' }}</label>
+                <div class="ginput_container">
+                    <select name="service_type" id="serviceTypeSelect" class="large" onchange="if (this.value=='other'){document.getElementById('otherServiceType').style.display='block';}else{document.getElementById('otherServiceType').style.display='none';}" required>
+                        <option value="">{{ app()->getLocale() == 'en' ? 'Choose...' : 'اختر...' }}</option>
+                        <option value="consultation">{{ app()->getLocale() == 'en' ? 'Consultation' : 'استشارة' }}</option>
+                        <option value="management_and_operation">{{ app()->getLocale() == 'en' ? 'Management and Operation Service' : 'خدمة الإدارة والتشغيل' }}</option>
+                        <option value="clinic_establishment">{{ app()->getLocale() == 'en' ? 'Clinic/Clinical Complex Establishment' : 'تأسيس عيادة/ مجمع طبي' }}</option>
+                        <option value="buy_or_sell_clinic">{{ app()->getLocale() == 'en' ? 'Buy or Sell Clinic/Clinical Complex' : 'شراء أو بيع عيادة/ مجمع طبي' }}</option>
+                        <option value="partnership_with_arkan">{{ app()->getLocale() == 'en' ? 'Partnership with Arkan' : 'الشراكة مع أركان' }}</option>
+                        <option value="other">{{ app()->getLocale() == 'en' ? 'Other' : 'أخرى' }}</option>
+                    </select>
+                    <input name="other_service_type" type="text" id="otherServiceType" value="" class="large" style="display:none;" placeholder="{{ app()->getLocale() == 'en' ? 'Other (Please specify)' : 'أخرى (يرجى التوضيح)' }}">
+                </div>
+            </div>
+
+            <!-- Brief Message Field -->
+            <div class="gfield width-full">
+                <label class="gfield_label">{{ app()->getLocale() == 'en' ? 'Brief Message About Your Request' : 'رسالة مختصرة عن طلبك' }}</label>
+                <div class="ginput_container">
+                    <textarea name="brief_message" id="briefMessage" class="large" aria-invalid="false"></textarea>
+                </div>
+            </div>
+        </div>
                         </div>
                         </div>
-                        <div class="gform_footer"><input type="submit" class="gform_button button" value="Submit" tabindex="0"></div>
+                        <div class="gform_footer"><input type="submit" class="gform_button button"  value="{{ App::getLocale() === 'en' ? 'Submit' : 'إرسال' }}" tabindex="0"></div>
                         </form>
                     </div>
                 </div>
