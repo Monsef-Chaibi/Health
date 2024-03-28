@@ -16,11 +16,12 @@ use Illuminate\Support\Facades\Session;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::middleware(['checkDemoExpiration'])->group(function () {
 Route::get('/', function () {
     return view('welcome');
 });
 
+});
 
 Route::match(['get', 'post'], '/Emergency', [Controller::class, 'Emergency'])->name('Emergency');
 
