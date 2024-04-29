@@ -45,8 +45,7 @@ var js_variables = {"themeurl":"https:\/\/www.scphealth.com\/wp-content\/themes\
 
 
 
-							<button type="button" class="pum-close popmake-close" aria-label="Close">
-			CLOSE			</button>
+						
 
 	</div>
 
